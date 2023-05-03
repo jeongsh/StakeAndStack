@@ -7,7 +7,123 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Stake and Stack</title>
 </head>
-<body>
-
+<body class="body">
+  <div class="banner">
+    <div class="left">
+      <img src="./assets/images/banner-logo.svg" alt="">
+      <p>SaS Club Airdrop( Membership NFT)</p>
+    </div>
+    <div class="right">
+      <div class="content">
+        <p class="white">notice & Archive</p>
+        <p>Download all issues of the State of Staking</p>
+        <p>+ Read Now</p></div>
+      <button class="btn-close" id="btnBanner">
+        <img src="./assets/images/banner-close.svg" alt="">
+      </button>
+    </div>
+  </div>
+  <header>
+    <img src="./assets/images/logo.svg" alt="">
+    <nav>
+      <p class="link">About</p>
+      <a href="" class="link">Networks</a>
+      <a href="" class="link">Products</a>
+    </nav>
+    <div class="box-btn">
+      <a href="" class="btn">LOGIN</a>
+      <a href="" class="btn">LOGIN</a>
+      <a href="" class="btn btn-yellow">DASHBOARD</a>
+    </div>
+  </header>
+  <main>
+    <section class="sec-video">
+      <h3 class="sub-title">
+        Make your coins work for you 24/7 with
+      </h3>
+      <h2 class="title">
+        Stake and <span>Stack</span>
+      </h2>
+      <p class="des">
+        Stake and Stack empowers investors to generate yield through non-custodial staking,<br>
+        while offering memberships for added benefits, and ensuring high uptime and secure asset management 24/7.
+      </p>
+      <div class="box-btn">
+        <a href="" class="link">STAKE NOW</a>
+        <a href="" class="link">LEARN MORE</a>
+      </div>
+      <video src="" poster="./assets/images/thumbnail.svg"></video>
+    </section>
+    <section class="sec-coin">
+      <div class="wrap">
+        <img src="./assets/images/coin-monster.svg" alt="" class="moster">
+        <div class="content">
+          <h2 class="title">
+            The advantages of staking your<br>assets with us
+          </h2>
+          <p class="des">
+            <strong>Stake and Stack</strong>, a trusted validator since 2019, is backed by a highly skilled
+            team boasting decades of experience in software development, system
+            architecture, and highly available infrastructure.
+          </p>
+          <div class="wrap-shadow">
+            <div class="box-percent d-flex center">
+              <div class="wrap-content">
+                <div class="d-flex v-center">
+                  <h4 class="number">
+                    4Y+
+                  </h4>
+                  <p class="text">
+                    running<br>experience
+                  </p>
+                </div>
+                <div class="d-flex v-center">
+                  <h4 class="number">
+                    7%
+                  </h4>
+                  <p class="text">
+                    standard<br>commission
+                  </p>
+                </div>
+                <div class="d-flex v-center">
+                  <h4 class="number">
+                    99%+
+                  </h4>
+                  <p class="text">
+                    overall<br>ptime
+                  </p>
+                </div>
+                <div class="d-flex v-center">
+                  <h4 class="number">
+                    0%
+                  </h4>
+                  <p class="text">
+                    minimum<br>commission
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="shadow"></div>
+          </div>
+          <p class="highlight">
+            <span>■ SaS Club Exclusive Membership (NFT)</span><br>
+            <span>■ Reduced fees for increased delegation duration and size (w/o NFT)</span><br>
+            <span>■ User-friendly and intuitive dashboard</span><br>
+            <span>■ 24/7 support via Telegram and KakaoTalk</span><br>
+            <span>■ Stake and Stack Bot for Telegram alerts</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div style="height: 400vh; background-color: aquamarine;"></div>
+  </main>
+  
+  <script>
+    const btnBanner = document.querySelector('#btnBanner');
+    const banner = document.querySelector('.banner');
+    btnBanner.addEventListener('click', ()=>{
+      banner.classList.add('close')
+    })
+  </script>
 </body>
 </html>
