@@ -1,0 +1,16 @@
+@mixin nth-delay($reverse : false, $num : 4, $delay : 0.2){
+  @if($reverse){
+    @for $i from 1 to $num{
+      &:nth-child(#{$i}){
+        transition-delay: #{$delay*($num - $i)}s;
+      }
+    }
+  }
+  @else{
+    @for $i from 1 to $num{
+      &:nth-child(#{$i}){
+        transition-delay: #{$delay*$i}s;
+      }
+    }
+  }
+}
