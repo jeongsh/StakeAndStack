@@ -1,3 +1,4 @@
+@import "variables";
 .d-flex{
   display: flex;
   &.v-center{
@@ -13,4 +14,13 @@
   &.between{
     justify-content: space-between;
   }
+}
+
+.green{
+  color: $secondary;
+}
+
+//swiper
+.swiper.swiper-1{
+  overflow: visible;
 }

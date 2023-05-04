@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <title>Stake and Stack</title>
 </head>
+
 <body class="body">
   <div class="banner">
     <div class="left">
@@ -17,7 +22,8 @@
       <div class="content">
         <p class="white">notice & Archive</p>
         <p>Download all issues of the State of Staking</p>
-        <p>+ Read Now</p></div>
+        <p>+ Read Now</p>
+      </div>
       <button class="btn-close" id="btnBanner">
         <img src="./assets/images/banner-close.svg" alt="">
       </button>
@@ -115,15 +121,79 @@
         </div>
       </div>
     </section>
+    <section class="sec-network" style="height: 100vh;">네트워크는 아직 완성 안됨</section>
+    <section class="sec-slide1">
+      <div class="wrap">
+        <h2 class="title">We know how to validate the<br>
+          blockchains</h2>
+        <h3 class="subtitle">
+          <span class="green">Stake</span> your crypto to <span class="green">stack</span> the coins
+        </h3>
+        <!-- Slider main container -->
+        <div class="swiper swiper-1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="height: 300px; background-color: red;">Slide 1</div>
+            <div class="swiper-slide" style="height: 300px; background-color: blueviolet;">Slide 1</div>
+            <div class="swiper-slide" style="height: 300px; background-color: aquamarine;">Slide 1</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div style="height: 400vh; background-color: aquamarine;"></div>
   </main>
-  
+
   <script>
     const btnBanner = document.querySelector('#btnBanner');
     const banner = document.querySelector('.banner');
-    btnBanner.addEventListener('click', ()=>{
+    const secSlide1 = document.querySelector('.sec-slide1');
+    const swiper1 = document.querySelector('.swiper-1');
+    const swipers = swiper1.querySelectorAll('.swiper-slide')
+
+    // secSlide1.addEventListener('wheel', (e)=>{
+    //   if(!swipers[swipers.length - 1].classList.contains('swiper-slide-active')){
+    //     if(e.deltaY > 0){
+    //       e.preventDefault()
+    //     }
+    //   }
+    // },{passive: false})
+
+    let lastScrollY = 0
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction === 'down') {
+        console.log(111)
+        if (secSlide1.getBoundingClientRect().top <= 0) {
+          window.scrollTo(0, window.scrollY + secSlide1.getBoundingClientRect().top, 'smooth');
+          e.preventDefault();
+
+          // window.removeEventListener('scroll',()=>{});
+        }
+      }
+
+      // if(secSlide1.getBoundingClientRect().top - window.innerHeight/10 > 0 && secSlide1.getBoundingClientRect().top - window.innerHeight/10 < window.innerHeight/10){
+      //   secSlide1.scrollIntoView()
+      //   console.log(window.pageYOffset + secSlide1.getBoundingClientRect().top)
+      // }
+      // console.log(secSlide1.getBoundingClientRect().top - window.innerHeight/10 < window.innerHeight/10)
+      lastScrollY = y;
+    })
+
+    btnBanner.addEventListener('click', () => {
       banner.classList.add('close')
     })
+
+    const swiper = new Swiper('.swiper-1', {
+      spaceBetween: 50,
+      mousewheel: {
+        releaseOnEdges: true,
+      },
+      speed: 600,
+    });
   </script>
 </body>
+
 </html>

@@ -260,3 +260,24 @@ header{
     }
   }
 }
+
+.sec-slide1{
+  width: 100%;
+  height: 100vh;
+  background: url(../images/sec-slide1-bg.svg) 50% 0 / contain;
+  overflow-x: hidden;
+  .wrap{
+    padding: 121px 0 0 184px;
+  }
+  .title{
+    font-size: 45px;
+    line-height: 1.46;
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  .subtitle{
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 80px;
+  }
+}
