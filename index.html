@@ -301,14 +301,16 @@
       memberPositionX = scrollHorizontal(secMembership, 50, memberPositionX, scrollDirection, lastScrollTop)
       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 
+      //스크롤시 섹션에 active 클래스 추가
       sections.forEach(e => {
-        if(e.getBoundingClientRect().top <= 0){
+        if(e.getBoundingClientRect().top <= 150){
           e.classList.add('active')
         }
         else{
           e.classList.remove('active')
         }
       });
+      console.log(sections[1].getBoundingClientRect().top)
     })
 
     //세로스크롤 막고 가로 스크롤, 가로스크롤 끝나면 다시 세로스크롤
@@ -347,6 +349,7 @@
       }
       return positionX
     }
+
   </script>
 </body>
 

@@ -336,6 +336,8 @@ header .btn-yellow {
   z-index: 1;
   text-transform: uppercase;
   margin-bottom: 70px;
+  transform: translate(10px, 16px);
+  transition: 0.3s;
 }
 .sec-coin .box-percent .wrap-content {
   width: 100%;
@@ -370,6 +372,9 @@ header .btn-yellow {
 .sec-coin .highlights .highlight::after {
   background: #D5E823;
   left: 22px;
+}
+.sec-coin.active .box-percent {
+  transform: translate(0);
 }
 
 .sec-network {

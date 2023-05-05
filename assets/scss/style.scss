@@ -216,6 +216,8 @@ header{
     z-index: 1;
     text-transform: uppercase;
     margin-bottom: 70px;
+    transform: translate(10px , 16px);
+    transition: 0.3s;
     .wrap-content{
       width: 100%;
       display: flex;
@@ -251,6 +253,11 @@ header{
         background: #D5E823;
         left: 22px;
       }
+    }
+  }
+  &.active{
+    .box-percent{
+      transform: translate(0);
     }
   }
 }
