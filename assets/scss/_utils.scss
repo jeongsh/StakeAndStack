@@ -24,3 +24,17 @@
 .swiper.swiper-1{
   overflow: visible;
 }
+
+.highlight{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  &::after{
+    content: "";
+    width: calc(100% - 13px);
+    height: 14px;
+    position: absolute;
+    bottom: -3px;
+    z-index: -1;
+  }
+}

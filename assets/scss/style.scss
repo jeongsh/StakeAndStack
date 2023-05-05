@@ -3,6 +3,7 @@
 .body{
   background: $Yellow01;
   padding-top: 30px;
+  overflow-x: hidden;
 }
 .wrap{
   max-width: 1400px;
@@ -103,7 +104,9 @@ header{
 }
 
 .sec-video{
+  padding-top: 30px;
   text-align: center;
+  height: 100vh;
   .sub-title{
     font-size: 30px;
     line-height: 1;
@@ -158,7 +161,7 @@ header{
 }
 
 .sec-coin{
-  height: 900px;
+  height: 100vh;
   background: url(../images/coin-bg.svg) 50% 50% / contain no-repeat;
   .wrap{
     padding-left: 180px;
@@ -240,34 +243,135 @@ header{
       padding-top: 6px;
     }
   }
-  .highlight{
+  .highlights{
     font-size: 18px;
     line-height: 30px;
-    span{
-      display: inline-block;
-      position: relative;
-      z-index: 1;
+    .highlight{
       &::after{
-        content: "";
-        width: calc(100% - 13px);
-        height: 14px;
         background: #D5E823;
-        position: absolute;
         left: 22px;
-        bottom: -3px;
-        z-index: -1;
       }
     }
   }
 }
 
-.sec-slide1{
+.sec-network{
   width: 100%;
   height: 100vh;
-  background: url(../images/sec-slide1-bg.svg) 50% 0 / contain;
-  overflow-x: hidden;
-  .wrap{
-    padding: 121px 0 0 184px;
+  background: #F3F3F3;
+  padding-top: 135px;
+  text-align: center;
+  position: relative;
+  .line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .title{
+    font-size: 45px;
+    line-height: 0.6;
+    margin-bottom: 25px;
+  }
+  .des{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: $Natural30;
+  }
+}
+
+.sec-slider{
+  width: 100%;
+  position: relative;
+  &.fixed{
+    .slide-container{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+    }
+    .background{
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  }
+  &.fixend{
+    .slide-container{
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+    }
+    .background{
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
+  }
+  
+  .text{
+    position: absolute;
+    top: 121px;
+    left: max(calc((100% - 1400px)/2 + 184px), 20px);
+  }
+
+  .scroll{
+    position: absolute;
+    width: 100%;
+    left: max(calc((100% - 1400px)/2 + 184px), 20px);
+    top: 422px;
+    height: 100vh;
+    max-width: 2000px;
+    min-width: 1600px;
+  }
+}
+
+.sec-blockchains{
+  .obj1{
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    top: calc(100vh - 167px);
+  }
+  .obj2{
+    position: absolute;
+    right: -64px;
+    top: 180px;
+  }
+  &.fixed{
+    .obj1{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+    .obj2{
+      position: fixed;
+      right: -64px;
+      top: 180px;
+    }
+  }
+  &.fixend{
+    .obj1{
+      position: absolute;
+      left: 0;
+      top: auto;
+      bottom: 0;
+    }
+    .obj2{
+      position: absolute;
+      right: -64px;
+      top: auto;
+      bottom: calc(100vh - 639px);
+    }
+  }
+  .background{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/sec-slide1-bg.svg) 50% 0 / cover;
   }
   .title{
     font-size: 45px;
@@ -280,4 +384,180 @@ header{
     color: #fff;
     margin-bottom: 80px;
   }
+  .card-wrap{
+    display: flex;
+    gap: 50px;
+    .card{
+      width: 325px;
+      height: 300px;
+      border-radius: 10px;
+      background: #fff;
+      border: 3px solid;
+      .head{
+        height: 100px;
+        padding: 20px 0 0 25px;
+        font-size: 25px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 3px solid $Natural30;
+        line-height: 29px;
+      }
+      .content{
+        padding: 25px 20px;
+        height: 200px;
+        font-size: 18px;
+        font-weight: 400;
+        word-break: keep-all;
+        letter-spacing: -0.2px;
+        color: #000;
+      }
+      &:nth-child(odd){
+        color: $primary;
+        box-shadow: 8px 8px 0px 0px #3D73DD;
+      }
+      &:nth-child(even){
+        color: $secondary;
+        box-shadow: 8px 8px 0px 0px #00C585;
+      }
+    }
+  }
+}
+
+.sec-membership{
+  .obj{
+    position: absolute;
+    right: 76px;
+    top: 266px;
+  }
+  &.fixed{
+    .obj{
+      position: fixed;
+    }
+  }
+  &.fixend{
+    .obj{
+      position: absolute;
+      top: auto;
+      bottom: calc(100vh - 626px);
+    }
+  }
+  .title{
+    font-size: 45px;
+    line-height: 1.46;
+    margin-bottom: 5px;
+  }
+  .subtitle{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .des{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 74px;
+    .blue{
+      font-weight: 600;
+      color: $primary;
+    }
+  }
+  .highlight{
+    &::after{
+      width: calc(100% + 4px);
+      background: #53FFC7;
+      left: -2px;
+    }
+  }
+  .link-more{
+    width: 202px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    border-radius: 12px;
+  }
+  .scroll{
+    top: 480px;
+  }
+  .card-wrap{
+    display: flex;
+    gap: 50px;
+    .card{
+      width: 325px;
+      min-width: 325px;
+      height: 270px;
+      border-radius: 10px;
+      background: #fff;
+      border: 3px solid;
+      overflow: hidden;
+      color: $primary;
+      box-shadow: 8px 8px 0px 0px #3D73DD;
+      .content{
+        padding: 25px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        word-break: keep-all;
+        letter-spacing: -0.2px;
+        color: #000;
+      }
+      &:nth-child(2){
+        color: $secondary;
+        box-shadow: 8px 8px 0px 0px #00C585;
+      }
+    }
+  }
+  .text{
+    top: 60px;
+  }
+}
+.sec-partner{
+  height: 800px;
+  background: url(../images/coin-bg.svg) 50% 50% / contain no-repeat #000;
+  padding-top: 99px;
+  text-align: center;
+  .cats{
+    display: block;
+    margin: 0 auto 40px auto;
+  }
+  .title{
+    font-size: 50px;
+    line-height: 0.7;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .des{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 88px;
+    color: #747E80;
+  }
+  .box-link{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 25px;
+  }
+  .link-partner{
+    width: 240px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    background: #000;
+    &:hover{
+      opacity: 1;
+      scale: 1.1;
+    }
+  }
+}
+
+.sec-contact{
+  height: 900px;
+  background: $secondary;
 }
