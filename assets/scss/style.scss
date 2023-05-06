@@ -1072,9 +1072,8 @@ header {
 footer{
   background: #fff;
   position: relative;
-  padding-bottom: 50px;
   .wrap{
-    padding: 114px 49px 50px 49px;
+    padding: 114px 49px 124px 49px;
     position: relative;
     .top{
       display: flex;
@@ -1157,7 +1156,7 @@ footer{
   }
   .cat{
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     right: 198px;
   }
 }
