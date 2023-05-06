@@ -826,6 +826,7 @@ header {
     gap: 50px;
     margin: 0 auto 20px auto;
     transition: 0.3s;
+    cursor: pointer;
 
     .btn-accordion {
       width: 25px;
@@ -922,6 +923,8 @@ header {
   .news {
     height: 480px;
     display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .img {
@@ -1005,6 +1008,8 @@ header {
     height: 100%;
     border-radius: 0 0 100px 100px;
     background: #000;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .title {

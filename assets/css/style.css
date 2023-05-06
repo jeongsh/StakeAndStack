@@ -819,6 +819,7 @@ header .btn-yellow {
   gap: 50px;
   margin: 0 auto 20px auto;
   transition: 0.3s;
+  cursor: pointer;
 }
 .sec-question .accordion .btn-accordion {
   width: 25px;
@@ -899,6 +900,8 @@ header .btn-yellow {
 .sec-news .news {
   height: 480px;
   display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .sec-news .img {
   width: 50%;
@@ -980,6 +983,8 @@ header .btn-yellow {
   height: 100%;
   border-radius: 0 0 100px 100px;
   background: #000;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .sec-newsletter .title {
   font-size: 45px;

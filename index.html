@@ -472,7 +472,6 @@
     const secBlockchains = document.querySelector('.sec-blockchains');
     const secMembership = document.querySelector('.sec-membership');
     const textAdditional = document.querySelector('#textAdditional');
-    const btnAccordion = document.querySelectorAll('.btn-accordion');
     const accordion = document.querySelectorAll('.accordion');
 
     let lastScrollTop = 0
@@ -542,9 +541,9 @@
       span.innerText = `${length}/${maxLength}`
     })
 
-    btnAccordion.forEach((e, i) => {
+    accordion.forEach((e, i) => {
       e.addEventListener('click', () => {
-        accordion[i].classList.toggle('active')
+        e.classList.toggle('active')
       })
     })
   </script>
