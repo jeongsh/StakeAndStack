@@ -1,39 +1,53 @@
 @import "variables";
-.mo{
+@import "mixins";
+
+.mo {
   display: none !important;
 }
 
-.d-flex{
+.wrap {
+  max-width: 1400px;
+  width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
   display: flex;
-  &.v-center{
+
+  &.v-center {
     align-items: center;
   }
-  &.h-center{
+
+  &.h-center {
     justify-content: center;
   }
-  &.center{
+
+  &.center {
     align-items: center;
     justify-content: center;
   }
-  &.between{
+
+  &.between {
     justify-content: space-between;
   }
 }
 
-.green{
+.green {
   color: $secondary;
 }
 
 //swiper
-.swiper.swiper-1{
+.swiper.swiper-1 {
   overflow: visible;
 }
 
-.highlight{
+.highlight {
   display: inline-block;
   position: relative;
   z-index: 1;
-  &::after{
+
+  &::after {
     content: "";
     width: calc(100% - 13px);
     height: 14px;
@@ -43,11 +57,92 @@
   }
 }
 
-@media(max-width: 1024px){
-  .mo{
+.btn-yellow {
+  width: 202px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  border-radius: 12px;
+  @include buttonHover($Yellow01, #000);
+}
+
+.link-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $Yellow01;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  position: relative;
+  background: $Yellow01;
+  border: 2px solid #000;
+  border-radius: 30px;
+  height: 30px;
+  transition: 0.3s;
+  width: 75px;
+  .text{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    transition: 0.3s;
+    line-height: 1;
+    &.hide{
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+      text-align: right;
+    }
+  }
+  .circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $Yellow01;
+    border: 2px solid #000;
+    position: absolute;
+    left: calc(100% - 24px);;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+  &.active{
+    background: #F4F5FB;
+    .text{
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+      &.hide{
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+      }
+    }
+    .circle{
+      left: 8px;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .mo {
     display: block !important;
   }
-  .pc{
+
+  .pc {
     display: none !important;
   }
 }

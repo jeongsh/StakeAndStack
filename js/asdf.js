@@ -1,3 +1,0 @@
-function calculateBMI(weight, height){
-    
-}

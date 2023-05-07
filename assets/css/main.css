@@ -84,6 +84,13 @@ button, a {
   display: none !important;
 }
 
+.wrap {
+  max-width: 1400px;
+  width: calc(100% - 100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .d-flex {
   display: flex;
 }
@@ -121,6 +128,94 @@ button, a {
   position: absolute;
   bottom: -3px;
   z-index: -1;
+}
+
+.btn-yellow {
+  width: 202px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  border-radius: 12px;
+  background-image: linear-gradient(45deg, #000 50%, #FEED01 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.3s ease-in-out, color 0.3s;
+  position: relative;
+}
+.btn-yellow:hover {
+  background-position: 0;
+  color: #FEED01;
+}
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FEED01;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  padding: 0 13px;
+  position: relative;
+  background: #FEED01;
+  border: 2px solid #000;
+  border-radius: 30px;
+  height: 30px;
+  transition: 0.3s;
+  width: 75px;
+}
+.toggle .text {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  transition: 0.3s;
+  line-height: 1;
+}
+.toggle .text.hide {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: right;
+}
+.toggle .circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FEED01;
+  border: 2px solid #000;
+  position: absolute;
+  left: calc(100% - 24px);
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.toggle.active {
+  background: #F4F5FB;
+}
+.toggle.active .text {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
+.toggle.active .text.hide {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+.toggle.active .circle {
+  left: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -473,16 +568,6 @@ footer .box-icon .d-flex {
 footer .box-icon .title {
   text-transform: unset;
 }
-footer .box-icon .link-icon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #FEED01;
-  border: 2px solid;
-  border-radius: 10px;
-}
 footer .box-icon .d-flex {
   gap: 5px;
 }
@@ -590,13 +675,6 @@ footer .cat {
   padding-top: 30px;
 }
 
-.wrap {
-  max-width: 1400px;
-  width: calc(100% - 100px);
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .banner {
   margin-bottom: 30px;
   background: #000;
@@ -693,7 +771,7 @@ footer .cat {
   background-image: linear-gradient(45deg, #000 50%, #fff 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 0.5s ease-in-out, color 0.5s;
+  transition: background 0.3s ease-in-out, color 0.3s;
   position: relative;
 }
 .sec-video .box-btn .link:hover {
@@ -1010,7 +1088,7 @@ footer .cat {
   background-image: linear-gradient(45deg, #000 50%, #FEED01 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 0.5s ease-in-out, color 0.5s;
+  transition: background 0.3s ease-in-out, color 0.3s;
   position: relative;
 }
 .sec-membership .link-more:hover {
@@ -1210,7 +1288,7 @@ footer .cat {
   background-image: linear-gradient(45deg, #000 50%, #FEED01 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 0.5s ease-in-out, color 0.5s;
+  transition: background 0.3s ease-in-out, color 0.3s;
   position: relative;
 }
 .sec-contact .right .btn-send:hover {
@@ -1428,7 +1506,7 @@ footer .cat {
   background-image: linear-gradient(45deg, #000 50%, #fff 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 0.5s ease-in-out, color 0.5s;
+  transition: background 0.3s ease-in-out, color 0.3s;
   position: relative;
 }
 .sec-news .text .link-more:hover {
@@ -1838,10 +1916,13 @@ footer .cat {
   }
   .sec-video .title {
     font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
   .sec-video .title span::after {
-    width: 143px;
+    width: 136px;
     bottom: -5px;
+    left: -3px;
   }
   .sec-coin {
     height: auto;
@@ -1883,6 +1964,7 @@ footer .cat {
   }
   .sec-coin .highlight-left::after {
     left: 0 !important;
+    width: calc(100% + 8px);
   }
   .sec-contact {
     padding: 50px 16px;
@@ -1909,4 +1991,4 @@ footer .cat {
   .sec-news .news .img {
     border-radius: 60px 60px 0 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

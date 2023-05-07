@@ -1,0 +1,246 @@
+@import "common";
+
+.body {
+  &.tezos {
+    background: #fff url(../images/networks/tezos-bg.jpg) 50% 0/contain no-repeat;
+  }
+}
+.wrap{
+  padding: 0 60px;
+}
+
+.title{
+  font-size: 35px;
+  line-height: 1.4;
+}
+.sub-title{
+  font-size: 30px;
+  line-height: 1.4;
+}
+section{
+  margin-bottom: 50px;
+}
+
+.sec-coin {
+  padding-top: 154px;
+  margin-bottom: 30px;
+  .wrap-info {
+    width: 990px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .head {
+      width: 100%;
+      height: 106px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      border-bottom: 1px solid #000;
+
+      .coin-title {
+        font-size: 38px;
+        line-height: 1.4;
+      }
+    }
+
+    .content {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .validator {
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 13px;
+      color: #0C0C0C;
+    }
+
+    .address {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
+      margin-right: 15px;
+      color: #090909;
+    }
+    .explorer{
+      width: 260px;
+      height: 40px;
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 10px auto 50px auto;
+    }
+    .box-info{
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      margin: 0 auto 40px auto;
+    }
+    .info{
+      text-align: left;
+    }
+    .type{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+      color: #282828;
+    }
+    .value{
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 1.17;
+      letter-spacing: -0.05em;
+      margin-bottom: 14px;
+      color: #090909;
+    }
+    .link-more{
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #282828;
+    }
+    .btn-yellow{
+      width: 175px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sec-1{
+  .wrap{
+    display: flex;
+  }
+  .sub-title{
+    margin-bottom: 30px;
+  }
+  .des{
+    color: #6E6E6E;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+  }
+  .box-link{
+    display: flex;
+    gap: 10px;
+  }
+  .left{
+    width: 50%;
+    padding-right: 50px;
+    border-right: 1px solid #000;
+  }
+  .right{
+    width: 50%;
+    padding-left: 50px;
+    .factor{
+      display: flex;
+      gap: 40px 0;
+      flex-wrap: wrap;
+      .box{
+        width: 33.3%;
+        text-align: center;
+      }
+    }
+    .value{
+      font-size: 30px;
+      line-height: 70px;
+      vertical-align: middle;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .type{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #616161;
+    }
+  }
+}
+
+.sec-2{
+  .box-calc{
+    border: 1px solid #868686;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .head{
+    padding: 30px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #868686;
+    .title{
+      margin-bottom: 7px;
+    }
+    .des{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  .left{
+    flex: 1;
+    padding: 40px 30px 0 52px;
+    .label-text{
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    .label{
+      width: 100%;
+      background: #f3f3f3;
+      border: 2px solid #000;
+      display: flex;
+      height: 50px;
+      gap: 10px;
+      padding: 0 12px;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      input{
+        flex: 1;
+        height: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        color: #555d67;
+      }
+      .btn-remove{
+        display: block;
+        img{
+          display: block;
+        }
+      }
+    }
+    .how{
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .price{
+      text-align: center;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 18px;
+      margin-bottom: 30px;
+    }
+    .box-range{
+      width: calc(100% - 32px);
+      background: url(../images/networks/range.png) 50% 0/contain no-repeat;
+    }
+    .range{
+
+    }
+  }
+  .right{
+    width: 690px;
+    background: #f4f5fb;
+    padding: 40px 20px;
+  }
+}

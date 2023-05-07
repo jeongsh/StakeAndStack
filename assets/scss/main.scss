@@ -1,20 +1,14 @@
 @import "common";
-
 .body {
   background: $Yellow01;
-  padding-top: 30px;
+  padding-top: 110px;
   overflow-x: hidden;
-}
-
-.wrap {
-  max-width: 1400px;
-  width: calc(100% - 100px);
-  margin-left: auto;
-  margin-right: auto;
+  &.hide-banner{
+    padding-top: 30px;
+  }
 }
 
 .banner {
-  margin-top: -30px;
   margin-bottom: 30px;
   background: #000;
   color: #fff;
@@ -24,6 +18,10 @@
   height: 80px;
   padding: 0 50px;
   gap: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 
   .left {
     display: flex;
@@ -1166,8 +1164,12 @@
 @media(max-width: 1024px){
   .body{
     padding-top: 0;
+    &.hide-banner{
+      padding-top: 0;
+    }
   }
   .banner{
+    position: static;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0 30px;
@@ -1383,9 +1385,12 @@
     }
     .title{
       font-size: 45px;
+      line-height: 1.2;
+      margin-bottom: 20px;
       span::after{
-        width: 143px;
+        width: 136px;
         bottom: -5px;
+        left: -3px;
       }
     }
   }
@@ -1431,6 +1436,7 @@
     .highlight-left{
       &::after{
         left: 0 !important;
+        width: calc(100% + 8px);
       }
     }
   }
