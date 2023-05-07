@@ -112,10 +112,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fff;
       border: 3px solid #000;
       border-radius: 12px;
       font-weight: 700;
+      @include buttonHover(#fff, #000);
     }
   }
 
@@ -496,6 +496,7 @@
     letter-spacing: 0.2em;
     font-weight: 700;
     border-radius: 12px;
+    @include buttonHover($Yellow01, #000);
   }
 
   .scroll {
@@ -708,15 +709,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid;
+      border: 2px solid #000;
       font-size: 14px;
       font-weight: 700;
       letter-spacing: 0.2em;
-      background: $Yellow01;
       border-radius: 10px;
       width: 302px;
       height: 60px;
       margin-bottom: 30px;
+      @include buttonHover($Yellow01, #000)
     }
 
     .privacy {
@@ -924,6 +925,10 @@
       color: $Natural30;
       margin-bottom: 25px;
       padding-right: 70px;
+      height: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @include ellipsis(6, 25px)
     }
 
     .link-more {
@@ -936,8 +941,9 @@
       letter-spacing: 0.2em;
       font-weight: 700;
       color: #000;
-      border: 3px solid;
+      border: 3px solid #000;
       border-radius: 12px;
+      @include buttonHover(#fff, #000)
     }
   }
 }

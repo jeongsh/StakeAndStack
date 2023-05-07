@@ -8,3 +8,17 @@
   line-height: $line-height;
   height: $line-height * $line-cnt; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
 }
+
+@mixin buttonHover($bg, $hover){
+  background: {
+    image: linear-gradient(45deg,$hover 50%, $bg 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 0.5s ease-in-out, color 0.5s;
+  position: relative;
+  &:hover {
+    background-position: 0;
+    color: $bg;
+  }
+}

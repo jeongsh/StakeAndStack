@@ -681,10 +681,18 @@ footer .cat {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
   border: 3px solid #000;
   border-radius: 12px;
   font-weight: 700;
+  background-image: linear-gradient(45deg, #000 50%, #fff 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.5s ease-in-out, color 0.5s;
+  position: relative;
+}
+.sec-video .box-btn .link:hover {
+  background-position: 0;
+  color: #fff;
 }
 .sec-video video {
   display: block;
@@ -993,6 +1001,15 @@ footer .cat {
   letter-spacing: 0.2em;
   font-weight: 700;
   border-radius: 12px;
+  background-image: linear-gradient(45deg, #000 50%, #FEED01 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.5s ease-in-out, color 0.5s;
+  position: relative;
+}
+.sec-membership .link-more:hover {
+  background-position: 0;
+  color: #FEED01;
 }
 .sec-membership .scroll {
   top: 531px;
@@ -1176,15 +1193,23 @@ footer .cat {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid;
+  border: 2px solid #000;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2em;
-  background: #FEED01;
   border-radius: 10px;
   width: 302px;
   height: 60px;
   margin-bottom: 30px;
+  background-image: linear-gradient(45deg, #000 50%, #FEED01 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.5s ease-in-out, color 0.5s;
+  position: relative;
+}
+.sec-contact .right .btn-send:hover {
+  background-position: 0;
+  color: #FEED01;
 }
 .sec-contact .right .privacy {
   font-size: 18px;
@@ -1370,6 +1395,17 @@ footer .cat {
   color: #555D67;
   margin-bottom: 25px;
   padding-right: 70px;
+  height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 25px;
+  height: 150px; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
 }
 .sec-news .text .link-more {
   width: 270px;
@@ -1381,8 +1417,17 @@ footer .cat {
   letter-spacing: 0.2em;
   font-weight: 700;
   color: #000;
-  border: 3px solid;
+  border: 3px solid #000;
   border-radius: 12px;
+  background-image: linear-gradient(45deg, #000 50%, #fff 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 0.5s ease-in-out, color 0.5s;
+  position: relative;
+}
+.sec-news .text .link-more:hover {
+  background-position: 0;
+  color: #fff;
 }
 
 .sec-newsletter {
