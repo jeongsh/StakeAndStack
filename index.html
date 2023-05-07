@@ -9,14 +9,49 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <title>Stake and Stack</title>
 </head>
 
 <body class="body">
+  <header class="mo">
+    <img src="./assets/images/main/logo.svg" alt="logo" class="logo">
+    <div class="btn-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="menu">
+      <div class="menu-container">
+        <ul class="link-list">
+          <li class="link-item">
+            <p class="link">About</p>
+            <a href="" class="link small">+ About Stake and Stack</a>
+            <a href="" class="link small">+ About webew</a>
+          </li>
+          <li class="link-item"><a href="" class="link">Networks</a></li>
+          <li class="link-item"><a href="" class="link">Products</a></li>
+          <li class="link-item"><a href="" class="link">Membership</a></li>
+          <li class="link-item"><a href="" class="link">News&Blog</a></li>
+          <li class="link-item"><a href="" class="link thin">LOGIN</a></li>
+          <li class="link-item"><a href="" class="link thin yellow">DASHBOARD</a></li>
+          <li class="link-item"><a href="" class="link thin">News&Blog</a></li>
+          <li class="link-item">
+            <a href="" class="link thin">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+            </a>
+            <a href="" class="link thin">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
   <div class="banner">
     <div class="left">
-      <img src="./assets/images/main/banner-logo.svg" alt="banner-logo">
-      <p>SaS Club Airdrop( Membership NFT)</p>
+      <img src="./assets/images/main/banner-logo.svg" alt="banner-logo" class="banner-logo">
+      <p class="sas">SaS Club Airdrop( Membership NFT)</p>
     </div>
     <div class="right">
       <div class="content">
@@ -29,16 +64,44 @@
       </button>
     </div>
   </div>
-  <header>
-    <img src="./assets/images/main/logo.svg" alt="logo">
+  <header class="pc">
+    <img src="./assets/images/main/logo.svg" alt="logo" class="logo">
     <nav>
-      <p class="link">About</p>
+      <button class="link btn-about">
+        About
+        <div class="box-sublink">
+          <a href="" class="link">+About Stake and Stack</a>
+          <a href="" class="link">+About webew</a>
+        </div>
+      </button>
       <a href="" class="link">Networks</a>
       <a href="" class="link">Products</a>
+      <a href="" class="link">Membership</a>
+      <a href="" class="link">News&Blog</a>
     </nav>
+
+    <!-- TODO: 로그인 전, 후 분기처리 -->
     <div class="box-btn">
-      <a href="" class="btn">LOGIN</a>
-      <a href="" class="btn">LOGIN</a>
+      <!-- <a href="" class="btn before-login">LOGIN</a> -->
+      <a href="" class="btn after-login">LOGOUT</a>
+      <a href="" class="btn after-login">MYPAGE</a>
+      <button class="btn btn-language">
+        <div class="language">
+          <img src="./assets/images/icon/flag-usd.svg" alt="">
+          USD
+          <img src="./assets/images/icon/down.svg" alt="" class="icon">
+        </div>
+        <div class="wrap-language">
+          <div class="language">
+            <img src="./assets/images/icon/flag-usd.svg" alt="">
+            USD
+          </div>
+          <div class="language">
+            <img src="./assets/images/icon/flag-usd.svg" alt="">
+            KWD
+          </div>
+        </div>
+      </button>
       <a href="" class="btn btn-yellow">DASHBOARD</a>
     </div>
   </header>
@@ -114,7 +177,9 @@
           </div>
           <p class="highlights">
             <span class="highlight">■ SaS Club Exclusive Membership (NFT)</span><br>
-            <span class="highlight">■ Reduced fees for increased delegation duration and size (w/o NFT)</span><br>
+            <span class="highlight pc">■ Reduced fees for increased delegation duration and size (w/o NFT)</span><br class="pc">
+            <span class="highlight mo">■ Reduced fees for increased delegation </span>
+            <span class="highlight mo highlight-left">duration and size (w/o NFT)</span>
             <span class="highlight">■ User-friendly and intuitive dashboard</span><br>
             <span class="highlight">■ 24/7 support via Telegram and KakaoTalk</span><br>
             <span class="highlight">■ Stake and Stack Bot for Telegram alerts</span>
@@ -129,7 +194,7 @@
       <p class="des">Stake with us on various protocols, secure networks, and earn rewards as a token holder.</p>
     </section>
 
-    <section class="sec-blockchains sec-slider" style="height: 450vh;">
+    <section class="sec-blockchains sec-slider pc" style="height: 450vh;">
       <div class="background"></div>
       <img src="./assets/images/main/block-obj1.png" alt="" class="obj1">
       <img src="./assets/images/main/block-obj2.png" alt="" class="obj2">
@@ -177,7 +242,52 @@
       </div>
     </section>
 
-    <section class="sec-membership sec-slider" style="height: 450vh;">
+    <section class="sec-blockchains-mo mo">
+      <img src="./assets/images/main/block-obj1.png" alt="" class="obj1">
+      <h2 class="title">
+        We know how to<br>
+        validate the<br>
+        blockchains
+      </h2>
+      <h3 class="subtitle">
+        <span class="green">Stake</span> your crypto to <span class="green">stack</span> the coins
+      </h3>
+      <div class="swiper swiper-block">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <p class="head">
+              Stake and Stack<br>Membership
+            </p>
+            <p class="content">
+              Our tier-based membership offers reduced fees down to 0%, exclusive features, and perks, maximizing
+              rewards and enhancing the staking experience.
+            </p>
+          </div>
+          <div class="card swiper-slide">
+            <p class="head">Custom Fee Discounts</p>
+            <p class="content">Automatic fee discounts based on delegation amount and duration, available for both
+              members and non-members to enjoy increased rewards.</p>
+          </div>
+          <div class="card swiper-slide">
+            <p class="head">Dashboard & Automated Rewards</p>
+            <p class="content">Our intuitive dashboard displays real-time data and network stats, while our automatic
+              payout system ensures timely and precise distribution of staking rewards.</p>
+          </div>
+          <div class="card swiper-slide">
+            <p class="head">Expert Staking Solution</p>
+            <p class="content">With 4 years of experience, we ensure a secure and reliable staking environment
+              featuring 99.9% uptime, earning the trust of clients worldwide.</p>
+          </div>
+          <div class="card swiper-slide">
+            <p class="head">Multi-Protocol & Transparency</p>
+            <p class="content">We support various protocols and prioritize transparency, clear fees, and regular
+              audits for a seamless staking experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-membership sec-slider pc" style="height: 450vh;">
       <img src="./assets/images/main/member-dog.png" alt="" class="obj">
       <div class="slide-container">
         <div class="text">
@@ -234,6 +344,62 @@
       </div>
     </section>
 
+    <section class="sec-membership-mo mo">
+      <div class="slide-container">
+        <div class="text">
+          <h2 class="title">Stake and Stack Club Membership</h2>
+          <h3 class="subtitle">
+            Get exclusive access to our holder benefits
+          </h3>
+          <p class="des">
+            <span class="blue">Stake and Stack Club Membership</span> holders can maximize their rewards with<br>
+            benefits like <span class="highlight">lowering validator fees to 0%.</span>
+          </p>
+          <a href="" class="link-more">LEARN MORE</a>
+        </div>
+        <div class="swiper swiper-block">
+          <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+            <div class="card swiper-slide">
+              <img src="./assets/images/main/member1.svg" alt="" class="head">
+              <p class="content">
+                SaS Club members enjoy exclusive features, services, and promotions, elevating their staking experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="sec-partner">
       <div class="wrap">
         <img src="./assets/images/main/cats.svg" alt="" class="cats">
@@ -278,6 +444,15 @@
 
     <section class="sec-contact">
       <div class="wrap">
+        <div class="mo">
+          <h2 class="title">
+            Contact Us
+          </h2>
+          <p class="des">
+            For questions or staking large assets, fill out the form, and we'll be in touch. For delegations over $100k,
+            request a Stake and Stack special offer
+          </p>
+        </div>
         <div class="left">
           <div class="wrap-input">
             <input type="text" class="input short" placeholder="YOUR NAME" required>
@@ -295,10 +470,10 @@
           <div class="shadow"></div>
         </div>
         <div class="right">
-          <h2 class="title">
+          <h2 class="title pc">
             Contact Us
           </h2>
-          <p class="des">
+          <p class="des pc">
             For questions or staking large assets, fill out the form, and we'll be in touch. For delegations over $100k,
             request a Stake and Stack special offer
           </p>
@@ -431,27 +606,28 @@
             <a href="" class="link">SaS Club (Membership)</a>
           </div>
         </div>
-        <div class="divider"></div>
+        <div class="divider-vertical"></div>
+        <div class="divider-horizontal"></div>
         <div class="box-icon">
           <div class="box">
             <h3 class="title">Find us on</h3>
-           <div class="d-flex">
-            <a href="" class="link-icon"><img src="./assets//images/icon/mail.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/linktree.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/notion.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/medium.svg" alt=""></a>
-           </div>
+            <div class="d-flex">
+              <a href="" class="link-icon"><img src="./assets//images/icon/mail.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/linktree.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/notion.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/medium.svg" alt=""></a>
+            </div>
           </div>
           <div class="box">
             <h3 class="title">Join our community</h3>
-           <div class="d-flex">
-            <a href="" class="link-icon"><img src="./assets//images/icon/twitter.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/telegram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/kakao-talk.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/discord.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/instagram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets//images/icon/facebook.svg" alt=""></a>
-           </div>
+            <div class="d-flex">
+              <a href="" class="link-icon"><img src="./assets//images/icon/twitter.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/telegram.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/kakao-talk.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/discord.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/instagram.svg" alt=""></a>
+              <a href="" class="link-icon"><img src="./assets//images/icon/facebook.svg" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
@@ -468,11 +644,15 @@
   <script>
     const btnBanner = document.querySelector('#btnBanner');
     const banner = document.querySelector('.banner');
+    const btnAbout = document.querySelector('.btn-about');
+    const btnLanguage = document.querySelector('.btn-language');
     const sections = document.querySelectorAll('section');
     const secBlockchains = document.querySelector('.sec-blockchains');
     const secMembership = document.querySelector('.sec-membership');
     const textAdditional = document.querySelector('#textAdditional');
     const accordion = document.querySelectorAll('.accordion');
+    const btnMenu = document.querySelector('.btn-menu');
+    const headerMo = document.querySelector('header.mo');
 
     let lastScrollTop = 0
     let blcokPositionX = 0
@@ -480,6 +660,14 @@
 
     btnBanner.addEventListener('click', () => {
       banner.classList.add('close')
+    })
+
+    btnAbout.addEventListener('click', () => {
+      btnAbout.classList.toggle('active')
+    })
+
+    btnLanguage.addEventListener('click', () => {
+      btnLanguage.classList.toggle('active')
     })
 
     window.addEventListener('scroll', () => {
@@ -545,6 +733,22 @@
       e.addEventListener('click', () => {
         e.classList.toggle('active')
       })
+    })
+
+    btnMenu.addEventListener('click', () => {
+      headerMo.classList.toggle('active')
+    })
+
+    const swiper = new Swiper('.swiper-block', {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 25,
+    })
+
+    const swiper2 = new Swiper('.swiper-membership', {
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 25,
     })
   </script>
 </body>

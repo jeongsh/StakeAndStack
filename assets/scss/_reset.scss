@@ -3,7 +3,7 @@
 blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {margin:0;padding:0}
 h1, h2, h3, h4, h5, h6 {
   font-size:100%;
-  font-weight:600;
+  font-weight:400;
   font-family: 'Paytone One', sans-serif;
   span{
     font-family: inherit;
@@ -24,6 +24,7 @@ button, input, select {
   }
 }
 html {box-sizing:border-box;}
+section{overflow-x: hidden;}
 *, :after, :before {box-sizing:inherit}
 img, video {height:auto;max-width:100%}
 iframe {border:0}

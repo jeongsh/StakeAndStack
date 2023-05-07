@@ -1,4 +1,8 @@
 @import "variables";
+.mo{
+  display: none !important;
+}
+
 .d-flex{
   display: flex;
   &.v-center{
@@ -36,5 +40,14 @@
     position: absolute;
     bottom: -3px;
     z-index: -1;
+  }
+}
+
+@media(max-width: 1024px){
+  .mo{
+    display: block !important;
+  }
+  .pc{
+    display: none !important;
   }
 }
