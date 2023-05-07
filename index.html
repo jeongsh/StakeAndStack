@@ -645,6 +645,7 @@
     const btnBanner = document.querySelector('#btnBanner');
     const banner = document.querySelector('.banner');
     const btnAbout = document.querySelector('.btn-about');
+    const boxSublink = document.querySelector('.box-sublink');
     const btnLanguage = document.querySelector('.btn-language');
     const sections = document.querySelectorAll('section');
     const secBlockchains = document.querySelector('.sec-blockchains');
@@ -665,7 +666,13 @@
     btnAbout.addEventListener('click', () => {
       btnAbout.classList.toggle('active')
     })
-
+    //boxSublink 바깥 클릭시 active 클래스 제거
+    document.addEventListener('click', (e) => {
+      if (!boxSublink.contains(e.target) && !btnAbout.contains(e.target)) {
+        btnAbout.classList.remove('active')
+      }
+    })
+    
     btnLanguage.addEventListener('click', () => {
       btnLanguage.classList.toggle('active')
     })
