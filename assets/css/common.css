@@ -552,6 +552,7 @@ footer .cat {
   footer .wrap {
     padding: 0;
     margin: 0;
+    width: 100%;
   }
   footer .wrap .top {
     padding: 0 30px 40px 30px;
