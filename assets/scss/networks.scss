@@ -239,14 +239,13 @@ section{
     
     .box-range{
       width: calc(100% - 36px);
-      border-radius: 17px;
       height: 17px;
-      background: aquamarine;
       padding: 5px 8px;
       position: relative;
       margin-bottom: 30px;
-      // background: url(../images/networks/range.png) 50% 0/contain no-repeat;
-
+      background: #FFFFFF;
+      box-shadow: inset 0px 5px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
     }
     .range{
       width: 100%;
@@ -342,14 +341,13 @@ section{
     font-size: 25px;
     line-height: 1.2;
     font-weight: 700;
-    max-width: 454px;
     word-break: break-all;
-    margin-left: 32px;
-    margin-top: 40px;
+    margin-bottom: 25px;
   }
   .swiper-box{
     display: flex;
-    gap: 32px;
+    gap: 25px;
+    align-items: flex-end;
     .swiper-image{
       width: 485px;
       img{
@@ -364,10 +362,6 @@ section{
     display: flex;
     align-items: center;
     gap: 10px;
-    position: absolute;
-    left: 40px;
-    bottom: 3px;
-    z-index: 90;
     img{
       width: 26px;
     }
@@ -405,5 +399,40 @@ section{
     text-align: right;
     display: block;
     text-transform: uppercase;
+  }
+}
+.sec-5{
+  .wrap{
+    padding: 0 60px;
+  }
+  .title{
+    margin-bottom: 32px;
+  }
+  .keep{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 32px;
+  }
+ .d-flex{
+  gap: 45px;
+ } 
+}
+.sec-6{
+  .wrap{
+    padding: 50px 60px;
+    text-align: center;
+    .title{
+      font-size: 45px;
+      line-height: 18px;
+      margin-bottom: 40px;
+    }
+    .sub-title{
+      line-height: 18px;
+      margin-bottom: 100px;
+    }
+    .d-flex{
+      gap: 27px;
+    }
   }
 }
