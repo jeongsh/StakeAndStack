@@ -183,6 +183,8 @@ window.addEventListener('scroll', () => {
   sections.forEach(e => {
     if (e.getBoundingClientRect().top <= 300) {
       e.classList.add('active')
+    } else {
+      e.classList.remove('active')
     }
   });
 })
