@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Paytone+One&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 * {
   font-family: "Raleway", "Noto Sans KR", system-ui, "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   font-weight: 400;
@@ -215,6 +215,64 @@ button, a {
 }
 .toggle.active .circle {
   left: 8px;
+}
+
+.accordion {
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 0 auto 20px auto;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.accordion .btn-accordion {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.accordion .btn-accordion .line {
+  width: 25px;
+  height: 4px;
+  background: #00C585;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.accordion .btn-accordion .line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.accordion .text-accordion {
+  flex: 1;
+}
+.accordion .text-accordion .question {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #303234;
+  display: block;
+}
+.accordion .text-accordion .answer {
+  font-weight: 400;
+  font-size: 18px;
+  color: #969D9E;
+  display: block;
+  height: 0;
+  padding-top: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+.accordion.active .btn-accordion .line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.accordion.active .text-accordion .answer {
+  height: auto;
+  padding-top: 13px;
 }
 
 @media (max-width: 1024px) {

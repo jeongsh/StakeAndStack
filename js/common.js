@@ -156,7 +156,7 @@ const accordion = document.querySelectorAll('.accordion');
 const btnMenu = document.querySelector('.btn-menu');
 const toggle = document.querySelectorAll('.toggle');
 
-btnAbout.forEach((e, i) => { 
+btnAbout.forEach((e, i) => {
   e.addEventListener('click', () => {
     btnAbout.forEach(e => {
       e.classList.remove('active')
@@ -202,5 +202,25 @@ btnMenu.addEventListener('click', () => {
 toggle.forEach(e => {
   e.addEventListener('click', () => {
     e.classList.toggle('active')
+  })
+})
+
+const range = document.querySelectorAll('.range');
+range.forEach(e => {
+  //e의 min, max, value 속성을 가져옴
+  const min = e.getAttribute('min');
+  const max = e.getAttribute('max');
+
+  //e의 value 속성이 없으면 min값으로 설정
+  if (!e.getAttribute('value')) {
+    e.setAttribute('value', min)
+  }
+
+  e.addEventListener('input', () => {
+    //e의 현재 값을 가져옴
+    const value = e.value;
+    const percent = (value - min) / (max - min) * 100;
+    //value가 0이면 0%로, 100이면 100%로
+    e.style.background = `linear-gradient(to right, #797BED 0%, #797BED ${percent}%, transparent ${percent}%, transparent 100%)`
   })
 })
