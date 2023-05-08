@@ -181,10 +181,8 @@ btnLanguage.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
   //스크롤시 섹션에 active 클래스 추가
   sections.forEach(e => {
-    if (e.getBoundingClientRect().top <= 150) {
+    if (e.getBoundingClientRect().top <= 300) {
       e.classList.add('active')
-    } else {
-      e.classList.remove('active')
     }
   });
 })
