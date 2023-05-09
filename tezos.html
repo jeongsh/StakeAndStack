@@ -495,7 +495,7 @@
         <p class="keep">
           Keep your XTZ in exchanges? You should create your own wallet to keep your XTZ safe! Here's the recommended wallets for you
         </p>
-        <div class="d-flex">
+        <div class="d-flex pc">
           <a href="https://wallet.kukai.app" target="_blank">
             <img src="./assets/images/networks/kukai.svg" alt="">
           </a>
@@ -512,6 +512,35 @@
             <img src="./assets/images/networks/kukai.svg" alt="">
           </a>
         </div>
+        <div class="swiper swiper-wallets mo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://wallet.kukai.app" target="_blank">
+                <img src="./assets/images/networks/kukai.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.ledger.com" target="_blank">
+                <img src="./assets/images/networks/kukai.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://trustwallet.com/tezos-wallet" target="_blank">
+                <img src="./assets/images/networks/kukai.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href=" https://templewallet.com" target="_blank">
+                <img src="./assets/images/networks/kukai.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://airgap.it/" target="_blank">
+                <img src="./assets/images/networks/kukai.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="sec-6">
@@ -520,7 +549,7 @@
         <h3 class="sub-title">
           Here’s the top exchanges you can buy XTZ
         </h3>
-        <div class="d-flex">
+        <div class="d-flex pc">
           <a href="https://www.binance.com/en/trade/XTZ_USDT" target="_blank">
             <img src="./assets/images/networks/binance.svg" alt="">
           </a>
@@ -537,14 +566,53 @@
             <img src="./assets/images/networks/binance.svg" alt="">
           </a>
         </div>
+        <div class="swiper swiper-have mo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://www.binance.com/en/trade/XTZ_USDT" target="_blank">
+                <img src="./assets/images/networks/binance.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://exchange.coinbase.com/trade/XTZ-USD" target="_blank">
+                <img src="./assets/images/networks/binance.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://www.okx.com/trade-spot/xtz-usdt" target="_blank">
+                <img src="./assets/images/networks/binance.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://pro.kraken.com/app/trade/xtz-usd" target="_blank">
+                <img src="./assets/images/networks/binance.svg" alt="">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="https://upbit.com/exchange?code=CRIX.UPBIT.KRW-XTZ" target="_blank">
+                <img src="./assets/images/networks/binance.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <script src="./js/common.js"></script>
   <script>
-    var swiper1 = new Swiper(".swiper-image", {
+    var imgSwiper = new Swiper(".swiper-image", {
     });
-    var swiper2 = new Swiper(".swiper-guide", {
+    var guideSwiper = new Swiper(".swiper-guide", {
+    });
+    var walletSwiper = new Swiper(".swiper-wallets", {
+      direction: 'horizontal',
+      slidesPerView: "auto",
+      spaceBetween: 25,
+    });
+    var haveSwiper = new Swiper(".swiper-have", {
+      direction: 'horizontal',
+      slidesPerView: "auto",
+      spaceBetween: 25,
     });
 
     const swiperImage= document.querySelector('.swiper-image');
@@ -563,7 +631,7 @@
       swiperImage.swiper.slidePrev();
       swiperGuide.swiper.slidePrev();
     }
-    swiper2.on('transitionEnd', function () {
+    guideSwiper.on('transitionEnd', function () {
       swiperGuideCurrent.innerHTML = swiperGuide.swiper.realIndex + 1;
     });
   </script>

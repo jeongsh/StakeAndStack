@@ -220,3 +220,17 @@
     display: none !important;
   }
 }
+
+@media(max-width: 900px){
+  .accordion{
+    gap: 20px;
+    .text-accordion{
+      .question{
+        font-size: 18px;
+      }
+      .answer{
+        font-size: 15px;
+      }
+    }
+  }
+}
