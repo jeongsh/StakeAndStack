@@ -229,24 +229,31 @@ range.forEach(e => {
 
 // 스크롤 다운 시 header에 hide 클래스 추가 스크롤 업 시 hide 클래스 제거
 let lastScroll = 0;
+if(window.pageYOffset <= 0) {
+  header.classList.add('noscroll')
+} else {
+  header.classList.remove('noscroll')
+}
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
   //지금 높이가 맨위이면 noscroll 클래스 추가
-  if(currentScroll <= 0) {
-    header.classList.add('noscroll')
-  } else {
-    header.classList.remove('noscroll')
-  }
 
   if (currentScroll <= 0) {
     header.classList.remove('hide')
     header.classList.add('noscroll')
     return
   }
+  //위로 스크롤 시 현재 화면이 절대값 500px 이하이면 noscroll 클래스 추가
+  if (currentScroll <= lastScroll && currentScroll < 100) {
+    header.classList.add('noscroll')
+  } else {
+    header.classList.remove('noscroll')
+  }
   if (currentScroll > lastScroll && !header.classList.contains('hide')) {
     header.classList.add('hide')
   } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
     header.classList.remove('hide')
   }
+  console.log(currentScroll)
   lastScroll = currentScroll;
 })
