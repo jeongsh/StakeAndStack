@@ -254,6 +254,5 @@ window.addEventListener('scroll', () => {
   } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
     header.classList.remove('hide')
   }
-  console.log(currentScroll)
   lastScroll = currentScroll;
 })
