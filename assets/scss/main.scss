@@ -1,13 +1,18 @@
 @import "common";
 .body {
   background: $Yellow01;
-  padding-top: 110px;
+  padding-top: 230px;
   overflow-x: hidden;
   &.hide-banner{
-    padding-top: 30px;
+    padding-top: 140px;
+    header.pc.noscroll{
+      top: 30px;
+    }
   }
 }
-
+header.pc.noscroll{
+  top: 110px;
+}
 .banner {
   margin-bottom: 30px;
   background: #000;
@@ -982,7 +987,7 @@
     .title{
       font-size: 36px;
       line-height: 1.5;
-      
+
     }
     .des{
       font-size: 18px;
@@ -1178,7 +1183,7 @@
     background: transparent;
     color: #000;
     padding: 30px 0 70px 30px;
-    
+
     .title{
       margin-bottom: 10px;
     }
@@ -1190,13 +1195,13 @@
       font-weight: 400;
       line-height: 1.5;
       margin-bottom: 30px;
-  
+
       .blue {
         font-weight: 600;
         color: $primary;
       }
     }
-  
+
     .highlight {
       &::after {
         width: calc(100% + 4px);
@@ -1204,7 +1209,7 @@
         left: -2px;
       }
     }
-  
+
     .link-more {
       width: 202px;
       height: 60px;
@@ -1224,7 +1229,7 @@
       .head{
         padding: 0;
         height: auto;
-        
+
       }
     }
   }

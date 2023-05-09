@@ -207,6 +207,10 @@
   }
 }
 
+.banner{
+  display: none;
+}
+
 @media(max-width: 1024px) {
   .mo {
     display: block !important;

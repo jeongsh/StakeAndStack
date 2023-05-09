@@ -148,6 +148,7 @@ document.body.insertAdjacentHTML('beforeend', `
     <img src="./assets/images/main/footer-cat.svg" alt="" class="cat">
   </div>
 </footer>`)
+const header = document.querySelector('header.pc');
 const btnAbout = document.querySelectorAll('.btn-about');
 const boxSublink = document.querySelectorAll('.box-sublink');
 const btnLanguage = document.querySelector('.btn-language');
@@ -223,4 +224,29 @@ range.forEach(e => {
     //value가 0이면 0%로, 100이면 100%로
     e.style.background = `linear-gradient(to right, #797BED 0%, #797BED ${percent}%, transparent ${percent}%, transparent 100%)`
   })
+})
+
+
+// 스크롤 다운 시 header에 hide 클래스 추가 스크롤 업 시 hide 클래스 제거
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  //지금 높이가 맨위이면 noscroll 클래스 추가
+  if(currentScroll <= 0) {
+    header.classList.add('noscroll')
+  } else {
+    header.classList.remove('noscroll')
+  }
+
+  if (currentScroll <= 0) {
+    header.classList.remove('hide')
+    header.classList.add('noscroll')
+    return
+  }
+  if (currentScroll > lastScroll && !header.classList.contains('hide')) {
+    header.classList.add('hide')
+  } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
+    header.classList.remove('hide')
+  }
+  lastScroll = currentScroll;
 })
