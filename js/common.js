@@ -1,7 +1,7 @@
 //body 의 첫번째 자식으로 header 추가
 document.body.insertAdjacentHTML('afterbegin', `
 <header class="header mo">
-  <a href="/"><img src="./assets/images/main/logo.svg" alt="logo" class="logo"></a>
+  <a href="/"><img src="./assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <div class="btn-menu">
     <div class="line"></div>
     <div class="line"></div>
@@ -41,12 +41,12 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 
 <header class="pc header">
-  <a href="/"><img src="./assets/images/main/logo.svg" alt="logo" class="logo"></a>
+  <a href="/"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       About
       <div class="box-sublink">
-        <a href="./about-stack.html" class="link">+About Stake and Stack</a>
+        <a href="./about-stack/html" class="link">+About Stake and Stack</a>
         <a href="" class="link">+About webew</a>
       </div>
     </button>
@@ -229,25 +229,13 @@ range.forEach(e => {
 
 // 스크롤 다운 시 header에 hide 클래스 추가 스크롤 업 시 hide 클래스 제거
 let lastScroll = 0;
-if(window.pageYOffset <= 0) {
-  header.classList.add('noscroll')
-} else {
-  header.classList.remove('noscroll')
-}
 window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
   //지금 높이가 맨위이면 noscroll 클래스 추가
 
   if (currentScroll <= 0) {
     header.classList.remove('hide')
-    header.classList.add('noscroll')
     return
-  }
-  //위로 스크롤 시 현재 화면이 절대값 500px 이하이면 noscroll 클래스 추가
-  if (currentScroll <= lastScroll && currentScroll < 100) {
-    header.classList.add('noscroll')
-  } else {
-    header.classList.remove('noscroll')
   }
   if (currentScroll > lastScroll && !header.classList.contains('hide')) {
     header.classList.add('hide')
