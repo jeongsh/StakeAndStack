@@ -181,6 +181,19 @@ section{
       font-weight: 700;
       margin-bottom: 4px;
       font-family: 'Roboto', sans-serif;
+      &.block{
+        font-size: 24px;
+        line-height: 1;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4px;
+        small{
+          font-size: 20px;
+        }
+      }
       small{
         font-weight: inherit;
         font-size: 24px;
@@ -385,7 +398,13 @@ section{
     padding: 26px 55px 62px 55px;
   }
   .title{
-    margin-bottom: 60px;
+    margin-bottom: 25px;
+  }
+  .des{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
   }
   .guide{
     font-size: 25px;
@@ -484,7 +503,7 @@ section{
       margin-bottom: 100px;
     }
     .d-flex{
-      gap: 27px;
+      gap: 15px;
     }
   }
 }
@@ -696,6 +715,12 @@ section{
     .right{
       .value{
         font-size: 20px;
+        &.block{
+          font-size: 20px;
+          small{
+            font-size: 16px;
+          }
+        }
         small{
           font-size: 16px;
         }

@@ -924,6 +924,19 @@ section {
   margin-bottom: 4px;
   font-family: "Roboto", sans-serif;
 }
+.sec-1 .right .value.block {
+  font-size: 24px;
+  line-height: 1;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.sec-1 .right .value.block small {
+  font-size: 20px;
+}
 .sec-1 .right .value small {
   font-weight: inherit;
   font-size: 24px;
@@ -1107,7 +1120,13 @@ section {
   padding: 26px 55px 62px 55px;
 }
 .sec-3 .title {
-  margin-bottom: 60px;
+  margin-bottom: 25px;
+}
+.sec-3 .des {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
 }
 .sec-3 .guide {
   font-size: 25px;
@@ -1205,7 +1224,7 @@ section {
   margin-bottom: 100px;
 }
 .sec-6 .wrap .d-flex {
-  gap: 27px;
+  gap: 15px;
 }
 
 @media (max-width: 1440px) {
@@ -1387,6 +1406,12 @@ section {
   }
   .sec-1 .right .value {
     font-size: 20px;
+  }
+  .sec-1 .right .value.block {
+    font-size: 20px;
+  }
+  .sec-1 .right .value.block small {
+    font-size: 16px;
   }
   .sec-1 .right .value small {
     font-size: 16px;
