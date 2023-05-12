@@ -17,6 +17,16 @@
       background: #fff url(../images/networks/tezos-bg.jpg) 50% 0 no-repeat;
     }
   }
+  &.kava {
+    &::after{
+      background: #fff url(../images/networks/kava-bg.jpg) 50% 0 no-repeat;
+    }
+  }
+  &.akt {
+    &::after{
+      background: #fff url(../images/networks/akt-bg.jpg) 50% 0 no-repeat;
+    }
+  }
 }
 .wrap{
   padding: 0 60px;
@@ -35,7 +45,7 @@ section{
 }
 
 .sec-coin {
-  padding-top: 282px;
+  padding-top: 134px;
   margin-bottom: 30px;
   .wrap-info {
     max-width: 990px;
@@ -226,23 +236,50 @@ section{
       display: flex;
       height: 50px;
       gap: 10px;
-      padding: 0 12px;
       align-items: center;
       border-radius: 8px;
       margin-bottom: 20px;
-      input{
-        flex: 1;
-        height: 100%;
+      padding: 0 12px;
+      // .input{
+      //   flex: 1;
+      //   height: 100%;
+      //   font-size: 15px;
+      //   font-weight: 500;
+      //   color: #555d67;
+      //   appearance: none;
+      // }
+      // .btn-remove{
+      //   display: block;
+      //   img{
+      //     display: block;
+      //   }
+      // }
+    }
+    .box-select{
+      position: relative;
+      .select{
+        appearance: none;
+        position: relative;
         font-size: 15px;
         font-weight: 500;
-        color: #555d67;
-      }
-      .btn-remove{
-        display: block;
-        img{
-          display: block;
+        color: #555D67;
+        cursor: pointer;
+        &.active + .arrow{
+          transform: translateY(-50%) rotate(180deg);
         }
       }
+      
+      .arrow{
+        pointer-events: none;
+        width: 16px;
+        height: 16px;
+        right: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../images/icon/arrow-down.png) 50% 50%/contain no-repeat;
+      }
+
     }
     .how{
       font-weight: 600;
@@ -363,6 +400,8 @@ section{
     align-items: flex-end;
     .swiper-image{
       width: 485px;
+      border-radius: 10px;
+      border: 2px solid #000;
       img{
         display: block;
       }

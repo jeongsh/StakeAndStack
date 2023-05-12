@@ -12,7 +12,7 @@ document.body.insertAdjacentHTML('afterbegin', `
       <ul class="link-list">
         <li class="link-item">
           <p class="link">About</p>
-          <a href="./about-stack" class="link small">+ About Stake and Stack</a>
+          <a href="./about-stack.html" class="link small">+ About Stake and Stack</a>
           <a href="" class="link small">+ About webew</a>
         </li>
         <li class="link-item">
@@ -46,7 +46,7 @@ document.body.insertAdjacentHTML('afterbegin', `
     <button class="link btn-about">
       About
       <div class="box-sublink">
-        <a href="./about-stack/html" class="link">+About Stake and Stack</a>
+        <a href="./about-stack.html" class="link">+About Stake and Stack</a>
         <a href="" class="link">+About webew</a>
       </div>
     </button>
@@ -156,6 +156,7 @@ const sections = document.querySelectorAll('section');
 const accordion = document.querySelectorAll('.accordion');
 const btnMenu = document.querySelector('.btn-menu');
 const toggle = document.querySelectorAll('.toggle');
+const select = document.querySelectorAll('select');
 
 btnAbout.forEach((e, i) => {
   e.addEventListener('click', () => {
@@ -243,4 +244,10 @@ window.addEventListener('scroll', () => {
     header.classList.remove('hide')
   }
   lastScroll = currentScroll;
+})
+
+select.forEach(e => {
+  e.addEventListener('click', () => {
+    e.classList.toggle('active')
+  })
 })

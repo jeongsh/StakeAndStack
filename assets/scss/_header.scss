@@ -90,12 +90,14 @@ header.pc {
           background: #fff;
           border-color: #fff;
           color: $secondary;
+          padding: 0;
         }
       }
     }
     &.active{
       background: $Yellow01;
       border: 2px solid #000;
+      padding: 0 15px;
       .box-sublink{
         opacity: 1;
         visibility: visible;
