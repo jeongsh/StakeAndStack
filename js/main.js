@@ -51,7 +51,7 @@ window.onload = function(){
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     paused: true,
-    multiplier: 0.9,
+    multiplier: 0.8,
     onUpdate: () => {
       window.dispatchEvent(new Event('resize'));
     },
