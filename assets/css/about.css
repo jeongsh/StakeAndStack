@@ -49,10 +49,6 @@ html {
   box-sizing: border-box;
 }
 
-section {
-  overflow-x: hidden;
-}
-
 *, :after, :before {
   box-sizing: inherit;
 }
@@ -610,6 +606,7 @@ header.mo.active .menu {
 footer {
   background: #fff;
   position: relative;
+  z-index: 900;
 }
 footer .wrap {
   padding: 114px 49px 124px 49px;

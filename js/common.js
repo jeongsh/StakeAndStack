@@ -40,7 +40,7 @@ document.body.insertAdjacentHTML('afterbegin', `
   </div>
 </header>
 
-<header class="pc header">
+<header class="pc header" data-scroll>
   <a href="/"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
@@ -90,8 +90,9 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 `)
 //body 의 마지막 자식으로 header 추가
-document.body.insertAdjacentHTML('beforeend', `
-<footer>
+const main = document.querySelector('main');
+main.insertAdjacentHTML('beforeend', `
+<footer data-scroll>
   <div class="wrap">
     <div class="top">
       <div class="box-link">

@@ -1,11 +1,14 @@
 @import "common";
+[data-scroll-container],
+[data-scroll-section] {
+  perspective: 1px;
+}
+
 .body {
   background: $Yellow01;
-  overflow-x: hidden;
+  padding-top: 0;
 }
-header.pc.noscroll{
-  top: 110px;
-}
+
 .banner {
   background: #000;
   color: #fff;
@@ -57,7 +60,7 @@ header.pc.noscroll{
 }
 
 .sec-video {
-  padding-top: 30px;
+  padding-top: 175px;
   text-align: center;
 
   // height: 100vh;
@@ -321,109 +324,75 @@ header.pc.noscroll{
   }
 }
 
-.sec-blockchains {
-  .obj1 {
-    position: absolute;
-    left: 0;
-    bottom: auto;
-    top: calc(100vh - 167px);
-  }
-
-  .obj2 {
-    position: absolute;
-    right: -200px;
-    top: 180px;
-  }
-
-  &.fixed {
-    .obj1 {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-    }
-
-    .obj2 {
-      position: fixed;
-      right: -200px;
-      top: 180px;
-    }
-  }
-
-  &.fixend {
-    .obj1 {
-      position: absolute;
-      left: 0;
-      top: auto;
-      bottom: 0;
-    }
-
-    .obj2 {
-      position: absolute;
-      right: -200px;
-      top: auto;
-      bottom: calc(100vh - 639px);
-    }
-  }
-
-  .background {
+.sec-slide {
+  position: relative;
+  background: #000;
+  .background{
     width: 100%;
     height: 100vh;
-    background: url(../images/main/sec-slide1-bg.svg) 50% 0 / cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/main/sec-slide1-bg.svg) top center / contain;
+    z-index: 0;
   }
-
-  .title {
-    font-size: 45px;
-    line-height: 1.46;
-    color: #fff;
-    margin-bottom: 28px;
-  }
-
-  .subtitle {
-    font-size: 35px;
-    color: #fff;
-    margin-bottom: 80px;
-  }
-
-  .card-wrap {
+  .wrap{
     display: flex;
-    gap: 50px;
+    gap: 60px;
+    position: relative;
+    padding-top: 126px;
+    padding-bottom: 126px;
+  }
 
-    .card {
-      width: 325px;
-      height: 300px;
-      border-radius: 10px;
-      background: #fff;
-      border: 3px solid;
+  .box-title {
+    width: 300px;
+    
+    .scroll-area{
+      padding-bottom: 60vh;
+    }
+    .title {
+      font-size: 45px;
+      line-height: 1.46;
+      color: #fff;
+      margin-bottom: 28px;
+    }
 
-      .head {
-        height: 100px;
-        padding: 20px 0 0 25px;
-        font-size: 25px;
-        font-weight: 700;
-        color: #000;
-        border-bottom: 3px solid $Natural30;
-        line-height: 29px;
-      }
-
-      .content {
-        padding: 25px 20px;
-        height: 200px;
-        font-size: 18px;
-        font-weight: 400;
-        word-break: keep-all;
-        letter-spacing: -0.2px;
-        color: #000;
-      }
-
-      &:nth-child(odd) {
-        color: $primary;
-        box-shadow: 8px 8px 0px 0px #3D73DD;
-      }
-
-      &:nth-child(even) {
-        color: $secondary;
-        box-shadow: 8px 8px 0px 0px #00C585;
-      }
+    .subtitle {
+      font-size: 26px;
+      color: #fff;
+    }
+  }
+  .box-card{
+    display: flex;
+    gap: 80px;
+    position: relative;
+    z-index: 1;
+  }
+  .card{
+    width: 377px;
+    color: #fff;
+    transition: 0.3s linear;
+    &-title{
+      font-weight: 700;
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+    &-des{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    &-1{
+      margin: 20px 0 144px;
+    }
+    &-3{
+      // margin-bottom: 144px;
+    }
+    &-2{
+      margin-top: 382px;
+    }
+    &-4{
+      margin-top: 144px;
     }
   }
 }
@@ -540,6 +509,8 @@ header.pc.noscroll{
   padding-top: 99px;
   text-align: center;
   position: relative;
+  overflow: hidden;
+
   // transition: background-position-y 0.5s cubic-bezier(0.68,-0.55,0.27,1.55);;
   .cats {
     display: block;
@@ -585,59 +556,78 @@ header.pc.noscroll{
       scale: 1.1;
     }
   }
-  .coin{
+
+  .coin {
     position: absolute;
     z-index: 0;
     top: -100%;
     overflow: hidden;
-    &1{
+
+    &1 {
       left: 0;
-      transition: 0.5s cubic-bezier(0.68,-0.55,0.27,1.55);
+      top: 635px;
+      // transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
     }
-    &2{
+
+    &2 {
       left: 117px;
-      transition: 0.25s cubic-bezier(0.68,-0.55,0.27,1.55);
+      top: 119px;
+      // transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
-    &3{
+
+    &3 {
+      top: 316px;
       left: 227px;
-      transition: 0.4s cubic-bezier(0.68,-0.55,0.27,1.55);
+      // transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
-    &4{
+
+    &4 {
+      top: 634px;
       right: 488px;
-      transition: 0.6s cubic-bezier(0.68,-0.55,0.27,1.55);
+      // transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
-    &5{
+
+    &5 {
+      top: -40px;
       right: 187px;
-      transition: 0.45s cubic-bezier(0.68,-0.55,0.27,1.55);
+      // transition: 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
-    &6{
+
+    &6 {
+      top: 257px;
       right: 0;
-      transition: 0.55s cubic-bezier(0.68,-0.55,0.27,1.55);
+      // transition: 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
   }
-  &.active{
-    .coin{
-      &1{
-        top: 635px;
-      }
-      &2{
-        top: 119px;
-      }
-      &3{
-        top: 316px;
-      }
-      &4{
-        top: 634px;
-      }
-      &5{
-        top: -40px;
-      }
-      &6{
-        top: 257px;
-      }
-    }
-  }
+
+  // &.is-inview {
+  //   .coin {
+  //     &1 {
+  //       top: 635px;
+  //     }
+
+  //     &2 {
+  //       top: 119px;
+  //     }
+
+  //     &3 {
+  //       top: 316px;
+  //     }
+
+  //     &4 {
+  //       top: 634px;
+  //     }
+
+  //     &5 {
+  //       top: -40px;
+  //     }
+
+  //     &6 {
+  //       top: 257px;
+  //     }
+  //   }
+  // }
 }
 
 .sec-contact {
@@ -740,7 +730,7 @@ header.pc.noscroll{
     }
   }
 
-  &.active {
+  &.is-inview {
     .left {
       .wrap-input {
         transform: translate(0);
@@ -779,6 +769,7 @@ header.pc.noscroll{
       }
     }
   }
+
   .title {
     font-size: 45px;
     line-height: 1.46;
@@ -958,12 +949,14 @@ header.pc.noscroll{
     text-align: center;
     margin-bottom: 120px;
   }
-  .wrap-input{
+
+  .wrap-input {
     margin: 0 auto;
     display: flex;
     gap: 15px;
     justify-content: center;
-    .input{
+
+    .input {
       width: 100%;
       max-width: 500px;
       background: #fff;
@@ -973,11 +966,13 @@ header.pc.noscroll{
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.1em;
-      &::placeholder{
+
+      &::placeholder {
         color: #000;
       }
     }
-    .btn-subscribe{
+
+    .btn-subscribe {
       width: 267px;
       height: 60px;
       display: flex;
@@ -990,7 +985,8 @@ header.pc.noscroll{
       border-radius: 10px;
       position: relative;
       text-transform: uppercase;
-      &::after{
+
+      &::after {
         content: "";
         width: 40px;
         height: 40px;
@@ -1004,185 +1000,231 @@ header.pc.noscroll{
   }
 }
 
-@media (max-width: 1440px){
-  .sec-video{
+@media (max-width: 1440px) {
+  .sec-video {
     padding: 30px;
     padding-bottom: 0;
-    .sub-title{
+
+    .sub-title {
       font-size: 25px;
     }
-    .title{
+
+    .title {
       font-size: 80px;
-      span::after{
+
+      span::after {
         width: 247px;
       }
     }
   }
-  .sec-coin, .sec-partner, .sec-question{
+
+  .sec-coin,
+  .sec-partner,
+  .sec-question {
     background-size: cover;
   }
-  .sec-coin{
-    .wrap{
+
+  .sec-coin {
+    .wrap {
       padding-left: 0;
     }
-    .moster{
+
+    .moster {
       right: 0;
       left: auto;
       width: 320px;
     }
-    .title{
+
+    .title {
       font-size: 36px;
       line-height: 1.5;
 
     }
-    .des{
+
+    .des {
       font-size: 18px;
       margin-bottom: 40px;
     }
   }
-  .sec-network{
-    .title{
+
+  .sec-network {
+    .title {
       font-size: 36px;
       line-height: 1.5;
     }
-    .des{
+
+    .des {
       font-size: 18px;
     }
   }
-  .sec-blockchains{
-    .obj2{
+
+  .sec-blockchains {
+    .obj2 {
       display: none;
     }
-    .title{
+
+    .title {
       font-size: 36px;
       line-height: 1.5;
     }
-    .subtitle{
+
+    .subtitle {
       font-size: 28px;
     }
   }
-  .sec-membership{
-    .obj{
+
+  .sec-membership {
+    .obj {
       right: 30px;
       width: 240px;
     }
-    .title{
+
+    .title {
       font-size: 36px;
       line-height: 1.5;
     }
-    .des{
+
+    .des {
       font-size: 18px;
     }
   }
-  .sec-partner{
-    .title{
+
+  .sec-partner {
+    .title {
       font-size: 36px;
     }
-    .des{
+
+    .des {
       font-size: 18px;
     }
   }
-  .sec-contact{
+
+  .sec-contact {
     height: 100vh;
-    .wrap{
+
+    .wrap {
       gap: 48px;
     }
-    .des{
+
+    .des {
       margin-bottom: 60px;
     }
-    .left{
+
+    .left {
       flex: 1;
-      .wrap-input{
+
+      .wrap-input {
         width: 100%;
       }
     }
-    .right{
-      .title{
+
+    .right {
+      .title {
         font-size: 36px;
       }
-      .des{
+
+      .des {
         font-size: 18px;
       }
-      .privacy{
+
+      .privacy {
         font-size: 16px;
       }
     }
   }
-  .sec-question{
-    .title{
+
+  .sec-question {
+    .title {
       font-size: 36px;
     }
   }
-  .sec-news{
-    .title{
+
+  .sec-news {
+    .title {
       font-size: 36px;
     }
-    .des{
+
+    .des {
       font-size: 18px;
       margin-bottom: 80px;
     }
-    .text{
+
+    .text {
       padding: 24px 30px;
-      .news-title{
+
+      .news-title {
         padding-right: 0;
       }
-      .content{
+
+      .content {
         padding-right: 0;
       }
     }
   }
-  .sec-newsletter{
+
+  .sec-newsletter {
     height: 480px;
-    .title{
+
+    .title {
       font-size: 36px;
     }
-    .des{
+
+    .des {
       font-size: 18px;
       margin-bottom: 80px;
     }
   }
 }
 
-@media(max-width: 1024px){
-  .body{
+@media(max-width: 1024px) {
+  .body {
     padding-top: 0;
-    &.hide-banner{
+
+    &.hide-banner {
       padding-top: 0;
     }
   }
-  .banner{
+
+  .banner {
     margin-bottom: 0;
     margin-top: 0;
     padding: 0 30px;
     gap: 30px;
-    .banner-logo{
+
+    .banner-logo {
       display: none;
     }
   }
 
-  .sec-blockchains-mo, .sec-membership-mo{
+  .sec-blockchains-mo,
+  .sec-membership-mo {
     padding: 110px 0 266px 30px;
     background: #000;
     position: relative;
     color: #fff;
     position: relative;
-    .obj1{
+
+    .obj1 {
       position: absolute;
       left: -34px;
       bottom: 0;
     }
-    .title{
+
+    .title {
       font-size: 36px;
       line-height: 1.5;
       margin-bottom: 30px;
     }
-    .subtitle{
+
+    .subtitle {
       font-size: 28px;
       margin-bottom: 50px;
-      .green{
+
+      .green {
         color: $secondary;
       }
     }
+
     .card {
       width: 325px;
       border-radius: 10px;
@@ -1221,20 +1263,24 @@ header.pc.noscroll{
       }
     }
   }
-  .sec-coin .moster{
+
+  .sec-coin .moster {
     display: none;
   }
-  .sec-membership-mo{
+
+  .sec-membership-mo {
     background: transparent;
     color: #000;
     padding: 30px 0 70px 30px;
 
-    .title{
+    .title {
       margin-bottom: 10px;
     }
-    .subtitle{
+
+    .subtitle {
       margin-bottom: 20px;
     }
+
     .des {
       font-size: 20px;
       font-weight: 400;
@@ -1268,185 +1314,228 @@ header.pc.noscroll{
       border-radius: 12px;
       margin-bottom: 60px;
     }
-    .card{
+
+    .card {
       height: 270px;
       overflow: hidden;
-      .head{
+
+      .head {
         padding: 0;
         height: auto;
 
       }
     }
   }
-  .sec-partner{
+
+  .sec-partner {
     padding-bottom: 80px;
     height: auto;
-    .box-link{
+
+    .box-link {
       gap: 35px 10px;
-      .link-partner{
+
+      .link-partner {
         width: calc(33% - 10px);
       }
     }
   }
-  .sec-contact{
+
+  .sec-contact {
     padding: 50px 30px;
     height: auto;
-    .wrap{
+
+    .wrap {
       flex-direction: column;
       gap: 30px;
-      .title{
+
+      .title {
         font-size: 36px;
         line-height: 1.5;
         margin-bottom: 10px;
       }
-      .des{
+
+      .des {
         font-size: 18px;
         line-height: 1.5;
         margin-bottom: 0px;
       }
-      .right{
+
+      .right {
         max-width: 100%;
-        .btn-send{
+
+        .btn-send {
           width: 100%;
         }
       }
     }
   }
 
-  .sec-news{
-    .news{
+  .sec-news {
+    .news {
       flex-direction: column;
       height: auto;
       width: 100%;
-      .text{
+
+      .text {
         width: 100%;
         border-radius: 0;
       }
-      .img{
+
+      .img {
         width: 100%;
         border-radius: 100px 100px 0 0;
-        img{
+
+        img {
           display: block;
         }
       }
     }
   }
-  .sec-newsletter{
-    .wrap-input{
-      .input{
+
+  .sec-newsletter {
+    .wrap-input {
+      .input {
         width: 400px;
       }
     }
   }
 }
 
-@media(max-width: 768px){
-  .wrap{
+@media(max-width: 768px) {
+  .wrap {
     width: calc(100% - 32px);
   }
-  .banner{
+
+  .banner {
     height: 106px;
     display: block;
     padding-top: 10px;
-    .sas{
+
+    .sas {
       margin-bottom: 10px;
     }
-    .right{
+
+    .right {
       width: 100%;
-      .content{
+
+      .content {
         display: block;
       }
     }
   }
-  .sec-video{
+
+  .sec-video {
     padding: 20px 16px;
-    .sub-title{
+
+    .sub-title {
       font-size: 20px;
       margin-bottom: 0;
     }
-    .title{
+
+    .title {
       font-size: 45px;
       line-height: 1.2;
       margin-bottom: 20px;
-      span::after{
+
+      span::after {
         width: 136px;
         bottom: -5px;
         left: -3px;
       }
     }
   }
-  .sec-coin{
+
+  .sec-coin {
     height: auto;
     padding: 40px 0;
-    .title{
-      br{
+
+    .title {
+      br {
         display: none;
       }
     }
-    .wrap{
+
+    .wrap {
       padding-top: 0;
     }
-    .moster{
+
+    .moster {
       display: none;
     }
-    .content{
+
+    .content {
       width: auto;
     }
-    .box-percent{
+
+    .box-percent {
       flex-wrap: wrap;
       height: auto;
       padding: 20px 30px;
-      .number{
+
+      .number {
         width: 50%;
         text-align: left;
         font-size: 40px;
       }
-      .text{
+
+      .text {
         width: 50%;
       }
-      .d-flex{
+
+      .d-flex {
         width: 100%;
-        &:nth-of-type(even){
+
+        &:nth-of-type(even) {
           padding-left: 0;
         }
       }
     }
-    .highlight.mo{
+
+    .highlight.mo {
       display: inline-block !important;
     }
-    .highlight-left{
-      &::after{
+
+    .highlight-left {
+      &::after {
         left: 0 !important;
         width: calc(100% + 8px);
       }
     }
   }
-  .sec-contact{
+
+  .sec-contact {
     padding: 50px 16px;
-    .wrap{
+
+    .wrap {
       width: 100%;
     }
   }
-  .sec-partner .title{
+
+  .sec-partner .title {
     line-height: 1.2;
   }
-  .sec-newsletter{
-    .background{
-      border-radius:  0 0 60px 60px;
+
+  .sec-newsletter {
+    .background {
+      border-radius: 0 0 60px 60px;
     }
-    .wrap-input{
+
+    .wrap-input {
       flex-wrap: wrap;
-      .input{
+
+      .input {
         width: 267px;
         height: 60px;
       }
     }
-    .des{
+
+    .des {
       margin-bottom: 40px;
     }
   }
-  .sec-news .news{
-    .img{
+
+  .sec-news .news {
+    .img {
       border-radius: 60px 60px 0 0;
     }
   }

@@ -50,10 +50,6 @@ html {
   box-sizing: border-box;
 }
 
-section {
-  overflow-x: hidden;
-}
-
 *, :after, :before {
   box-sizing: inherit;
 }
@@ -611,6 +607,7 @@ header.mo.active .menu {
 footer {
   background: #fff;
   position: relative;
+  z-index: 900;
 }
 footer .wrap {
   padding: 114px 49px 124px 49px;
@@ -752,13 +749,14 @@ footer .cat {
     right: 0;
   }
 }
-.body {
-  background: #FEED01;
-  overflow-x: hidden;
+[data-scroll-container],
+[data-scroll-section] {
+  perspective: 1px;
 }
 
-header.pc.noscroll {
-  top: 110px;
+.body {
+  background: #FEED01;
+  padding-top: 0;
 }
 
 .banner {
@@ -806,7 +804,7 @@ header.pc.noscroll {
 }
 
 .sec-video {
-  padding-top: 30px;
+  padding-top: 175px;
   text-align: center;
 }
 .sec-video .sub-title {
@@ -1035,91 +1033,71 @@ header.pc.noscroll {
   min-width: 1600px;
 }
 
-.sec-blockchains .obj1 {
-  position: absolute;
-  left: 0;
-  bottom: auto;
-  top: calc(100vh - 167px);
+.sec-slide {
+  position: relative;
+  background: #000;
 }
-.sec-blockchains .obj2 {
-  position: absolute;
-  right: -200px;
-  top: 180px;
-}
-.sec-blockchains.fixed .obj1 {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-.sec-blockchains.fixed .obj2 {
-  position: fixed;
-  right: -200px;
-  top: 180px;
-}
-.sec-blockchains.fixend .obj1 {
-  position: absolute;
-  left: 0;
-  top: auto;
-  bottom: 0;
-}
-.sec-blockchains.fixend .obj2 {
-  position: absolute;
-  right: -200px;
-  top: auto;
-  bottom: calc(100vh - 639px);
-}
-.sec-blockchains .background {
+.sec-slide .background {
   width: 100%;
   height: 100vh;
-  background: url(../images/main/sec-slide1-bg.svg) 50% 0/cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/main/sec-slide1-bg.svg) top center/contain;
+  z-index: 0;
 }
-.sec-blockchains .title {
+.sec-slide .wrap {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  padding-top: 126px;
+  padding-bottom: 126px;
+}
+.sec-slide .box-title {
+  width: 300px;
+}
+.sec-slide .box-title .scroll-area {
+  padding-bottom: 60vh;
+}
+.sec-slide .box-title .title {
   font-size: 45px;
   line-height: 1.46;
   color: #fff;
   margin-bottom: 28px;
 }
-.sec-blockchains .subtitle {
-  font-size: 35px;
+.sec-slide .box-title .subtitle {
+  font-size: 26px;
   color: #fff;
-  margin-bottom: 80px;
 }
-.sec-blockchains .card-wrap {
+.sec-slide .box-card {
   display: flex;
-  gap: 50px;
+  gap: 80px;
+  position: relative;
+  z-index: 1;
 }
-.sec-blockchains .card-wrap .card {
-  width: 325px;
-  height: 300px;
-  border-radius: 10px;
-  background: #fff;
-  border: 3px solid;
+.sec-slide .card {
+  width: 377px;
+  color: #fff;
+  transition: 0.3s linear;
 }
-.sec-blockchains .card-wrap .card .head {
-  height: 100px;
-  padding: 20px 0 0 25px;
-  font-size: 25px;
+.sec-slide .card-title {
   font-weight: 700;
-  color: #000;
-  border-bottom: 3px solid #555D67;
-  line-height: 29px;
+  font-size: 26px;
+  margin-bottom: 16px;
 }
-.sec-blockchains .card-wrap .card .content {
-  padding: 25px 20px;
-  height: 200px;
-  font-size: 18px;
+.sec-slide .card-des {
   font-weight: 400;
-  word-break: keep-all;
-  letter-spacing: -0.2px;
-  color: #000;
+  font-size: 18px;
+  line-height: 1.4;
 }
-.sec-blockchains .card-wrap .card:nth-child(odd) {
-  color: #3D73DD;
-  box-shadow: 8px 8px 0px 0px #3D73DD;
+.sec-slide .card-1 {
+  margin: 20px 0 144px;
 }
-.sec-blockchains .card-wrap .card:nth-child(even) {
-  color: #00C585;
-  box-shadow: 8px 8px 0px 0px #00C585;
+.sec-slide .card-2 {
+  margin-top: 382px;
+}
+.sec-slide .card-4 {
+  margin-top: 144px;
 }
 
 .sec-membership .obj {
@@ -1220,6 +1198,7 @@ header.pc.noscroll {
   padding-top: 99px;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 .sec-partner .cats {
   display: block;
@@ -1268,45 +1247,27 @@ header.pc.noscroll {
 }
 .sec-partner .coin1 {
   left: 0;
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  top: 635px;
 }
 .sec-partner .coin2 {
   left: 117px;
-  transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.sec-partner .coin3 {
-  left: 227px;
-  transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.sec-partner .coin4 {
-  right: 488px;
-  transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.sec-partner .coin5 {
-  right: 187px;
-  transition: 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.sec-partner .coin6 {
-  right: 0;
-  transition: 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.sec-partner.active .coin1 {
-  top: 635px;
-}
-.sec-partner.active .coin2 {
   top: 119px;
 }
-.sec-partner.active .coin3 {
+.sec-partner .coin3 {
   top: 316px;
+  left: 227px;
 }
-.sec-partner.active .coin4 {
+.sec-partner .coin4 {
   top: 634px;
+  right: 488px;
 }
-.sec-partner.active .coin5 {
+.sec-partner .coin5 {
   top: -40px;
+  right: 187px;
 }
-.sec-partner.active .coin6 {
+.sec-partner .coin6 {
   top: 257px;
+  right: 0;
 }
 
 .sec-contact {
@@ -1399,7 +1360,7 @@ header.pc.noscroll {
   border-radius: 20px;
   z-index: 0;
 }
-.sec-contact.active .left .wrap-input {
+.sec-contact.is-inview .left .wrap-input {
   transform: translate(0);
 }
 .sec-contact .right {
@@ -1682,7 +1643,9 @@ header.pc.noscroll {
   .sec-video .title span::after {
     width: 247px;
   }
-  .sec-coin, .sec-partner, .sec-question {
+  .sec-coin,
+  .sec-partner,
+  .sec-question {
     background-size: cover;
   }
   .sec-coin .wrap {
@@ -1805,38 +1768,45 @@ header.pc.noscroll {
   .banner .banner-logo {
     display: none;
   }
-  .sec-blockchains-mo, .sec-membership-mo {
+  .sec-blockchains-mo,
+  .sec-membership-mo {
     padding: 110px 0 266px 30px;
     background: #000;
     position: relative;
     color: #fff;
     position: relative;
   }
-  .sec-blockchains-mo .obj1, .sec-membership-mo .obj1 {
+  .sec-blockchains-mo .obj1,
+  .sec-membership-mo .obj1 {
     position: absolute;
     left: -34px;
     bottom: 0;
   }
-  .sec-blockchains-mo .title, .sec-membership-mo .title {
+  .sec-blockchains-mo .title,
+  .sec-membership-mo .title {
     font-size: 36px;
     line-height: 1.5;
     margin-bottom: 30px;
   }
-  .sec-blockchains-mo .subtitle, .sec-membership-mo .subtitle {
+  .sec-blockchains-mo .subtitle,
+  .sec-membership-mo .subtitle {
     font-size: 28px;
     margin-bottom: 50px;
   }
-  .sec-blockchains-mo .subtitle .green, .sec-membership-mo .subtitle .green {
+  .sec-blockchains-mo .subtitle .green,
+  .sec-membership-mo .subtitle .green {
     color: #00C585;
   }
-  .sec-blockchains-mo .card, .sec-membership-mo .card {
+  .sec-blockchains-mo .card,
+  .sec-membership-mo .card {
     width: 325px;
     border-radius: 10px;
     background: #fff;
     border: 3px solid;
     margin-bottom: 20px;
   }
-  .sec-blockchains-mo .card .head, .sec-membership-mo .card .head {
+  .sec-blockchains-mo .card .head,
+  .sec-membership-mo .card .head {
     height: 100px;
     padding: 20px 0 0 25px;
     font-size: 25px;
@@ -1845,7 +1815,8 @@ header.pc.noscroll {
     border-bottom: 3px solid #555D67;
     line-height: 29px;
   }
-  .sec-blockchains-mo .card .content, .sec-membership-mo .card .content {
+  .sec-blockchains-mo .card .content,
+  .sec-membership-mo .card .content {
     padding: 25px 20px;
     height: 200px;
     font-size: 18px;
@@ -1854,11 +1825,13 @@ header.pc.noscroll {
     letter-spacing: -0.2px;
     color: #000;
   }
-  .sec-blockchains-mo .card:nth-child(odd), .sec-membership-mo .card:nth-child(odd) {
+  .sec-blockchains-mo .card:nth-child(odd),
+  .sec-membership-mo .card:nth-child(odd) {
     color: #3D73DD;
     box-shadow: 8px 8px 0px 0px #3D73DD;
   }
-  .sec-blockchains-mo .card:nth-child(even), .sec-membership-mo .card:nth-child(even) {
+  .sec-blockchains-mo .card:nth-child(even),
+  .sec-membership-mo .card:nth-child(even) {
     color: #00C585;
     box-shadow: 8px 8px 0px 0px #00C585;
   }
