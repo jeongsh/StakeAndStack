@@ -29,21 +29,16 @@ const swiper2 = new Swiper('.swiper-membership', {
   spaceBetween: 25,
 })
 
-// locomotive-scroll
-// const cards = document.querySelectorAll('.sec-slide .card');
-// cards.forEach(e => {
-//   const img = e.querySelector('.card-img');
-//   const title = e.querySelector('.card-title');
-//   const des = e.querySelector('.card-des');
-//   //img, title, des에 data-scroll 속성 추가
-//   img.setAttribute('data-scroll', '');
-//   title.setAttribute('data-scroll', '');
-//   des.setAttribute('data-scroll', '');
-//   //img, title, des에 data-scroll-speed 속성 추가
-//   img.setAttribute('data-scroll-speed', '1.5');
-//   title.setAttribute('data-scroll-speed', '2');
-//   des.setAttribute('data-scroll-speed', '2.5');
-// });
+const swiperCoin = new Swiper('.swiper-coin', {
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  centeredSlides: true,
+  loop: true,
+})
+
 let lastScroll2 = 0;
 
 window.onload = function(){

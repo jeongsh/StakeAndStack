@@ -61,18 +61,40 @@
 
 .sec-video {
   padding-top: 175px;
+  height: 100vh;
   text-align: center;
+  position: relative;
+  .video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  // .black{
+  //   width: 100%;
+  //   height: 100vh;
+  //   background: #000;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  // }
 
   // height: 100vh;
   .sub-title {
     font-size: 30px;
     line-height: 1.4;
+    position: relative;
+    z-index: 1;
   }
 
   .title {
     font-size: 100px;
     line-height: 71px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 
     span {
       font-weight: inherit;
@@ -269,6 +291,26 @@
     margin-bottom: 40px;
     color: $Natural30;
   }
+  // .swiper-wrapper{
+  //   align-items: center;
+  //   gap: 65px;
+  // }
+  .swiper-slide{
+    width: auto;
+    img{
+      width: 188px;
+    }
+    &.swiper-slide-active{
+      img{
+        width: 357px;
+      }
+    }
+    // width: 188px;
+    // display: flex;
+    // &.swiper-slide-active{
+    //   width: 357px;
+    // }
+  }
 }
 
 .sec-slider {
@@ -346,7 +388,7 @@
 
   .box-title {
     width: 300px;
-    
+
     .scroll-area{
       padding-bottom: 60vh;
     }

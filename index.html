@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/locomotive-scroll.min.js"></script>
@@ -37,7 +37,9 @@
   </div>
   <main data-scroll-container>
     <section class="sec-video" data-scroll>
-      <video src="./assets/videos/animation.mp4" poster="./assets/images/main/thumbnail.svg" autoplay loop muted></video>
+      <video src="./assets/videos/animation.mp4" poster="./assets/images/main/thumbnail.svg" autoplay loop muted
+        class="video"></video>
+      <div class="black"></div>
       <h2 class="title">
         Stake and <span>Stack</span>
       </h2>
@@ -53,7 +55,7 @@
         <a href="" class="link">LEARN MORE</a>
       </div>
     </section>
-  
+
     <section class="sec-coin" data-scroll>
       <div class="wrap">
         <img src="./assets/images/main/coin-cat.svg" alt="coin-cat" class="moster">
@@ -118,14 +120,27 @@
         </div>
       </div>
     </section>
-  
+
     <section class="sec-network" data-scroll>
       <img src="./assets/images/main/network-line.svg" alt="" class="line">
       <h2 class="title">Supported Networks</h2>
       <p class="des">Stake with us on various protocols, secure networks, and earn rewards as a token holder.</p>
+      <!-- <div class="wrap">
+
+      </div> -->
+      <div class="swiper swiper-coin">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/images/main/network-1.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/images/main/network-2.png" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/images/main/network-3.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
-  
-    <section class="sec-slide" data-scroll id="knowHow">
+
+    <section class="sec-slide pc" data-scroll id="knowHow">
       <div class="background" data-scroll data-scroll-sticky data-scroll-target="#knowHow"></div>
       <div class="wrap" id="knowWrap">
         <div class="box-title">
@@ -196,8 +211,8 @@
       </div>
       <div style="height: 150vh; background: aquamarine; position: relative; z-index: 1001;"></div>
     </section>
-    
-  
+
+
     <section class="sec-blockchains-mo mo">
       <img src="./assets/images/main/block-obj1.png" alt="" class="obj1">
       <h2 class="title">
@@ -242,8 +257,8 @@
         </div>
       </div>
     </section>
-  
-    <!-- <section class="sec-membership sec-slider pc">
+
+    <section class="sec-membership sec-slider pc">
       <img src="./assets/images/main/member-dog.png" alt="" class="obj">
       <div class="slide-container">
         <div class="text">
@@ -298,8 +313,8 @@
           </div>
         </div>
       </div>
-    </section> -->
-  
+    </section>
+
     <section class="sec-membership-mo mo">
       <div class="slide-container">
         <div class="text">
@@ -355,7 +370,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="sec-partner" data-scroll data-scroll-offset="60%">
       <div class="wrap">
         <img src="./assets/images/main/cats.svg" alt="" class="cats">
@@ -396,14 +411,14 @@
           </a>
         </div>
       </div>
-      <img src="./assets/images/main/coin_1.svg" alt="" class="coin coin1"  data-scroll data-scroll-speed="2">
-      <img src="./assets/images/main/coin_2.svg" alt="" class="coin coin2"  data-scroll data-scroll-speed="3">
-      <img src="./assets/images/main/coin_3.svg" alt="" class="coin coin3"  data-scroll data-scroll-speed="4">
-      <img src="./assets/images/main/coin_4.svg" alt="" class="coin coin4"  data-scroll data-scroll-speed="3">
-      <img src="./assets/images/main/coin_5.svg" alt="" class="coin coin5"  data-scroll data-scroll-speed="2">
-      <img src="./assets/images/main/coin_6.svg" alt="" class="coin coin6"  data-scroll data-scroll-speed="6">
+      <img src="./assets/images/main/coin_1.svg" alt="" class="coin coin1" data-scroll data-scroll-speed="2">
+      <img src="./assets/images/main/coin_2.svg" alt="" class="coin coin2" data-scroll data-scroll-speed="3">
+      <img src="./assets/images/main/coin_3.svg" alt="" class="coin coin3" data-scroll data-scroll-speed="4">
+      <img src="./assets/images/main/coin_4.svg" alt="" class="coin coin4" data-scroll data-scroll-speed="3">
+      <img src="./assets/images/main/coin_5.svg" alt="" class="coin coin5" data-scroll data-scroll-speed="2">
+      <img src="./assets/images/main/coin_6.svg" alt="" class="coin coin6" data-scroll data-scroll-speed="6">
     </section>
-  
+
     <section class="sec-contact" data-scroll>
       <div class="wrap">
         <div class="mo">
@@ -449,7 +464,7 @@
         </div>
       </div>
     </section>
-  
+
     <section class="sec-question" data-scroll>
       <div class="wrap">
         <h2 class="title">
@@ -508,11 +523,11 @@
         </div>
       </div>
     </section>
-  
+
     <section class="sec-news" data-scroll>
       <h2 class="title">NEWS & BLOG</h2>
       <p class="des">Stay Updated: Get the Latest Updates and Insights on Our Services</p>
-  
+
       <div class="news">
         <div class="img">
           <img src="./assets/images/main/asdf.webp" alt="">
@@ -546,8 +561,11 @@
       </div>
     </section>
   </main>
-  <script nomodule="" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
-  <script nomodule="" src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+  <script nomodule="" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+    crossorigin="anonymous"></script>
+  <script nomodule=""
+    src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+    crossorigin="anonymous"></script>
   <script src="./js/common.js"></script>
   <script src="./js/main.js"></script>
 </body>
