@@ -268,7 +268,7 @@
   width: 100%;
   height: 100vh;
   background: #F3F3F3;
-  padding-top: 135px;
+  padding-top: 99px;
   text-align: center;
   position: relative;
 
@@ -288,28 +288,118 @@
   .des {
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     color: $Natural30;
   }
-  // .swiper-wrapper{
-  //   align-items: center;
-  //   gap: 65px;
-  // }
+  .box-swiper{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .swiper-coin{
+    width: 100%;
+  }
+  .swiper-wrapper{
+    height: 620px;
+    align-items: center;
+  }
   .swiper-slide{
     width: auto;
-    img{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    .box-img{
       width: 188px;
-    }
-    &.swiper-slide-active{
+      transition: 0.3s;
+      position: relative;
+      z-index: 1;
+      &::after{
+        content: "";
+        width: 514px;
+        height: 436px;
+        background: url(../images/main/network-coin-1.png) 50% 50% / cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.3s;
+        z-index: 0;
+      }
       img{
-        width: 357px;
+        width: 100%;
+        margin-bottom: 30px;
+        display: block;
       }
     }
-    // width: 188px;
-    // display: flex;
-    // &.swiper-slide-active{
-    //   width: 357px;
-    // }
+    &.swiper-slide-active{
+      .box-img{
+        width: 357px;
+        &::after{
+          transform: translate(-50%, -50%) scale(1);
+        }
+        img{
+          filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.2));
+        }
+      }
+      .box-text{
+        opacity: 1;
+      }
+    }
+  }
+  .btn-swiper{
+    position: absolute;
+    top: calc(50% - 88px);
+    transform: translateY(-50%);
+    z-index: 2;
+    img{
+      width: 55px;
+    }
+  }
+  .btn-next{
+    right: -45px;
+  }
+  .btn-prev{
+    left: -45px;
+    img{
+      transform: rotate(-180deg);
+    }
+  }
+  .box-text{
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+    transition: 0.3s;
+    .coin-type{
+      font-size: 30px;
+      line-height: 1;
+    }
+    .percent{
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+    .gray{
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      color: #555D67;
+      margin-bottom: 18px;
+    }
+    .link {
+      width: 185px;
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #000;
+      border-radius: 10px;
+      font-weight: 700;
+      @include buttonHover(#fff, #000);
+      margin: 0 auto;
+    }
   }
 }
 

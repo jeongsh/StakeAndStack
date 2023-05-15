@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
   <link rel="stylesheet" href="./assets/css/main.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/locomotive-scroll.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> -->
@@ -122,22 +122,57 @@
     </section>
 
     <section class="sec-network" data-scroll>
-      <img src="./assets/images/main/network-line.svg" alt="" class="line">
+      <!-- <img src="./assets/images/main/network-line.svg" alt="" class="line"> -->
       <h2 class="title">Supported Networks</h2>
       <p class="des">Stake with us on various protocols, secure networks, and earn rewards as a token holder.</p>
-      <!-- <div class="wrap">
-
-      </div> -->
-      <div class="swiper swiper-coin">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./assets/images/main/network-1.png" alt=""></div>
-          <div class="swiper-slide"><img src="./assets/images/main/network-2.png" alt=""></div>
-          <div class="swiper-slide"><img src="./assets/images/main/network-3.png" alt=""></div>
+      <div class="box-swiper">
+        <div class="swiper swiper-coin">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <div class="box-img">
+                  <img src="./assets/images/main/network-1.png" alt="">
+                </div>
+                <div class="box-text">
+                  <h4 class="coin-type">Tezos (XTS)</h4>
+                  <p class="percent">5.0 ~ 8.0%</p>
+                  <p class="gray">Expected APY</p>
+                  <a href="" class="link">STAKE NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="box-img">
+                  <img src="./assets/images/main/network-2.png" alt="">
+                </div>
+                <div class="box-text">
+                  <h4 class="coin-type">Tezos (XTS)</h4>
+                  <p class="percent">5.0 ~ 8.0%</p>
+                  <p class="gray">Expected APY</p>
+                  <a href="" class="link">STAKE NOW</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="box-img">
+                  <img src="./assets/images/main/network-3.png" alt="">
+                </div>
+                <div class="box-text">
+                  <h4 class="coin-type">Tezos (XTS)</h4>
+                  <p class="percent">5.0 ~ 8.0%</p>
+                  <p class="gray">Expected APY</p>
+                  <a href="" class="link">STAKE NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <button class="btn-prev btn-swiper"><img src="./assets/images/icon/arrow-right.svg" alt=""></button>
+        <button class="btn-next btn-swiper"><img src="./assets/images/icon/arrow-right.svg" alt=""></button>
       </div>
+
     </section>
 
     <section class="sec-slide pc" data-scroll id="knowHow">

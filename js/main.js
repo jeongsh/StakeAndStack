@@ -17,31 +17,33 @@ textAdditional.addEventListener('keyup', (e) => {
   span.innerText = `${length}/${maxLength}`
 })
 
-const swiper = new Swiper('.swiper-block', {
-  direction: 'horizontal',
-  slidesPerView: 'auto',
-  spaceBetween: 25,
-})
-
-const swiper2 = new Swiper('.swiper-membership', {
-  direction: 'horizontal',
-  slidesPerView: 'auto',
-  spaceBetween: 25,
-})
-
-const swiperCoin = new Swiper('.swiper-coin', {
-  slidesPerView: 'auto',
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  centeredSlides: true,
-  loop: true,
-})
-
-let lastScroll2 = 0;
-
 window.onload = function(){
+
+  const swiper = new Swiper('.swiper-block', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+  })
+
+  const swiper2 = new Swiper('.swiper-membership', {
+    direction: 'horizontal',
+    slidesPerView: 'auto',
+    spaceBetween: 25,
+  })
+
+  const swiperCoin = new Swiper('.swiper-coin', {
+    slidesPerView: '3',
+    navigation: {
+      nextEl: ".btn-next",
+      prevEl: ".btn-prev",
+    },
+    loop: true,
+    centeredSlides: true,
+    speed: 600,
+  })
+
+  let lastScroll2 = 0;
+
 	const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
