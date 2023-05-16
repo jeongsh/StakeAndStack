@@ -32,7 +32,9 @@ window.onload = function(){
   })
 
   const swiperCoin = new Swiper('.swiper-coin', {
-    slidesPerView: '3',
+    slidesPerView: 2,
+    spaceBetween: 0,
+
     navigation: {
       nextEl: ".btn-next",
       prevEl: ".btn-prev",
@@ -40,6 +42,12 @@ window.onload = function(){
     loop: true,
     centeredSlides: true,
     speed: 600,
+    breakpoints: {
+      // 500px 보다 클 경우
+      500: {
+        slidesPerView: '3',
+      }
+    }
   })
 
   let lastScroll2 = 0;
