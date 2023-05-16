@@ -1,0 +1,39 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+}
+
+.gnb {
+  width: 230px;
+  background-color: #000;
+
+  .list-item {
+    height: 40px;
+    width: 100%;
+  }
+
+  .link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    &.active{
+      color: $secondary;
+    }
+    .gray{
+      color: #666666;
+      font-family: 'Roboto';
+      font-size: 12px;
+    }
+  }
+}
