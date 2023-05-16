@@ -320,6 +320,12 @@
         transition: 0.3s;
         z-index: 0;
       }
+      &.coin-2::after{
+        background: url(../images/main/network-coin-2.png) 50% 50% / cover;
+      }
+      &.coin-3::after{
+        background: url(../images/main/network-coin-3.png) 50% 50% / cover;
+      }
 
       img {
         width: 100%;
