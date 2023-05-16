@@ -40,7 +40,7 @@ document.body.insertAdjacentHTML('afterbegin', `
   </div>
 </header>
 
-<header class="pc header" data-scroll>
+<header class="pc header">
   <a href="/"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
@@ -85,7 +85,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         </div>
       </div>
     </button>
-    <a href="" class="btn btn-yellow">DASHBOARD</a>
+    <a href="./dashboard.html" class="btn btn-yellow">DASHBOARD</a>
   </div>
 </header>
 `)

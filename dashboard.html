@@ -24,32 +24,60 @@
             <div class="blank"></div>
           </p>
         </li>
-        <li class="list-item">
+        <li class="list-item border list-toggle">
           <button class="btn-toggle">
             <p class="link">
               Staked Assets
             </p>
             <p class="gray">
               $1.75 M
-              <img src="./assets/images/dashboard/arrow-down.svg" alt="">
+              <img src="./assets/images/dashboard/arrow-down.svg" alt="" class="arrow">
             </p>
           </button>
-        </li>
-        <li class="list-sub">
-          <a href="" class="sub-link">
-            <div class="top">
-              <div class="circle"></div>
-              <p class="link">
-                Tezos
-                <span class="gray">
-                  $1.75 M
-                </span>
-              </p>
-            </div>
-            <div class="bottom">
-
-            </div>
-          </a>
+          <div class="list-sub">
+            <a href="" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Tezos
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+            <a href="" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Kava
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+            <a href="" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Akash Network
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+          </div>
         </li>
         <li class="list-item">
           <a href="" class="link">
@@ -63,7 +91,7 @@
             SaS Membership
           </a>
         </li>
-        <li class="list-item">
+        <li class="list-item border">
           <a href="" class="link">
             <img src="./assets/images/dashboard/report.png" alt="" class="icon">
             Reports
@@ -83,12 +111,47 @@
         </li>
       </ul>
     </nav>
-    <main>
+    <main class="main">
+      <div class="header">
+        <button class="btn btn-language">
+          <div class="language">
+            <img src="./assets/images/icon/flag-usd.svg" alt="">
+            USD
+            <img src="./assets/images/dashboard/arrow-down-gray.svg" alt="" class="icon">
+          </div>
+          <div class="wrap-language">
+            <div class="language">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              USD
+            </div>
+            <div class="language">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              KWD
+            </div>
+          </div>
+        </button>
+        <button class="btn-header btn-wallet"><img src="./assets/images/dashboard/wallet.png" alt=""></button>
+        <button class="btn-header btn-bell"><img src="./assets/images/dashboard/bell_on.png" alt=""></button>
+        <button class="btn-header btn-nft"><img src="./assets/images/dashboard/nft-white.png" alt=""></button>
+        <button class="btn-header btn-setting"><img src="./assets/images/dashboard/setting.png" alt=""></button>
+        <button class="btn-header btn-share"><img src="./assets/images/dashboard/share.png" alt=""></button>
+        <button class="btn-header btn-user"><img src="./assets/images/dashboard/user.png" alt=""></button>
+      </div>
+      
     </main>
   </div>
   <script>
     const btnToggle = document.querySelector('.btn-toggle');
+    const listToggle = document.querySelector('.list-toggle');
+    const btnLanguage = document.querySelector('.btn-language');
 
+    btnToggle.addEventListener('click', () => {
+      listToggle.classList.toggle('active');
+    })
+
+    btnLanguage.addEventListener('click', () => {
+      btnLanguage.classList.toggle('active');
+    })
   </script>
 </body>
 
