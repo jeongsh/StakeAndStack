@@ -61,10 +61,13 @@
 }
 
 .sec-video {
-  padding-top: 175px;
+  padding-bottom: 80px;
   height: 100vh;
   text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
   .video {
     width: 100%;
@@ -74,54 +77,34 @@
     left: 0;
     top: 0;
   }
-
-  // .black{
-  //   width: 100%;
-  //   height: 100vh;
-  //   background: #000;
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  // }
-
-  // height: 100vh;
+  .box{
+    width: 100%;
+  }
   .sub-title {
     font-size: 30px;
     line-height: 1.4;
     position: relative;
     z-index: 1;
+    color: #fff;
   }
-
-  .title {
-    font-size: 100px;
-    line-height: 71px;
-    margin-bottom: 20px;
+  .video-title, .video-subtitle{
+    display: block;
     position: relative;
-    z-index: 1;
-
-    span {
-      font-weight: inherit;
-      position: relative;
-      z-index: 1;
-
-      &::after {
-        content: "";
-        width: 305px;
-        height: 43px;
-        background: url(../images/main/title-tag.svg) 50% 50% / cover;
-        position: absolute;
-        left: -13px;
-        bottom: 5px;
-        z-index: -1;
-      }
-    }
+    z-index: 2;
+    margin: 0 auto;
+  }
+  .video-title{
+    margin-bottom: 16px;
+  }
+  .video-subtitle{
+    margin-bottom: 20px;
   }
 
-  .des {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 35px;
-  }
+  // .des {
+  //   font-size: 16px;
+  //   font-weight: 400;
+  //   margin-bottom: 35px;
+  // }
 
   .box-btn {
     display: flex;
@@ -733,68 +716,33 @@
     &1 {
       left: 0;
       top: 635px;
-      // transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-
     }
 
     &2 {
       left: 117px;
       top: 119px;
-      // transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
     &3 {
       top: 316px;
       left: 227px;
-      // transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
     &4 {
       top: 634px;
       right: 488px;
-      // transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
     &5 {
       top: -40px;
       right: 187px;
-      // transition: 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
 
     &6 {
       top: 257px;
       right: 0;
-      // transition: 0.55s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
   }
-
-  // &.is-inview {
-  //   .coin {
-  //     &1 {
-  //       top: 635px;
-  //     }
-
-  //     &2 {
-  //       top: 119px;
-  //     }
-
-  //     &3 {
-  //       top: 316px;
-  //     }
-
-  //     &4 {
-  //       top: 634px;
-  //     }
-
-  //     &5 {
-  //       top: -40px;
-  //     }
-
-  //     &6 {
-  //       top: 257px;
-  //     }
-  //   }
-  // }
 }
 
 .sec-contact {
@@ -1761,6 +1709,9 @@
     .img {
       border-radius: 60px 60px 0 0;
     }
+  }
+  .sec-membership-mo {
+    padding: 30px 15px 70px 15px;
   }
 }
 
