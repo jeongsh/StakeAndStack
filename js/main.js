@@ -17,7 +17,7 @@ textAdditional.addEventListener('keyup', (e) => {
   span.innerText = `${length}/${maxLength}`
 })
 
-window.onload = function(){
+window.onload = function () {
 
   const swiper = new Swiper('.swiper-block', {
     direction: 'horizontal',
@@ -63,38 +63,38 @@ window.onload = function(){
   const secMemberTop = secMember.getBoundingClientRect().top;
   let lastScroll2 = 0;
 
-	const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    paused: true,
-    multiplier: 0.8,
-    onUpdate: () => {
-      window.dispatchEvent(new Event('resize'));
-    },
-  });
-  scroll.on('scroll', (instance) => {
-    const currentScroll = instance.scroll.y;
-    const memberScrollX = secMemberTop - currentScroll;
-    const memberScrollTop = secMember.getBoundingClientRect().top;
-    if(currentScroll > lastScroll2){
-      header.classList.add('hide')
-    }
-    else{
-      header.classList.remove('hide')
-    }
-    articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
-    videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
-    videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
+  const isMobile = window.innerWidth < 768;
 
-    //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
-    if(memberScrollTop < window.innerHeight){
-      marquee1.style.left = `${527 + memberScrollX}px`
-      marquee2.style.right = `${582 + memberScrollX}px`
-    }
-    console.log( memberScrollX*0.2)
-    lastScroll2 = currentScroll;
-  });
+  if (!isMobile) {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true,
+      paused: true,
+      multiplier: 0.8,
+      onUpdate: () => {
+        window.dispatchEvent(new Event('resize'));
+      },
+    });
+    scroll.on('scroll', (instance) => {
+      const currentScroll = instance.scroll.y;
+      const memberScrollX = secMemberTop - currentScroll;
+      const memberScrollTop = secMember.getBoundingClientRect().top;
+      if (currentScroll > lastScroll2) {
+        header.classList.add('hide')
+      } else {
+        header.classList.remove('hide')
+      }
+      articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
+      videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
+      videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
+
+      //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
+      if (memberScrollTop < window.innerHeight) {
+        marquee1.style.left = `${527 + memberScrollX}px`
+        marquee2.style.right = `${582 + memberScrollX}px`
+      }
+      console.log(memberScrollX * 0.2)
+      lastScroll2 = currentScroll;
+    });
+  }
 }
-
-
-
