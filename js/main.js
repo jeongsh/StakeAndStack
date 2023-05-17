@@ -50,6 +50,15 @@ window.onload = function(){
     }
   })
 
+
+  //locomotive scroll
+  const articleVideo = document.querySelector('.article-video');
+  const secMember = document.querySelector('.sec-membership.pc');
+  //secMember의 marquee-1
+  const marquee1 = document.querySelector('.marquee-1');
+  const marquee2 = document.querySelector('.marquee-2');
+  //secMember의 절대위치
+  const secMemberTop = secMember.getBoundingClientRect().top;
   let lastScroll2 = 0;
 
 	const scroll = new LocomotiveScroll({
@@ -63,12 +72,22 @@ window.onload = function(){
   });
   scroll.on('scroll', (instance) => {
     const currentScroll = instance.scroll.y;
+    const memberScrollX = secMemberTop - currentScroll;
+    const memberScrollTop = secMember.getBoundingClientRect().top;
     if(currentScroll > lastScroll2){
       header.classList.add('hide')
     }
     else{
       header.classList.remove('hide')
     }
+    articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
+
+    //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
+    if(memberScrollTop < window.innerHeight*0.3){
+      marquee1.style.transform = `translate3d(${memberScrollX}px, 0, 0)`
+      marquee2.style.transform = `translate3d(${-memberScrollX}px, 0, 0)`
+    }
+    console.log('scrollX'+ memberScrollX + 'top' + secMemberTop + 'current' + currentScroll)
     lastScroll2 = currentScroll;
   });
 }
