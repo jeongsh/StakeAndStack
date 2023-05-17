@@ -83,11 +83,11 @@ window.onload = function(){
     articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
 
     //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
-    if(memberScrollTop < window.innerHeight*0.3){
-      marquee1.style.transform = `translate3d(${memberScrollX}px, 0, 0)`
-      marquee2.style.transform = `translate3d(${-memberScrollX}px, 0, 0)`
+    if(memberScrollTop < window.innerHeight){
+      marquee1.style.left = `${527 + memberScrollX}px`
+      marquee2.style.right = `${582 + memberScrollX}px`
     }
-    console.log('scrollX'+ memberScrollX + 'top' + secMemberTop + 'current' + currentScroll)
+    console.log( memberScrollX*0.2)
     lastScroll2 = currentScroll;
   });
 }
