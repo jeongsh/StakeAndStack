@@ -318,6 +318,7 @@
   .box-card {
     gap: 10px;
     display: flex;
+    margin-bottom: 28px;
 
     .card {
       width: 285px;
@@ -326,6 +327,7 @@
       background: #fff;
       overflow: hidden;
       border: 1px solid #C0C4CD;
+
       &-summary {
         border: 1px solid #666;
         filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
@@ -366,6 +368,7 @@
     font-size: 20px;
     color: #000;
     line-height: 20px;
+
     span {
       line-height: 20px;
     }
@@ -397,10 +400,12 @@
     font-size: 18px;
     line-height: 20px;
     color: #00C585;
-    &.minus{
+
+    &.minus {
       color: #FF1212;
     }
-    .small{
+
+    .small {
       font-size: 12px;
       font-weight: inherit;
     }
@@ -411,6 +416,7 @@
     .box-gray {
       height: 130px;
       padding: 20px;
+
       .d-flex {
         display: flex;
         gap: 15px;
@@ -440,31 +446,88 @@
     }
   }
 
-  .card-assets{
-    .box-gray{
+  .card-assets {
+    .box-gray {
       border-bottom: 1px solid #C0C4CD;
     }
-    .box-statistics{
+
+    .box-statistics {
       padding: 10px;
       text-align: right;
       border-bottom: 1px solid #C0C4CD;
-      .gray{
+
+      .gray {
         justify-content: flex-end;
         margin: 0px;
       }
-      .value{
-        margin-bottom: 7px;
+
+      .value {
+        margin-bottom: 6px;
       }
-      .percent{
-        margin-bottom: 7px;
+
+      .percent {
+        margin-bottom: 6px;
         font-size: 20px;
         line-height: 20px;
-        &:nth-last-of-type(1){
+
+        &:nth-last-of-type(1) {
           margin-bottom: 0;
         }
       }
-      &:nth-last-of-type(1){
+
+      &:nth-last-of-type(1) {
         border: none;
+      }
+    }
+  }
+
+  .box-graph {
+    display: flex;
+    gap: 28px;
+
+    .box-chart {
+      flex: 1;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #C0C4CD;
+      overflow: hidden;
+    }
+
+    .chart-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 30px;
+
+      .filter-list {
+        display: flex;
+      }
+
+      .btn-filter {
+        width: 38px;
+        height: 19px;
+        background: #fff;
+        color: #C0C4CD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #DEDEDE 1px solid;
+        margin-left: -1px;
+        font-weight: 500;
+        font-size: 12px;
+
+        &.active {
+          color: #555D67;
+          border-color: #A0A0A0;
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
+    .chart{
+      img{
+        width: 100%;
       }
     }
   }
