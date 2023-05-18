@@ -321,7 +321,8 @@
     margin-bottom: 28px;
 
     .card {
-      width: 285px;
+      // width: 285px;
+      flex: 1;
       height: 405px;
       border-radius: 10px;
       background: #fff;

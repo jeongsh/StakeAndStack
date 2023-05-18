@@ -13,7 +13,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         <li class="link-item">
           <p class="link">About</p>
           <a href="./about-stack.html" class="link small">+ About Stake and Stack</a>
-          <a href="" class="link small">+ About webew</a>
+          <a href="./about-webew.html" class="link small">+ About webew</a>
         </li>
         <li class="link-item">
           <p class="link">Networks</p>
@@ -47,7 +47,7 @@ document.body.insertAdjacentHTML('afterbegin', `
       About
       <div class="box-sublink">
         <a href="./about-stack.html" class="link">+About Stake and Stack</a>
-        <a href="" class="link">+About webew</a>
+        <a href="./about-webew.html" class="link">+About webew</a>
       </div>
     </button>
     <button class="link btn-about">
