@@ -1,0 +1,141 @@
+@import "common";
+
+.body {
+  height: 100vh;
+  background: $secondary;
+  padding-top: 0;
+  &-pwd{
+    background: $secondary url(../images/login/pwd-bg.svg) 50% 50% /cover no-repeat;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-login{
+  max-width: 400px;
+  width: calc(100% - 32px);
+}
+.box-join{
+  max-width: 660px;
+  width: calc(100% - 32px);
+}
+.logo {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 45px;
+  line-height: 63px;
+  margin-bottom: 15px;
+}
+
+.wrap-input {
+  border-radius: 20px;
+  background: #fff;
+  border: 2px solid;
+  padding: 50px;
+  z-index: 1;
+  position: relative;
+  transition: 0.2s;
+  box-shadow: 11px 11px 0px #000000;
+  width: 100%;
+  margin-bottom: 73px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background: #F3F3F3;
+  border: 2px solid #F3F3F3;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 12px;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+
+  &::placeholder {
+    color: #BABABB;
+  }
+
+  &:focus {
+    border-color: #000;
+  }
+}
+
+.length {
+  position: absolute;
+  right: 24px;
+  bottom: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #61646B;
+
+}
+
+.btn-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  border-radius: 10px;
+  width: 302px;
+  height: 60px;
+  @include buttonHover($Yellow01, #000)
+}
+
+.link {
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.password{
+  .title{
+    font-size: 40px;
+  }
+}
+
+.join{
+  .d-flex{
+    gap: 20px;
+    .btn-yellow{
+      flex: 1;
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .wrap-input{
+    padding: 24px 16px;
+  }
+  .btn-yellow{
+    height: 48px;
+  }
+  .title{
+    font-size: 30px !important;
+  }
+}
+
+@media(max-height: 700px) {
+  .body-join{
+    height: auto;
+    padding: 5vh 0;
+  }
+}

@@ -2,7 +2,6 @@ const body = document.querySelector('.body');
 const btnBanner = document.querySelector('#btnBanner');
 const banner = document.querySelector('.banner');
 const textAdditional = document.querySelector('#textAdditional');
-const headerMo = document.querySelector('header.mo');
 
 
 btnBanner.addEventListener('click', () => {

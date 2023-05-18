@@ -4,6 +4,14 @@
   background: $Yellow01;
   padding-top: 125px;
   overflow-x: hidden;
+  &.webew{
+      background: $secondary;
+  }
+}
+main{
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .title{
   font-size: 80px;
@@ -22,7 +30,7 @@
   z-index: 1;
   .wrap{
     padding-top: 133px;
-    padding-left: 90px;
+    padding-left: 70px;
     position: relative;
   }
   .title, .sub-title{
@@ -86,14 +94,24 @@
         text-decoration: underline;
       }
     }
+    .areas .text{
+      width: 100%;
+    }
+    .desc-list{
+      list-style: disc;
+      margin-bottom: 13px;
+      margin-left: 30px;
+      .inner{
+        margin-left: 20px;
+      }
+    }
   }
 }
 
 .webew{
-  background: $secondary;
   .pug{
     position: absolute;
-    top: 252px;
+    top: 127px;
     right: -320px;
     z-index: 3;
   }
@@ -136,8 +154,18 @@
       padding-left: 0;
     }
   }
+  .webew .sec-1 .wrap{
+    padding-top: 213px;
+  }
+  .webew .pug{
+    right: -500px;
+    top: 110px;
+  }
 }
 @media(max-width: 1024px){
+  .webew .pug{
+    display: none;
+  }
   .body{
     padding-top: 0;
   }
@@ -164,6 +192,7 @@
       width: 400px;
     }
   }
+  
   .sec-2 {
     .wrap{
       padding: 80px 30px 50px 30px;
@@ -196,9 +225,18 @@
       order: 1;
     }
   }
+  .webew .title{
+    font-size: 42px;
+  }
 }
 
 @media(max-width: 768px){
+  .webew .sec-1 .wrap{
+    height: auto;
+  }
+  .title .dot{
+    width: 8.5px;
+  }
   .sec-1{
     padding: 30px;
     padding-bottom: 0;
@@ -209,7 +247,7 @@
       display: none;
     }
     .wrap{
-      padding: 0;
+      padding: 0 !important;
       .popcorn{
         display: none;
       }

@@ -198,7 +198,7 @@ header.mo{
     }
   }
   .menu {
-    background: #000 url(../images/main/menu-bg.svg) 50% 50%/contain no-repeat;
+    background: #000 url(../images/main/menu-bg.svg) 50% 50% /cover no-repeat;
     position: fixed;
     top: 0;
     left: 0;
@@ -292,12 +292,6 @@ header.mo{
   header.pc {
     .logo{
       width: 110px;
-    }
-    nav{
-      gap: 2px;
-      .link{
-        font-size: 14px;
-      }
     }
     .btn{
       height: 30px;

@@ -65,7 +65,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 
   <!-- TODO: 로그인 전, 후 분기처리 -->
   <div class="box-btn">
-    <!-- <a href="" class="btn before-login">LOGIN</a> -->
+    <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
     <a href="" class="btn after-login">LOGOUT</a>
     <a href="" class="btn after-login">MYPAGE</a>
     <button class="btn btn-language">
@@ -158,6 +158,7 @@ const accordion = document.querySelectorAll('.accordion');
 const btnMenu = document.querySelector('.btn-menu');
 const toggle = document.querySelectorAll('.toggle');
 const select = document.querySelectorAll('select');
+const headerMo = document.querySelector('header.mo');
 
 btnAbout.forEach((e, i) => {
   e.addEventListener('click', () => {
