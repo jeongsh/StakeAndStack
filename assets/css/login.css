@@ -871,6 +871,13 @@ footer .cat {
   flex: 1;
 }
 
+p {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 @media (max-width: 500px) {
   .wrap-input {
     padding: 24px 16px;

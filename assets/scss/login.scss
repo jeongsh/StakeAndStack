@@ -4,7 +4,8 @@
   height: 100vh;
   background: $secondary;
   padding-top: 0;
-  &-pwd{
+
+  &-pwd {
     background: $secondary url(../images/login/pwd-bg.svg) 50% 50% /cover no-repeat;
   }
 }
@@ -17,14 +18,17 @@
   align-items: center;
   flex-direction: column;
 }
-.box-login{
+
+.box-login {
   max-width: 400px;
   width: calc(100% - 32px);
 }
-.box-join{
+
+.box-join {
   max-width: 660px;
   width: calc(100% - 32px);
 }
+
 .logo {
   margin-bottom: 30px;
 }
@@ -106,35 +110,45 @@
   display: block;
 }
 
-.password{
-  .title{
+.password {
+  .title {
     font-size: 40px;
   }
 }
 
-.join{
-  .d-flex{
+.join {
+  .d-flex {
     gap: 20px;
-    .btn-yellow{
+
+    .btn-yellow {
       flex: 1;
     }
   }
 }
 
+p {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 @media(max-width: 500px) {
-  .wrap-input{
+  .wrap-input {
     padding: 24px 16px;
   }
-  .btn-yellow{
+
+  .btn-yellow {
     height: 48px;
   }
-  .title{
+
+  .title {
     font-size: 30px !important;
   }
 }
 
 @media(max-height: 700px) {
-  .body-join{
+  .body-join {
     height: auto;
     padding: 5vh 0;
   }
