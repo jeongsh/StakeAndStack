@@ -93,7 +93,6 @@ window.onload = function () {
         marquee1.style.left = `${527 + memberScrollX}px`
         marquee2.style.right = `${582 + memberScrollX}px`
       }
-      console.log(memberScrollX * 0.2)
       lastScroll2 = currentScroll;
     });
   }
