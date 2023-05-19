@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+
+  <title>Stake and Stack</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <nav class="gnb">
+      <a href="./"><img src="./assets/images/dashboard/logo-dashboard.svg" alt="logo" class="logo-dashboard"></a>
+      <ul class="list">
+        <li class="list-item">
+          <a href="./dashboard.html" class="link">
+            Dashboard
+          </a>
+          <p class="gray">
+            $1.75 M
+            <div class="blank"></div>
+          </p>
+        </li>
+        <li class="list-item border list-toggle active">
+          <button class="btn-toggle">
+            <p class="link active">
+              Staked Assets
+            </p>
+            <p class="gray">
+              $1.75 M
+              <img src="./assets/images/dashboard/arrow-down.svg" alt="" class="arrow">
+            </p>
+          </button>
+          <div class="list-sub">
+            <a href="./assets.html" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Tezos
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+            <a href="./assets.html" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Kava
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+            <a href="./assets.html" class="sub-link">
+              <div class="top">
+                <div class="circle"></div>
+                <p class="link">
+                  Akash Network
+                  <span class="gray">
+                    $1.75 M
+                  </span>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="gray">92,147,147,147,147,47 XTZ</div>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="" class="link">
+            <img src="./assets/images/dashboard/nft-small.png" alt="" class="icon">
+            NFTs
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link">
+            <img src="./assets/images/dashboard/member.png" alt="" class="icon">
+            SaS Membership
+          </a>
+        </li>
+        <li class="list-item border">
+          <a href="" class="link">
+            <img src="./assets/images/dashboard/report.png" alt="" class="icon">
+            Reports
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link">
+            <img src="./assets/images/dashboard/news.png" alt="" class="icon">
+            News
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="" class="link">
+            <img src="./assets/images/dashboard/content.png" alt="" class="icon">
+            Contents
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main assets">
+      <div class="header">
+        <button class="btn btn-language">
+          <div class="language">
+            <img src="./assets/images/icon/flag-usd.svg" alt="">
+            USD
+            <img src="./assets/images/dashboard/arrow-down-gray.svg" alt="" class="icon">
+          </div>
+          <div class="wrap-language">
+            <div class="language">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              USD
+            </div>
+            <div class="language">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              KWD
+            </div>
+          </div>
+        </button>
+        <button class="btn-header btn-wallet"></button>
+        <button class="btn-header btn-bell active"></button>
+        <button class="btn-header btn-nft"></button>
+        <button class="btn-header btn-setting"></button>
+        <button class="btn-header btn-share"></button>
+        <button class="btn-header btn-user"><img src="./assets/images/dashboard/user.png" alt=""></button>
+      </div>
+      <div class="content">
+        <p class="subtitle">Staked Assets</p>
+        <div class="wrap-total">
+          <div class="total">
+            <div class="box-num">
+              <span class="total-type">
+                Total balance
+              </span>
+              <p class="value">
+                $1,752,000
+              </p>
+            </div>
+            <div class="box-num">
+              <span class="total-type">
+                Total staked
+              </span>
+              <p class="value">
+                $1,752,000
+              </p>
+            </div>
+            <div class="box-num">
+              <span class="total-type">
+                Total earned
+              </span>
+              <p class="value">
+                $1,752,000
+              </p>
+            </div>
+          </div>
+          <button class="btn-red">
+            <img src="./assets/images/dashboard/plus.png" alt="">
+            Add/Manage
+          </button>
+        </div>
+        <div class="wrap-portion">
+          <!-- TODO: 차트가 붙어야 퍼블이 가능 할거 같아요 -->
+          <p style="color: #fff;">차트가 붙어야 퍼블이 가능 할거 같아요</p>
+        </div>
+        <div class="wrap-monthly">
+          <div class="wrap-chart">
+            <p class="subtitle">Monthly Summary <span class="month">(April 2023)</span></p>
+            <div class="box-assets">
+              <div class="box-bar">
+                <p class="bar-type">Staked Assets</p>
+                <p class="value">
+                  $1,752,000
+                </p>
+                <!-- asset이 올랐을 때 -->
+                <p class="fluctuation up">
+                  2.5%
+                </p>
+                <img src="./assets/images/dashboard/chart-3.png" alt="">
+              </div>
+              <div class="box-bar">
+                <p class="bar-type">Staked Assets</p>
+                <p class="value">
+                  $1,752,000
+                </p>
+                <!-- asset이 내려갔을 때 -->
+                <p class="fluctuation down">
+                  2.5%
+                </p>
+                <img src="./assets/images/dashboard/chart-4.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="wrap-last">
+            <p class="subtitle">Last Transactions</p>
+            <div class="box-table">
+              <table class="table last-table">
+                <colgroup>
+                  <col style="width: 44px;">
+                  <col style="width: 160px;">
+                  <col style="min-width: 150px;">
+                  <col style="width: 146px;">
+                  <col style="width: 140px;">
+                  <col style="width: 140px;">
+                  <col style="width: 140px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="delete"></th>
+                    <th>Coin</th>
+                    <th>From/To</th>
+                    <th>Date & Time</th>
+                    <th>Operation</th>
+                    <th style="text-align: right;">Outgoing</th>
+                    <th style="text-align: right;">Incoming</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                  <tr>
+                    <td class="delete">
+                      <button class="btn-delete"><img src="./assets/images/dashboard/delete.png" alt="delete"></button>
+                    </td>
+                    <td>Tezos (XTZ)</td>
+                    <td>Stake and Stack
+                      <span class="td-gray">
+                        tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY
+                      </span>
+                    </td>
+                    <td class="date">2023-04-09 00:00</td>
+                    <td class="operation">Staking Rewards</td>
+                    <td class="out">-240.00000</td>
+                    <td class="in">+38.145221</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-wallet">
+          <p class="subtitle">Wallet</p>
+          <div class="box-table">
+            <table class="table table-wallet">
+              <colgroup>
+                <col style="width:44px">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Coin</th>
+                  <th>Balance</th>
+                  <th>Valus Price</th>
+                  <th>Amount Bought</th>
+                  <th>Total Bought
+                    Avg. Price</th>
+                  <th>Delegation
+                    Period</th>
+                  <th>
+                    Rewards Amount
+                  </th>
+                  <th style="text-align: right;">Total PNL</th>
+                  <th style="text-align: right;">Returns</th>
+                  <th style="text-align: right; padding-right: 30px">APY</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+                <tr>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                  <td class="td-gray">92.123.0998887</td>
+                  <td class="td-gray">
+                    92.123.0998887
+                  </td>
+                  <td>
+                    $102,608.71
+                    <span class="td-gray">
+                      $1.112
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    90,000.00000
+                  </td>
+                  <td>
+                    $90,000.00
+                    <span class="td-gray">
+                      $1.00
+                    </span>
+                  </td>
+                  <td class="td-gray">
+                    422 Days
+                  </td>
+                  <td class="td-gray">
+                    2,147.987652
+                  </td>
+                  <td class="in">
+                    $38.145221
+                  </td>
+                  <td class="in">
+                    +15.55%
+                  </td>
+                  <td class="in" style="padding-right: 30px">
+                    +8.65%
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="wrap-coin">
+          <!-- 코인 타이틀 -->
+          <p class="subtitle">Tezos</p>
+          <div class="box-table">
+            <table class="table table-coin">
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col style="width: 60px;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Cycle</th>
+                  <th>Membership/<br>
+                    Auto-Discount</th>
+                  <th>Basic Fee</th>
+                  <th>Discounted</th>
+                  <th>Delegated Amount</th>
+                  <th>Reward</th>
+                  <th>Payout</th>
+                  <th>Local Difference</th>
+                  <th>Discount</th>
+                  <th>Baker Fee</th>
+                  <th>Efficiency</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>99.99%</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>-</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>-</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>99.99%</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>99.99%</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>601</td>
+                  <td>Sas GOLD</td>
+                  <td>10.00%</td>
+                  <td>3.75%</td>
+                  <td>30,000.00000</td>
+                  <td>3,794.54555</td>
+                  <td>3,115,543234</td>
+                  <td>679.005650</td>
+                  <td>444.941215</td>
+                  <td>285.512345</td>
+                  <td>99.99%</td>
+                  <td class="delete">
+                    <button class="btn-delete">
+                      <img src="./assets/images/dashboard/delete.png" alt="delete">
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    const btnToggle = document.querySelector('.btn-toggle');
+    const listToggle = document.querySelector('.list-toggle');
+    const btnLanguage = document.querySelector('.btn-language');
+
+    btnToggle.addEventListener('click', () => {
+      listToggle.classList.toggle('active');
+    })
+
+    btnLanguage.addEventListener('click', () => {
+      btnLanguage.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>

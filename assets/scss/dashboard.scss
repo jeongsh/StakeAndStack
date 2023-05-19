@@ -130,7 +130,7 @@
   flex: 1;
   height: 100vh;
   overflow-y: auto;
-  background: #ddd;
+  background: #F5F4F4;
 
 
   .header {
@@ -292,10 +292,6 @@
     }
   }
 
-  .content * {
-    font-family: 'Pretendard';
-  }
-
   .btn-red {
     width: 148px;
     height: 32px;
@@ -315,7 +311,7 @@
     padding: 20px;
   }
 
-  .box-card {
+  .wrap-card {
     gap: 10px;
     display: flex;
     margin-bottom: 28px;
@@ -369,9 +365,11 @@
     font-size: 20px;
     color: #000;
     line-height: 20px;
+    font-family: 'roboto';
 
     span {
       line-height: 20px;
+      font-family: inherit;
     }
 
     .dolor {
@@ -401,6 +399,7 @@
     font-size: 18px;
     line-height: 20px;
     color: #00C585;
+    font-family: 'roboto';
 
     &.minus {
       color: #FF1212;
@@ -409,6 +408,7 @@
     .small {
       font-size: 12px;
       font-weight: inherit;
+      font-family: inherit;
     }
   }
 
@@ -526,9 +526,241 @@
         }
       }
     }
-    .chart{
-      img{
+
+    .chart {
+      img {
         width: 100%;
+      }
+    }
+  }
+}
+
+.assets {
+  .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 15px;
+
+    .month {
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  .content {
+    padding-top: 40px;
+  }
+
+  .wrap-total {
+    padding-right: 50px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .total {
+      width: 886px;
+      background: #fff;
+      border: 1px solid #666666;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      gap: 25px;
+
+      &-type {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .box-num {
+        width: 265px;
+        padding: 0 20px;
+      }
+
+      .value .num {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .wrap-portion {
+    height: 167px;
+    margin-bottom: 30px;
+    background: #37393D
+  }
+
+  .wrap-monthly {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    .subtitle {
+      padding: 10px;
+      display: block;
+      margin: 0;
+    }
+
+    .box-assets {
+      padding: 16px 30px;
+      display: flex;
+      gap: 35px;
+      border: 1px solid #C0C4CD;
+    }
+  }
+
+  .box-bar {
+
+    .bar-type {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+
+  }
+
+  .fluctuation {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    position: relative;
+    padding-left: 18px;
+    line-height: 9px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    &::before {
+      content: '';
+      width: 13px;
+      height: 9px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &.up {
+      color: #FF0000;
+
+      &::before {
+        background: url(../images/dashboard/up.svg) no-repeat;
+      }
+    }
+
+    &.down {
+      color: #0D61FF;
+
+      &::before {
+        background: url(../images/dashboard/down.svg) no-repeat;
+      }
+    }
+  }
+
+  .wrap-last {
+    flex: 1;
+  }
+  .box-table{
+    border-radius: 13px 13px 0 0;
+    border: 1px solid #C0C4CD;
+    overflow: hidden;
+  }
+  .table {
+    width: 100%;
+    text-align: left;
+    table-layout : fixed;
+
+    thead {
+      background: #F2F3F3;
+      border-bottom: 1px solid #C0C4CD;
+    }
+
+    th {
+      font-weight: 700;
+      font-size: 14px;
+      height: 40px;
+      padding: 0 20px;
+    }
+
+    td {
+      font-weight: 700;
+      font-size: 12px;
+      padding: 0 20px;
+    }
+
+    td.delete {
+      width: 44px;
+      height: 40px;
+      padding: 0;
+    }
+
+    tbody {
+      background: #fff;
+      tr {
+        height: 40px;
+        border-bottom: 1px solid #C0C4CD;
+        &:nth-last-child(1){
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .btn-delete {
+      padding-left: 12px;
+    }
+    .td-gray{
+      min-width: 150px;
+      display: block;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    td.td-gray{
+      display: table-cell;
+    }
+    .operation{
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .date{
+      font-family: 'roboto';
+    }
+    .out{
+      color: #FF0000;
+      font-weight: 700;
+      font-family: 'roboto';
+      text-align: right;
+    }
+    .in{
+      color: #00C585;
+      font-weight: 700;
+      font-family: 'roboto';
+      text-align: right;
+    }
+  }
+  .wrap-wallet{
+    margin-bottom: 30px;
+  }
+  .table-wallet, .table-coin{
+    thead{
+      height: 70px;
+    }
+    td{
+      font-family: 'roboto';
+      height: 50px;
+    }
+  }
+  .table-coin{
+    thead{
+      th{
+        font-size: 12px;
+        &:nth-last-child(1){
+          padding: 0;
+        }
       }
     }
   }
