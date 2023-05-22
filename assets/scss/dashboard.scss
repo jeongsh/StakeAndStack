@@ -679,6 +679,15 @@
       border-bottom: 1px solid #C0C4CD;
     }
 
+    .tr-gray{
+      background: #F2F3F3;
+      border-radius: 0 0 13px 13px;
+      height: 60px;
+      th{
+        font-family: 'roboto';
+      }
+    }
+
     th {
       font-weight: 700;
       font-size: 14px;
@@ -719,6 +728,12 @@
       overflow: hidden;
       white-space: nowrap;
     }
+    span.td-gray{
+      font-family: inherit;
+      font-weight: inherit;
+      color: #555D67;
+      font-weight: 500;
+    }
     td.td-gray{
       display: table-cell;
     }
@@ -744,6 +759,16 @@
   }
   .wrap-wallet{
     margin-bottom: 30px;
+    .box-table{
+      border-radius: 13px;
+      .td-gray{
+        color: #666;
+        font-weight: 500;
+      }
+      span.td-gray{
+        color: #666;
+      }
+    }
   }
   .table-wallet, .table-coin{
     thead{
@@ -760,6 +785,20 @@
         font-size: 12px;
         &:nth-last-child(1){
           padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .assets{
+    .wrap-total{
+      .total{
+        width: auto;
+        flex: 1;
+        .box-num{
+          width: auto;
         }
       }
     }
