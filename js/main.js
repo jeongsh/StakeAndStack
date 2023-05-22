@@ -84,8 +84,8 @@ window.onload = function () {
         header.classList.remove('hide')
       }
       articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
-      videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
-      videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
+      // videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
+      // videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
 
       //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
       if (memberScrollTop < window.innerHeight) {

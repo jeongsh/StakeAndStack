@@ -28,6 +28,12 @@ main{
 .sec-1{
   position: relative;
   z-index: 1;
+  .pug{
+    position: absolute;
+    right: 0;
+    bottom: 183px;
+    z-index: 3;
+  }
   .wrap{
     padding-top: 133px;
     padding-left: 70px;
@@ -109,13 +115,8 @@ main{
 }
 
 .webew{
-  .pug{
-    position: absolute;
-    top: 127px;
-    right: -320px;
-    z-index: 3;
-  }
   .sec-1{
+    position: relative;
     .wrap{
       height: 468px;
       padding-top: 231px;
@@ -157,15 +158,23 @@ main{
   .webew .sec-1 .wrap{
     padding-top: 213px;
   }
-  .webew .pug{
-    right: -500px;
-    top: 110px;
+}
+@media(max-width: 1280px){
+  .webew{
+    .sec-1{
+      .wrap{
+        padding-top: 190px;
+      }
+      .title{
+        font-size: 60px;
+        .dot{
+          width: 11.5px;
+        }
+      }
+    }
   }
 }
 @media(max-width: 1024px){
-  .webew .pug{
-    display: none;
-  }
   .body{
     padding-top: 0;
   }
@@ -205,6 +214,15 @@ main{
       }
     }
   }
+  .webew .sec-1 .title{
+    width: 50%;
+    line-height: 1.2;
+  }
+  .sec-1{
+    .pug{
+      bottom: 116px;
+    }
+  }
 }
 
 @media(max-width: 900px){
@@ -227,6 +245,15 @@ main{
   }
   .webew .title{
     font-size: 42px;
+  }
+  .webew .sec-1{
+    padding-bottom: 289px;
+    .pug{
+      bottom: 0;
+    }
+    .title{
+      width: 80%;
+    }
   }
 }
 
