@@ -158,6 +158,8 @@
 .sec-coin {
   height: 100vh;
   background: $Yellow01 url(../images/main/coin-bg.svg) 50% 50% / contain no-repeat;
+  position: relative;
+  overflow: hidden;
 
   .wrap {
     padding-left: 180px;
@@ -166,10 +168,10 @@
     position: relative;
   }
 
-  .moster {
+  .monster {
     position: absolute;
-    left: 890px;
-    bottom: 0;
+    right: -42px;
+    bottom: -102px;
     z-index: 5;
   }
 
@@ -1065,10 +1067,15 @@
 }
 
 .sec-news {
-  padding-top: 114px;
+  padding-top: 218px;
   background: $Yellow01;
   position: relative;
   z-index: 0;
+  .dogs{
+    position: absolute;
+    top: 126px;
+    right: 10%;
+  }
 
   .title {
     font-size: 45px;
@@ -1327,7 +1334,9 @@
       right: 30px;
       width: 240px;
     }
-
+    .list{
+      margin-top: 60px !important;
+    }
     .title {
       font-size: 36px;
       line-height: 1.5;
@@ -1389,6 +1398,9 @@
   }
 
   .sec-news {
+    .dogs{
+      display: none;
+    }
     .title {
       font-size: 36px;
     }
@@ -1513,8 +1525,9 @@
     }
   }
 
-  .sec-coin .moster {
-    display: none;
+  .sec-coin .monster {
+    width: 40%;
+    bottom: 0;
   }
 
   .sec-membership-mo {
@@ -1709,6 +1722,9 @@
       display: none;
     }
   }
+  .highlight.mo {
+    display: inline-block !important;
+  }
 }
 
 @media(max-width: 768px) {
@@ -1803,10 +1819,6 @@
       }
     }
 
-    .highlight.mo {
-      display: inline-block !important;
-    }
-
     .highlight-left {
       &::after {
         left: 0 !important;
@@ -1856,6 +1868,9 @@
 
   .sec-membership-mo {
     padding: 30px 15px 70px 15px;
+  }
+  .sec-coin .monster {
+    display: none;
   }
 }
 

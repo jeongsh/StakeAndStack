@@ -146,7 +146,7 @@ main.insertAdjacentHTML('beforeend', `
         <a href="" class="privacy">Privacy & Terms</a>
       </div>
     </div>
-    <img src="./assets/images/main/footer-cat.svg" alt="" class="cat">
+    <img src="./assets/images/gif/cat-b.gif" alt="" class="cat">
   </div>
 </footer>`)
 const header = document.querySelector('header.pc');
