@@ -146,21 +146,28 @@
             <div class="left">
               <p class="label-text">Enter Protocol</p>
               <div class="box-select">
-                <select name="" id="" class="label select">
-                  <option value="">TEZOS (XYZ)</option>
-                  <option value="">Kava</option>
-                  <option value="">Akash Network</option>
-                </select>
+                <div class="label select">
+                  <input type="text" value="TEZOS (XYZ)" placeholder="" disabled>
+                </div>
+                <!-- TODO: 셀렉트 변경했습니다 -->
+                <div class="option-container">
+                  <div class="option">TEZOS (XYZ)</div>
+                  <div class="option">Kava</div>
+                  <div class="option">Akash</div>
+                </div>
                 <img src="./assets/images/icon/arrow-down.png" alt="" class="arrow">
               </div>
-
               <p class="label-text">Validator Fee</p>
               <div class="box-select">
-                <select name="" id="" class="label select">
-                  <option value="">SaS Club_Gold</option>
-                  <option value="">Kava</option>
-                  <option value="">Akash Network</option>
-                </select>
+                <div class="label select">
+                  <input type="text" value="SaS Club_Gold" placeholder="" disabled>
+                </div>
+                <!-- TODO: 셀렉트 변경했습니다 -->
+                <div class="option-container">
+                  <div class="option">SaS Club_Gold</div>
+                  <div class="option">Kava</div>
+                  <div class="option">Akash</div>
+                </div>
                 <img src="./assets/images/icon/arrow-down.png" alt="" class="arrow">
               </div>
 
@@ -185,11 +192,15 @@
                 <div class="box">
                   <p class="label-text">Staking Duration</p>
                   <div class="box-select">
-                    <select name="" id="" class="label select">
-                      <option value="">TEZOS (XYZ)</option>
-                      <option value="">Kava</option>
-                      <option value="">Akash Network</option>
-                    </select>
+                    <div class="label select">
+                      <input type="text" value="SaS Club_Gold" placeholder="" disabled>
+                    </div>
+                    <!-- TODO: 셀렉트 변경했습니다 -->
+                    <div class="option-container">
+                      <div class="option">SaS Club_Gold</div>
+                      <div class="option">Kava</div>
+                      <div class="option">Akash</div>
+                    </div>
                     <img src="./assets/images/icon/arrow-down.png" alt="" class="arrow">
                   </div>
                 </div>
@@ -508,7 +519,8 @@
       <div class="wrap">
         <h2 class="title">Supported Wallets</h2>
         <p class="keep">
-          Keep your XTZ in exchanges? You should create your own wallet to keep your XTZ safe! Here's the recommended wallets for you
+          Keep your XTZ in exchanges? You should create your own wallet to keep your XTZ safe! Here's the recommended
+          wallets for you
         </p>
         <div class="d-flex pc">
           <a href="https://wallet.kukai.app" target="_blank">
@@ -616,10 +628,8 @@
   </main>
   <script src="./js/common.js"></script>
   <script>
-    var imgSwiper = new Swiper(".swiper-image", {
-    });
-    var guideSwiper = new Swiper(".swiper-guide", {
-    });
+    var imgSwiper = new Swiper(".swiper-image", {});
+    var guideSwiper = new Swiper(".swiper-guide", {});
     var walletSwiper = new Swiper(".swiper-wallets", {
       direction: 'horizontal',
       slidesPerView: "auto",
@@ -631,7 +641,7 @@
       spaceBetween: 25,
     });
 
-    const swiperImage= document.querySelector('.swiper-image');
+    const swiperImage = document.querySelector('.swiper-image');
     const swiperGuide = document.querySelector('.swiper-guide');
     const swiperGuideTotal = document.querySelector('.swiper-guide .total');
     const swiperGuideCurrent = document.querySelector('.swiper-guide .current');
@@ -639,11 +649,12 @@
     swiperGuideTotal.innerHTML = swiperGuide.swiper.slides.length;
     swiperGuideCurrent.innerHTML = swiperGuide.swiper.realIndex + 1;
 
-    function slideNext(){
+    function slideNext() {
       swiperImage.swiper.slideNext();
       swiperGuide.swiper.slideNext();
     }
-    function slidePrev(){
+
+    function slidePrev() {
       swiperImage.swiper.slidePrev();
       swiperGuide.swiper.slidePrev();
     }

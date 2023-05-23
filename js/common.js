@@ -157,7 +157,7 @@ const sections = document.querySelectorAll('section');
 const accordion = document.querySelectorAll('.accordion');
 const btnMenu = document.querySelector('.btn-menu');
 const toggle = document.querySelectorAll('.toggle');
-const select = document.querySelectorAll('select');
+const selectBox = document.querySelectorAll('.box-select');
 const headerMo = document.querySelector('header.mo');
 
 btnAbout.forEach((e, i) => {
@@ -248,8 +248,20 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 })
 
-select.forEach(e => {
+//커스텀 select 태그
+selectBox.forEach(e => {
   e.addEventListener('click', () => {
-    e.classList.toggle('active')
+    //selectBox의 active 클래스 제거
+    selectBox.forEach(el => {
+      el.classList.remove('active')
+    })
+    e.classList.add('active')
+  })
+  e.querySelectorAll('.option').forEach(a => {
+    a.addEventListener('click', (event) => {
+      event.stopPropagation();
+      e.querySelector('input').value = a.innerHTML;
+      e.classList.remove('active')
+    })
   })
 })
