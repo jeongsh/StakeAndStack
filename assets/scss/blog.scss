@@ -1,0 +1,52 @@
+@import "common";
+
+.body {
+  background: $Yellow01;
+  padding-top: 125px;
+  overflow-x: hidden;
+}
+
+.sec-title {
+  .wrap {
+    padding: 90px 0 30px;
+
+    .title {
+      font-size: 80px;
+      line-height: 1.4;
+      text-align: center;
+
+      small {
+        font-size: 50px;
+        font-family: inherit;
+        font-weight: inherit;
+      }
+    }
+
+    .des {
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+    }
+  }
+}
+
+.sec-list {
+  background: #fff;
+  padding: 102px 0;
+
+  .wrap {
+    display: flex;
+    gap: 61px 55px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 390px;
+    height: 450px;
+    background: #fff;
+    border: 1px solid #C0C4CD;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+  }
+}
