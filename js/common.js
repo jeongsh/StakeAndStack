@@ -23,10 +23,9 @@ document.body.insertAdjacentHTML('afterbegin', `
         </li>
         <li class="link-item"><a href="" class="link">Products</a></li>
         <li class="link-item"><a href="" class="link">Membership</a></li>
-        <li class="link-item"><a href="" class="link">News&Blog</a></li>
-        <li class="link-item"><a href="" class="link thin">LOGIN</a></li>
-        <li class="link-item"><a href="" class="link thin yellow">DASHBOARD</a></li>
-        <li class="link-item"><a href="" class="link thin">News&Blog</a></li>
+        <li class="link-item"><a href="./news-list.html" class="link">News&Blog</a></li>
+        <li class="link-item"><a href="./login" class="link thin">LOGIN</a></li>
+        <li class="link-item"><a href="./dashboard.html" class="link thin yellow">DASHBOARD</a></li>
         <li class="link-item">
           <a href="" class="link thin">
             <img src="./assets/images/icon/flag-usd.svg" alt="">
@@ -60,7 +59,7 @@ document.body.insertAdjacentHTML('afterbegin', `
     </button>
     <a href="" class="link">Products</a>
     <a href="" class="link">Membership</a>
-    <a href="" class="link">News&Blog</a>
+    <a href="./news-list.html" class="link">News&Blog</a>
   </nav>
 
   <!-- TODO: 로그인 전, 후 분기처리 -->
@@ -159,6 +158,8 @@ const btnMenu = document.querySelector('.btn-menu');
 const toggle = document.querySelectorAll('.toggle');
 const selectBox = document.querySelectorAll('.box-select');
 const headerMo = document.querySelector('header.mo');
+const btnTab = document.querySelectorAll('.btn-tab');
+const tabContent = document.querySelectorAll('.tab-content');
 
 btnAbout.forEach((e, i) => {
   e.addEventListener('click', () => {
@@ -263,5 +264,17 @@ selectBox.forEach(e => {
       e.querySelector('input').value = a.innerHTML;
       e.classList.remove('active')
     })
+  })
+})
+
+//btnTab의 data-tab-target 속성과 tabPanel의 data-tab-name가 같으면 active 클래스 추가
+btnTab.forEach(e => {
+  e.addEventListener('click', () => {
+    tabContent.forEach(el => {
+      el.classList.remove('active')
+    })
+    const tabName = e.getAttribute('data-tab-target');
+    const tab = document.querySelector(`[data-tab-name="${tabName}"]`);
+    tab.classList.add('active')
   })
 })

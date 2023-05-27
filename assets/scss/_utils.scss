@@ -1,8 +1,8 @@
 @import "variables";
 @import "mixins";
-.body{
-  padding-top: 145px;
-}
+// .body{
+//   padding-top: 145px;
+// }
 .mo {
   display: none !important;
 }
@@ -206,6 +206,16 @@
         padding-top: 13px;
       }
     }
+  }
+}
+
+.tab-content{
+  display: none;
+  &.active{
+    display: block;
+  }
+  .hide{
+    display: none;
   }
 }
 

@@ -290,4 +290,26 @@ main{
   .sec-2 .wrap .img{
     max-width: 100%;
   }
+  .title{
+    font-size: 34px;
+  }
+  .webew .sec-1{
+    padding-bottom: 289px;
+    .title{
+      width: 100%;
+      font-size: 46px;
+      .dot{
+        width: 8.5px;
+      }
+    }
+  }
+  .sec-2 .wrap .desc-list .inner{
+    margin-bottom: 24px;
+  }
+  .sec-2 .wrap article{
+    margin-bottom: 0;
+  }
+  .sec-2 .wrap .article-title{
+    font-size: 34px;
+  }
 }

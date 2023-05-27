@@ -52,7 +52,7 @@ section {
 }
 
 .sec-coin {
-  padding-top: 134px;
+  padding-top: 289px;
   margin-bottom: 30px;
 
   .wrap-info {
@@ -686,6 +686,9 @@ section {
 }
 
 @media(max-width: 1024px) {
+  .sec-coin{
+    padding-top: 140px;
+  }
   .sec-coin .wrap-info {
     margin: 0 30px;
   }
@@ -714,9 +717,9 @@ section {
     }
   }
 
-  .sec-coin {
-    padding-top: 230px;
-  }
+  // .sec-coin {
+  //   padding-top: 230px;
+  // }
 
   .sec-1 {
     .wrap {
