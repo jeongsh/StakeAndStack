@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Paytone+One&family=Raleway:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 * {
@@ -823,6 +824,9 @@ footer .cat {
   grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
   justify-items: center;
   grid-gap: 61px 55px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 61px;
 }
 .sec-list .thumbnail {
@@ -842,10 +846,20 @@ footer .cat {
 .sec-list .box-text p.date {
   font-weight: 700;
 }
+.sec-list .box-text .news-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 23px;
+  height: 69px; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
 .sec-list .card {
   width: 100%;
   max-width: 390px;
-  height: 450px;
+  height: 382px;
   background: #fff;
   border: 1px solid #C0C4CD;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
