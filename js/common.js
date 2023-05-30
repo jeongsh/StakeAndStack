@@ -92,7 +92,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 const main = document.querySelector('main');
 
 main.insertAdjacentHTML('beforeend', `
-<div class="toast-box">
+<div class="toast-box"></div>
 <footer data-scroll>
   <div class="wrap">
     <div class="top">
