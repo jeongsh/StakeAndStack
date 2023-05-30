@@ -19,6 +19,7 @@ textAdditional.addEventListener('keyup', (e) => {
 window.onload = function () {
 
   const swiper = new Swiper('.swiper-block', {
+    slidesPerView: 1,
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 25,
@@ -33,7 +34,9 @@ window.onload = function () {
   const swiperCoin = new Swiper('.swiper-coin', {
     slidesPerView: 2,
     spaceBetween: 0,
-
+    autoplay: {
+      delay: 5000,
+    },
     navigation: {
       nextEl: ".btn-next",
       prevEl: ".btn-prev",

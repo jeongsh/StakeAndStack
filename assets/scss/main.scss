@@ -222,7 +222,7 @@
     z-index: 1;
     text-transform: uppercase;
     margin-bottom: 70px;
-    transform: translate(10px, 16px);
+    // transform: translate(10px, 16px);
     transition: 0.3s;
 
     .wrap-content {
@@ -269,11 +269,11 @@
     }
   }
 
-  &.active {
-    .box-percent {
-      transform: translate(0);
-    }
-  }
+  // &.active {
+  //   .box-percent {
+  //     transform: translate(0);
+  //   }
+  // }
 }
 
 .sec-network {
@@ -343,7 +343,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%) scale(0);
-        transition: 0.3s;
+        transition: 0.5s;
         z-index: 0;
       }
 
@@ -528,7 +528,8 @@
       position: relative;
       padding-bottom: calc(488px + 60vh);
     }
-    .obj-1{
+
+    .obj-1 {
       position: absolute;
       right: 0;
       bottom: calc(60vh);
@@ -557,7 +558,7 @@
   }
 
   .card {
-    width: 377px;
+    width: 367px;
     color: #fff;
     transition: 0.3s linear;
     position: relative;
@@ -574,13 +575,23 @@
       line-height: 1.4;
     }
 
+    &-img {
+      height: 450px;
+      width: 100%;
+      object-fit: cover;
+      border: 2px solid #000000;
+      box-shadow: 6px 6px 0px #000000;
+      border-radius: 10px;
+    }
+
     &-1 {
       margin: 20px 0 144px;
     }
 
     &-3 {
+
       // margin-bottom: 144px;
-      .coin2{
+      .coin2 {
         position: absolute;
         top: 200px;
         left: -71px;
@@ -589,7 +600,8 @@
 
     &-2 {
       margin-top: 382px;
-      .coin1{
+
+      .coin1 {
         position: absolute;
         top: -18px;
         right: -67px;
@@ -609,7 +621,8 @@
     padding: 100px 90px 90px 90px;
     position: relative;
   }
-  .dog{
+
+  .dog {
     position: absolute;
     top: 82px;
     right: 50px;
@@ -683,10 +696,12 @@
     padding-top: 74px;
     position: relative;
   }
-  .marquee{
+
+  .marquee {
     max-width: none;
     width: auto;
   }
+
   .marquee-1 {
     position: absolute;
     top: 412px;
@@ -706,6 +721,14 @@
     opacity: 0;
     transform: translateY(50%);
     transition: 1s;
+    img {
+      width: 367px;
+      height: 383px;
+      border: 2px solid #000000;
+      box-shadow: 6px 6px 0px #000000;
+      border-radius: 10px;
+      object-fit: cover;
+    }
 
     .list-title {
       font-weight: 700;
@@ -1034,9 +1057,11 @@
 
 .sec-question {
   min-height: 900px;
-  background: url(../images/main/coin-bg3.svg) 50% 0 #000;
+  background: #000;
   padding-top: 142px;
   padding-bottom: 114px;
+  position: relative;
+  overflow: hidden;
 
   .title {
     font-size: 45px;
@@ -1064,6 +1089,43 @@
     margin-left: auto;
     color: $Yellow01;
   }
+
+  .coin {
+    position: absolute;
+    z-index: 0;
+    top: -100%;
+    overflow: hidden;
+
+    &1 {
+      left: 0;
+      top: 635px;
+    }
+
+    &2 {
+      left: 117px;
+      top: 119px;
+    }
+
+    &3 {
+      top: 316px;
+      left: 227px;
+    }
+
+    &4 {
+      top: 634px;
+      right: 488px;
+    }
+
+    &5 {
+      top: -40px;
+      right: 187px;
+    }
+
+    &6 {
+      top: 257px;
+      right: 0;
+    }
+  }
 }
 
 .sec-news {
@@ -1071,7 +1133,8 @@
   background: $Yellow01;
   position: relative;
   z-index: 0;
-  .dogs{
+
+  .dogs {
     position: absolute;
     top: 126px;
     right: 10%;
@@ -1334,9 +1397,11 @@
       right: 30px;
       width: 240px;
     }
-    .list{
+
+    .list {
       margin-top: 60px !important;
     }
+
     .title {
       font-size: 36px;
       line-height: 1.5;
@@ -1398,9 +1463,10 @@
   }
 
   .sec-news {
-    .dogs{
+    .dogs {
       display: none;
     }
+
     .title {
       font-size: 36px;
     }
@@ -1459,7 +1525,7 @@
 
   .sec-blockchains-mo,
   .sec-membership-mo {
-    padding: 110px 0 266px 30px;
+    padding: 110px 16px 266px 16px;
     background: url(../images/main/how-bg.jpg) center center / cover no-repeat;
     position: relative;
     color: #fff;
@@ -1486,41 +1552,32 @@
       }
     }
 
-    .card {
-      width: 325px;
-      border-radius: 10px;
-      background: #fff;
-      border: 3px solid;
-      margin-bottom: 20px;
-
-      .head {
-        height: 100px;
-        padding: 20px 0 0 25px;
-        font-size: 25px;
+    .card{
+      &-img {
+        height: 240px;
+        width: calc(100% - 12px);
+        object-fit: cover;
+        border: 2px solid #000000;
+        box-shadow: 6px 6px 0px #000000;
+        border-radius: 10px;
+        margin-bottom: 12px;
+      }
+      &-title {
+        width: calc(100% - 24px);
         font-weight: 700;
-        color: #000;
-        border-bottom: 3px solid $Natural30;
-        line-height: 29px;
+        font-size: 20px;
+        display: block;
+        padding-left: 12px;
+        margin-bottom: 8px;
       }
-
-      .content {
-        padding: 25px 20px;
-        height: 200px;
-        font-size: 18px;
+  
+      &-des {
+        width: calc(100% - 24px);
         font-weight: 400;
-        word-break: keep-all;
-        letter-spacing: -0.2px;
-        color: #000;
-      }
-
-      &:nth-child(odd) {
-        color: $primary;
-        box-shadow: 8px 8px 0px 0px #3D73DD;
-      }
-
-      &:nth-child(even) {
-        color: $secondary;
-        box-shadow: 8px 8px 0px 0px #00C585;
+        font-size: 14px;
+        line-height: 1.4;
+        display: block;
+        padding-left: 12px;
       }
     }
   }
@@ -1578,8 +1635,8 @@
     }
 
     .card {
-      height: 270px;
-      overflow: hidden;
+      // height: 270px;
+      // overflow: hidden;
 
       .head {
         padding: 0;
@@ -1722,6 +1779,7 @@
       display: none;
     }
   }
+
   .highlight.mo {
     display: inline-block !important;
   }
@@ -1770,13 +1828,18 @@
       }
     }
   }
-
+  .sec-network{
+    height: auto;
+    padding: 40px 16px;
+  }
   .sec-coin {
     height: auto;
     padding: 40px 0;
-    .highlights .highlight::after{
+
+    .highlights .highlight::after {
       display: none;
     }
+
     .title {
       br {
         display: none;
@@ -1829,9 +1892,11 @@
 
   .sec-contact {
     padding: 50px 16px;
-    .left .wrap-input{
+
+    .left .wrap-input {
       padding: 20px;
     }
+
     .wrap {
       width: 100%;
     }
@@ -1869,6 +1934,7 @@
   .sec-membership-mo {
     padding: 30px 15px 70px 15px;
   }
+
   .sec-coin .monster {
     display: none;
   }
