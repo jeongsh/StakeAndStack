@@ -287,6 +287,53 @@
   }
 }
 
+.toast-box{
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  z-index: 9998;
+}
+.toast{
+  display: flex;
+  align-items: center;
+  height: 55px;
+  padding: 0 34px;
+  max-width: 504px;
+  width: calc(100vw - 80px);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #c9c9c978;
+  line-height: 1;
+  margin-bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: 0.3s;
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .icon{
+    width: 24px;
+    margin-right: 14px;
+  }
+  &-success{
+    color: #68CB30;
+  }
+  &-warning{
+    color: #E9AA56;
+  }
+  &-error{
+    color: #F7737A;
+  }
+  &-info{
+    color: #909496;
+  }
+}
+
 @media(max-width: 1024px) {
   .mo {
     display: block !important;

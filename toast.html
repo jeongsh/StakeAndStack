@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 따로 css 링크 필요없습니다 공통으로 들어가 있어요 -->
+  <link rel="stylesheet" href="./assets/css/ex.css">
+
+  <title>Stake and Stack</title>
+  <style>
+    main{
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .btn-toast{
+      width: 200px;
+      height: 60px;
+      border: 2px solid;
+    }
+    .header, footer{
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <main>
+    <!-- btn-toast 클래스 주고 data-toast-type="success" 등으로 토스트 타입 지정 하세요 -->
+    <button class="btn-toast" data-toast-type="success">토스트 버튼 성공</button>
+    <button class="btn-toast" data-toast-type="warning">토스트 버튼 경고</button>
+    <button class="btn-toast" data-toast-type="error">토스트 버튼 에러</button>
+    <button class="btn-toast" data-toast-type="info">토스트 버튼 인포</button>
+  </main>
+  <script src="./js/common.js"></script>
+</body>
+</html>

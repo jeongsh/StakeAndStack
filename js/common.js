@@ -90,7 +90,9 @@ document.body.insertAdjacentHTML('afterbegin', `
 `)
 //body 의 마지막 자식으로 header 추가
 const main = document.querySelector('main');
+
 main.insertAdjacentHTML('beforeend', `
+<div class="toast-box">
 <footer data-scroll>
   <div class="wrap">
     <div class="top">
@@ -278,3 +280,48 @@ btnTab.forEach(e => {
     tab.classList.add('active')
   })
 })
+
+//토스트
+
+const btnToast = document.querySelectorAll('.btn-toast');
+const toastBox = document.querySelector('.toast-box');
+
+btnToast.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const toastType = e.target.dataset.toastType;
+    createToast(toastType)
+  });
+});
+
+//create toast
+const createToast = (type) => {
+  const toast = document.createElement('div');
+  let toastText = '';
+  if (type === 'success') {
+    toastText = '성공했습니다.';
+  } else if (type === 'warning') {
+    toastText = '경고했습니다.';
+  } else if (type === 'error') {
+    toastText = '에러났습니다.';
+  } else if (type === 'info') {
+    toastText = '알려드립니다.';
+  }
+
+  toast.classList.add('toast');
+  toast.classList.add(`toast-${type}`);
+  toast.innerHTML = `
+        <img src="./assets/images/icon/toast-${type}.svg" alt="icon" class="icon">
+        <span class="toast-text">${toastText}</span>
+      `;
+  toastBox.appendChild(toast);
+  setTimeout(() => {
+    toast.classList.add('active');
+  }, 100);
+  setTimeout(() => {
+    // 토스트에 remove 클래스를 추가하고 삭제
+    toast.classList.remove('active');
+    setTimeout(() => {
+      toast.remove();
+    }, 1000);
+  }, 2000);
+};
