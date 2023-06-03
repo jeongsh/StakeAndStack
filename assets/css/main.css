@@ -1181,6 +1181,7 @@ footer .cat {
 }
 .sec-network .swiper-slide.swiper-slide-active .box-img::after {
   transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s 0.2s;
 }
 .sec-network .swiper-slide.swiper-slide-active .box-img img {
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.2));
@@ -1353,7 +1354,8 @@ footer .cat {
 .sec-slide .card-title {
   font-weight: 700;
   font-size: 26px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  line-height: 1.2;
 }
 .sec-slide .card-des {
   font-weight: 400;
@@ -1368,6 +1370,7 @@ footer .cat {
   border: 2px solid #000000;
   box-shadow: 6px 6px 0px #000000;
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 .sec-slide .card-1 {
   margin: 20px 0 144px;
@@ -1497,6 +1500,7 @@ footer .cat {
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 25px;
 }
 .sec-membership .list .list-title {
   font-weight: 700;

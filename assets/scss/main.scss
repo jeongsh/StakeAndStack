@@ -368,6 +368,7 @@
 
         &::after {
           transform: translate(-50%, -50%) scale(1);
+          transition: 0.5s 0.2s;
         }
 
         img {
@@ -566,7 +567,8 @@
     &-title {
       font-weight: 700;
       font-size: 26px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
+      line-height: 1.2;
     }
 
     &-des {
@@ -582,6 +584,7 @@
       border: 2px solid #000000;
       box-shadow: 6px 6px 0px #000000;
       border-radius: 10px;
+      margin-bottom: 25px;
     }
 
     &-1 {
@@ -728,6 +731,7 @@
       box-shadow: 6px 6px 0px #000000;
       border-radius: 10px;
       object-fit: cover;
+      margin-bottom: 25px;
     }
 
     .list-title {
