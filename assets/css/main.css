@@ -555,6 +555,9 @@ header.pc .btn-language.active .language .icon {
 header.pc .btn-yellow {
   width: 104px;
 }
+header.pc .btn-yellow:hover {
+  color: #000;
+}
 header.pc.hide {
   transform: translate(-50%, calc(-100% - 30px));
 }

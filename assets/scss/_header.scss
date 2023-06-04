@@ -149,6 +149,9 @@ header.pc {
   }
   .btn-yellow{
     width: 104px;
+    &:hover{
+      color: #000;
+    }
   }
 
   &.hide{
