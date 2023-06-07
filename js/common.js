@@ -21,10 +21,10 @@ document.body.insertAdjacentHTML('afterbegin', `
           <a href="./kava.html" class="link small">+KAVA</a>
           <a href="./akt.html" class="link small">+AKT</a>
         </li>
-        <li class="link-item"><a href="" class="link">Products</a></li>
-        <li class="link-item"><a href="" class="link">Membership</a></li>
+        <!-- <li class="link-item"><a href="" class="link">Products</a></li>
+        <li class="link-item"><a href="" class="link">Membership</a></li> -->
         <li class="link-item"><a href="./news-list.html" class="link">News&Blog</a></li>
-        <li class="link-item"><a href="./login" class="link thin">LOGIN</a></li>
+        <!-- <li class="link-item"><a href="./login" class="link thin">LOGIN</a></li> -->
         <li class="link-item"><a href="./dashboard.html" class="link thin yellow">DASHBOARD</a></li>
         <li class="link-item">
           <a href="" class="link thin">
@@ -40,7 +40,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 
 <header class="pc header">
-  <a href="/"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
+  <a href="/" class="link-home"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       About
@@ -50,23 +50,23 @@ document.body.insertAdjacentHTML('afterbegin', `
       </div>
     </button>
     <button class="link btn-about">
-      NetWorks
+      Networks
       <div class="box-sublink">
         <a href="./tezos.html" class="link">+Tezos</a>
         <a href="./kava.html" class="link">+KAVA</a>
         <a href="./akt.html" class="link">+AKT</a>
       </div>
     </button>
-    <a href="" class="link">Products</a>
-    <a href="" class="link">Membership</a>
+    <!-- <a href="" class="link">Products</a>
+    <a href="" class="link">Membership</a> -->
     <a href="./news-list.html" class="link">News&Blog</a>
   </nav>
 
   <!-- TODO: 로그인 전, 후 분기처리 -->
   <div class="box-btn">
     <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
-    <a href="" class="btn after-login">LOGOUT</a>
-    <a href="" class="btn after-login">MYPAGE</a>
+    <!-- <a href="" class="btn after-login">LOGOUT</a>
+    <a href="" class="btn after-login">MYPAGE</a> -->
     <button class="btn btn-language">
       <div class="language">
         <img src="./assets/images/icon/flag-usd.svg" alt="">

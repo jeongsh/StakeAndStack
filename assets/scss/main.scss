@@ -1323,6 +1323,16 @@
   }
 }
 
+.box-move{
+  position: fixed;
+  right: 42px;
+  bottom: 36px;
+  z-index: 1001;
+  .btn-top{
+    margin-bottom: 13px;
+  }
+}
+
 @media (max-width: 1440px) {
   .sec-video {
     padding: 30px;

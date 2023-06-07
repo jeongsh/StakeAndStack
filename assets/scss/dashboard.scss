@@ -1,6 +1,7 @@
 @import "reset";
 @import "fonts";
 @import "variables";
+@import "mixins";
 
 .wrapper {
   height: 100vh;
@@ -305,6 +306,21 @@
     color: #fff;
     background: #FF5454;
     border-radius: 4px;
+  }
+
+  .btn-black{
+    width: 145px;
+    height: 32px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
   }
 
   .content {
@@ -706,6 +722,12 @@
       height: 40px;
       padding: 0;
     }
+    td.status{
+      width: 44px;
+      height: 40px;
+      padding: 0;
+      background: url(../images/dashboard/wait.svg) no-repeat center;
+    }
 
     tbody {
       background: #fff;
@@ -717,7 +739,18 @@
         }
       }
     }
-
+    tr.complete{
+      background: #E4EEFF;
+      .status{
+        background: url(../images/dashboard/complete.svg) no-repeat center;
+      }
+    }
+    tr.processing{
+      background: #FFF2EB;
+      .status{
+        background: url(../images/dashboard/processing.svg) no-repeat center;
+      }
+    }
     .btn-delete {
       padding-left: 12px;
     }
@@ -791,6 +824,60 @@
   }
 }
 
+.alert{
+  padding: 24px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #090909;
+  width: 374px;
+  .btn-close-alert{
+    margin-left: auto;
+  }
+  .alert-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 12px;
+  }
+  .alert-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .btn-cancle{
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    @include buttonHover(#fff, #090909);
+    width: 84px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-submit{
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    @include buttonHover(#090909, #fff);
+    width: 84px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+}
 @media screen and (max-width: 1440px){
   .assets{
     .wrap-total{

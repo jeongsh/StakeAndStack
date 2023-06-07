@@ -21,7 +21,6 @@ header.pc {
     justify-content: center;
     flex: 1;
     gap: 25px;
-
     .link {
       display: flex;
       height: 40px;
@@ -45,6 +44,10 @@ header.pc {
     display: flex;
     gap: 10px;
     position: relative;
+  }
+
+  .link-home{
+    width: 203px;
   }
 
   .btn {
@@ -147,6 +150,10 @@ header.pc {
       }
     }
   }
+  .red{
+    
+  }
+
   .btn-yellow{
     width: 104px;
     &:hover{

@@ -246,7 +246,7 @@
   &-container {
     position: relative;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     background: #fff;
     border: 3px solid #000000;
     box-shadow: 15px 15px 0px #000000;
@@ -256,15 +256,16 @@
   }
 
   &-title {
-    font-size: 40px;
-    line-height: 56px;
-    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 10px;
+    word-break: break-all;
   }
 
   &-desc {
     font-size: 20px;
     line-height: 23px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     word-break: break-all;
   }
 
@@ -277,13 +278,24 @@
   .btn-yellow{
     height: 48px;
   }
+  .btn-cancle{
+    @include buttonHover(#fff, #000);
+  }
   .btn-close-pop{
     position: absolute;
     right: 24px;
     top: 21px;
   }
   .pop-icon{
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+  }
+  &.no-title{
+    .btn-submit{
+      width: 340px;
+    }
+    .box-btn{
+      padding: 0;
+    }
   }
 }
 

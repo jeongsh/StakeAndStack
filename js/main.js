@@ -99,3 +99,21 @@ window.onload = function () {
     });
   }
 }
+
+//클릭시 맨위로
+const btnTop = document.querySelector('.btn-top');
+btnTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
+
+//클릭시 맨아래로
+const btnBottom = document.querySelector('.btn-bottom');
+btnBottom.addEventListener('click', () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+})

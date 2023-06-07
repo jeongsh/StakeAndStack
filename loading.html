@@ -19,6 +19,20 @@
       </div>
     </section>
   </main>
+  <script>
+    //LOADING... 에서 ... 부분을 1초마다 . 하나씩 추가하고 3개가 되면 .을 지우고 다시 반복
+    const title = document.querySelector('.title');
+    let count = 0;
+    let timer = setInterval(() => {
+      count++;
+      if (count > 3) {
+        count = 0;
+        title.innerHTML = 'LOADING';
+      } else {
+        title.innerHTML += '.';
+      }
+    }, 500);
+  </script>
 </body>
 
 </html>
