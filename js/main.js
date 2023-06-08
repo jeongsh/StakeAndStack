@@ -23,12 +23,22 @@ window.onload = function () {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 25,
+    breakpoints: {
+      500: {
+        slidesPerView: '2',
+      }
+    }
   })
 
   const swiper2 = new Swiper('.swiper-membership', {
     direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 25,
+    breakpoints: {
+      500: {
+        slidesPerView: '2',
+      }
+    }
   })
 
   const swiperCoin = new Swiper('.swiper-coin', {
@@ -64,10 +74,8 @@ window.onload = function () {
   //secMember의 절대위치
   const secMemberTop = secMember.getBoundingClientRect().top;
   let lastScroll2 = 0;
-  const lists = document.querySelectorAll('.list');
-  const background = document.querySelector('.background');
-  const secSlide = document.querySelector('.sec-slide.pc');
-  const isMobile = window.innerWidth < 1281;
+
+  const isMobile = window.innerWidth < 768;
 
   if (!isMobile) {
     const scroll = new LocomotiveScroll({
@@ -75,6 +83,9 @@ window.onload = function () {
       smooth: true,
       paused: true,
       multiplier: 0.8,
+      tablet: {
+        smooth: true
+      },
       onUpdate: () => {
         window.dispatchEvent(new Event('resize'));
       },
@@ -88,7 +99,11 @@ window.onload = function () {
       } else {
         header.classList.remove('hide')
       }
-      articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
+      if(window.innerWidth > 1280){
+        articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
+      }
+      // videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
+      // videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
 
       //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
       if (memberScrollTop < window.innerHeight) {
@@ -97,26 +112,6 @@ window.onload = function () {
       }
       lastScroll2 = currentScroll;
     });
-  }
-  else{
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
-      const memberScrollX = secMemberTop - currentScroll;
-      const memberScrollTop = secMember.getBoundingClientRect().top;
-      if (memberScrollTop < window.innerHeight) {
-        marquee1.style.left = `${527 + memberScrollX}px`
-        marquee2.style.right = `${582 + memberScrollX}px`
-      }
-      //화면 아래에서 30% 왔을 때 lists에 is-inview 추가
-      lists.forEach((list) => {
-        const listTop = list.getBoundingClientRect().top;
-        if (listTop < window.innerHeight * 0.7) {
-          list.classList.add('is-inview')
-        }
-      })
-
-      // background.style.transform = `translate3d(0, ${currentScroll}px, 0)`
-    })
   }
 }
 

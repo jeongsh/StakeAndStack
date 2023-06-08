@@ -1328,7 +1328,7 @@
 .box-move{
   position: fixed;
   right: 42px;
-  bottom: 36px;
+  bottom: 90px;
   z-index: 1001;
   .btn-top{
     margin-bottom: 13px;
@@ -1515,6 +1515,16 @@
     .des {
       font-size: 18px;
       margin-bottom: 80px;
+    }
+  }
+}
+
+@media(max-width: 1281px) and (min-width: 1025px) {
+  .sec-slide{
+    .box-title{
+      .title{
+        font-size: 34px;
+      }
     }
   }
 }
