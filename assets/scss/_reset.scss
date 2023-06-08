@@ -23,7 +23,8 @@ button, input, select {
     border-width: inherit;
   }
 }
-html {box-sizing:border-box;}
+html {box-sizing:border-box; overflow-x: hidden;}
+body{overflow-x: hidden;}
 *, :after, :before {box-sizing:inherit}
 img, video {height:auto;max-width:100%}
 iframe {border:0}
