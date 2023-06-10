@@ -892,7 +892,7 @@ footer .cat {
     padding-right: 0;
   }
 }
-.sec-loading {
+.loading {
   background: #00C585;
   width: 100vw;
   height: 100vh;
@@ -900,12 +900,16 @@ footer .cat {
   align-items: center;
   justify-content: center;
 }
-.sec-loading img {
+.loading img {
   width: 200px;
 }
-.sec-loading .title {
+.loading .title {
   font-size: 25px;
   text-align: center;
+}
+.loading.loading-pop {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .sec-construction {

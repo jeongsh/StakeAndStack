@@ -1,6 +1,6 @@
 @import "common";
 
-.sec-loading{
+.loading{
   background: $secondary;
   width: 100vw;
   height: 100vh;
@@ -13,6 +13,10 @@
   .title{
     font-size: 25px;
     text-align: center;
+  }
+  &.loading-pop{
+    color: #fff;
+    background: rgba(0,0,0,0.7);
   }
 }
 
