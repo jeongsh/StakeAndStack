@@ -11,13 +11,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 ul {list-style:none; padding-left: 0}
-a{color: #000; text-decoration: none;}
+a{color: #000; text-decoration: none; color: inherit;}
 button, input, select {
   margin:0;
   padding: 0;
   border: none;
   background: none;
   display: block;
+  color: inherit;
   &:focus-visible{
     outline: none;
     border-width: inherit;

@@ -33,6 +33,7 @@ ul {
 a {
   color: #000;
   text-decoration: none;
+  color: inherit;
 }
 
 button, input, select {
@@ -41,6 +42,7 @@ button, input, select {
   border: none;
   background: none;
   display: block;
+  color: inherit;
 }
 button:focus-visible, input:focus-visible, select:focus-visible {
   outline: none;
