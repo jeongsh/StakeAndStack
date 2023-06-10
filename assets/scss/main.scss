@@ -617,6 +617,26 @@
       margin-top: 144px;
     }
   }
+  &.tablet{
+    .background{
+      height: 100%;
+    }
+    .right-line{
+      padding-top: 126px;
+    }
+    .card{
+      margin: 20px 0 144px !important;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(50%);
+      transition: 1s;
+      &.is-inview{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 .sec-membership {
@@ -1856,7 +1876,7 @@
   }
   .sec-network{
     height: auto;
-    padding: 40px 16px;
+    padding: 40px 0;
   }
   .sec-coin {
     height: auto;

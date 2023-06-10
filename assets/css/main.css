@@ -1422,6 +1422,24 @@ footer .cat {
 .sec-slide .card-4 {
   margin-top: 144px;
 }
+.sec-slide.tablet .background {
+  height: 100%;
+}
+.sec-slide.tablet .right-line {
+  padding-top: 126px;
+}
+.sec-slide.tablet .card {
+  margin: 20px 0 144px !important;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50%);
+  transition: 1s;
+}
+.sec-slide.tablet .card.is-inview {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 .sec-membership {
   background: #FEED01;
@@ -2474,7 +2492,7 @@ footer .cat {
   }
   .sec-network {
     height: auto;
-    padding: 40px 16px;
+    padding: 40px 0;
   }
   .sec-coin {
     height: auto;

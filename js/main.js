@@ -65,8 +65,7 @@ window.onload = function () {
 
   //locomotive scroll
   const articleVideo = document.querySelector('.article-video');
-  const videoImgBox = articleVideo.querySelector('.box-img');
-  const videoButtonBox = articleVideo.querySelector('.box-btn');
+  const secSlide = document.querySelector('.sec-slide');
   const secMember = document.querySelector('.sec-membership.pc');
   //secMember의 marquee-1
   const marquee1 = document.querySelector('.marquee-1');
@@ -77,6 +76,18 @@ window.onload = function () {
 
   const isMobile = window.innerWidth < 768;
 
+  const isTablet = (() => {
+    const { userAgent, maxTouchPoints } = window.navigator;
+  
+    const isMac = /Macintosh/i.test(userAgent);
+  
+    if (isMac && maxTouchPoints > 0) return true;
+  
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi|mobi/i.test(
+      userAgent
+    );
+  })();
+
   if (!isMobile) {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
@@ -84,7 +95,7 @@ window.onload = function () {
       paused: true,
       multiplier: 0.8,
       tablet: {
-        smooth: true
+        smooth: false
       },
       onUpdate: () => {
         window.dispatchEvent(new Event('resize'));
@@ -102,8 +113,6 @@ window.onload = function () {
       if(window.innerWidth > 1280){
         articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
       }
-      // videoImgBox.style.transform = `translate3d(0, ${-currentScroll * 0.6}px, 0)`
-      // videoButtonBox.style.transform = `translate3d(0, ${-currentScroll* 0.65}px, 0)`
 
       //현재화면이 secMember - innerHeight*0.3 안에 있으면 marquee1이 transformX memberScrollX만큼 이동
       if (memberScrollTop < window.innerHeight) {
@@ -112,6 +121,9 @@ window.onload = function () {
       }
       lastScroll2 = currentScroll;
     });
+    if(isTablet){
+      secSlide.classList.add('tablet')
+    }
   }
 }
 
