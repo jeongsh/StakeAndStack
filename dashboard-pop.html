@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/dashboard.css">
+
+  <title>Stake and Stack</title>
+</head>
+
+<body class="body">
+  <h1 style="text-align: center;">팝업 한군데에 몰아넣으려고 만든 임시 버튼입니다 눌러서 확인 부탁드려요</h1>
+  <!-- 팝업 한군데에 몰아넣으려고 만든 임시 버튼 -->
+  <div class="box-btn-pop" style="margin: 30px auto; display: flex; justify-content: center; width: 100%; gap:16px">
+    <button class="btn-pop btn-gray" data-target="pop-network">
+      Choose Network
+    </button>
+    <button class="btn-pop btn-gray" data-target="pop-connect">
+      Connect your wallet
+    </button>
+    <button class="btn-pop btn-gray" data-target="pop-method">
+      Choose your method
+    </button>
+    <button class="btn-pop btn-gray" data-target="pop-add">
+      Add your wallet
+    </button>
+  </div>
+
+  <!-- 팝업 -->
+  <!-- Choose Network -->
+  <div class="pop pop-network" data-pop-name="pop-network">
+    <div class="pop-header">
+      <h4 class="pop-title">Choose Network</h4>
+    </div>
+    <div class="pop-body">
+      <div class="pop-list">
+        <div class="pop-item">
+          <input type="radio" name="Network" id="tezos" checked>
+          <label for="tezos">
+            <div class="left">
+              <img src="./assets/images/dashboard/logo-sm-tezos.svg" alt="">
+              Tezos (XTZ)
+            </div>
+            <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="Network" id="kava">
+          <label for="kava">
+            <div class="left">
+              <img src="./assets/images/dashboard/logo-sm-kava.svg" alt="">
+              Kava (KAVA)
+            </div>
+            <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="Network" id="akt">
+          <label for="akt">
+            <div class="left">
+              <img src="./assets/images/dashboard/logo-sm-akt.svg" alt="">
+              Akash Network (AKT)
+            </div>
+            <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="pop-footer">
+      <button class="btn btn-cancle">CANCLE</button>
+      <button class="btn btn-primary">CONFIRM</button>
+    </div>
+  </div>
+  <!-- Choose Network 끝-->
+
+  <!-- Connect your wallet -->
+  <div class="pop pop-connect" data-pop-name="pop-connect">
+    <div class="pop-header">
+      <h4 class="pop-title">Connect your wallet</h4>
+    </div>
+    <div class="pop-body">
+      <div class="pop-list">
+        <div class="pop-item">
+          <input type="radio" name="connect" id="metaMask" checked>
+          <label for="metaMask">
+            <div class="left">
+              <img src="" alt="">
+              MetaMask
+            </div>
+            <div class="right">
+              <div class="gray">POPULAR</div>
+              <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+            </div>
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="connect" id="walletConnect" checked>
+          <label for="walletConnect">
+            <div class="left">
+              <img src="" alt="">
+              WalletConnect
+            </div>
+            <div class="right">
+              <div class="gray">POPULAR</div>
+              <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+            </div>
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="connect" id="ledger" checked>
+          <label for="ledger">
+            <div class="left">
+              <img src="" alt="">
+              Ledger
+            </div>
+            <div class="right">
+              <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+            </div>
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="connect" id="phantom" checked>
+          <label for="phantom">
+            <div class="left">
+              <img src="" alt="">
+              Phantom
+            </div>
+            <div class="right">
+              <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+            </div>
+          </label>
+        </div>
+        <div class="pop-item">
+          <input type="radio" name="connect" id="etc" checked>
+          <label for="etc">
+            <div class="left">
+              <img src="" alt="">
+              etc
+            </div>
+            <div class="right">
+              <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="pop-footer">
+      <button class="btn btn-cancle">CANCLE</button>
+      <button class="btn btn-primary">CONFIRM</button>
+    </div>
+  </div>
+  <!-- Connect your wallet 끝-->
+
+  <!-- Choose your method -->
+  <div class="pop pop-method" data-pop-name="pop-method">
+    <div class="pop-header">
+      <h4 class="pop-title">Choose your method</h4>
+    </div>
+    <div class="pop-body">
+      <div class="box-radio">
+        <input type="radio" name="method" id="method1" checked>
+        <label for="method1">
+          <div class="circle"></div>
+          Connect your Wallet
+        </label>
+        <input type="radio" name="method" id="method2">
+        <label for="method2">
+          <div class="circle"></div>
+          Add your Wallet
+        </label>
+      </div>
+    </div>
+    <div class="pop-footer">
+      <div class="pop-footer">
+        <button class="btn btn-cancle">CANCLE</button>
+        <button class="btn btn-primary">CONFIRM</button>
+      </div>
+    </div>
+  </div>
+  <!-- Choose your method -->
+
+  <!-- Add your Wallet -->
+  <div class="pop pop-add" data-pop-name="pop-add">
+    <div class="pop-header">
+      <h4 class="pop-title">Add your Wallet</h4>
+    </div>
+    <div class="pop-body">
+      <div class="box-input">
+        <p class="gray">Wallet Name</p>
+        <input type="text" class="input-text" placeholder="Enter Wallet Name *">
+      </div>
+      <div class="box-input">
+        <p class="gray">Wallet Address</p>
+        <input type="text" class="input-text" placeholder="Enter Wallet Address *">
+      </div>
+    </div>
+    <div class="pop-footer">
+      <div class="pop-footer">
+        <button class="btn btn-cancle">CANCLE</button>
+        <button class="btn btn-primary">CONFIRM</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    const btnPop = document.querySelectorAll('.btn-pop');
+    const pop = document.querySelectorAll('.pop');
+
+    btnPop.forEach((btn, i) => {
+      btn.addEventListener('click', () => {
+        // el의 data-target을 가져온다.
+        const popName = btn.dataset.target;
+        pop.forEach((el) => {
+          el.classList.remove('active');
+          if (el.dataset.popName === popName) {
+            el.classList.add('active');
+          }
+        });
+        const cancle = pop[i].querySelector('.btn-cancle');
+        cancle.addEventListener('click', () => {
+          pop[i].classList.remove('active');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
