@@ -637,6 +637,28 @@ section {
   }
 }
 
+@media (min-width: 1921px){
+  .body{
+    &.tezos {
+      &::after {
+        background: #fff url(../images/networks/tezos-bg-big.jpg) 50% 0 no-repeat;
+      }
+    }
+
+    &.kava {
+      &::after {
+        background: #fff url(../images/networks/kava-bg-big.jpg) 50% 0 no-repeat;
+      }
+    }
+
+    &.akt {
+      &::after {
+        background: #fff url(../images/networks/akt-bg-big.jpg) 50% 0 no-repeat;
+      }
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .wrap {
     padding: 0;
