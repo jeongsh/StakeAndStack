@@ -31,6 +31,11 @@
       background: #fff url(../images/networks/akt-bg.jpg) 50% 0 no-repeat;
     }
   }
+  &.sol {
+    &::after {
+      background: #fff url(../images/networks/sol-bg.jpg) 50% 0 no-repeat;
+    }
+  }
 }
 
 .wrap {
@@ -92,10 +97,13 @@ section {
 
     .address {
       font-weight: 700;
-      font-size: 26px;
+      font-size: 22px;
       line-height: 1.2;
       margin-right: 15px;
       color: #090909;
+    }
+    .btn-copy{
+      min-width: 27px;
     }
 
     .explorer {
@@ -936,5 +944,8 @@ section {
         }
       }
     }
+  }
+  .sec-coin .wrap-info .head .coin-title{
+    font-size: 24px;
   }
 }

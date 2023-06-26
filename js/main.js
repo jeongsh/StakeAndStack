@@ -2,7 +2,9 @@ const body = document.querySelector('.body');
 const btnBanner = document.querySelector('#btnBanner');
 const banner = document.querySelector('.banner');
 const textAdditional = document.querySelector('#textAdditional');
-
+const btnTop = document.querySelector('.btn-top');
+const btnBottom = document.querySelector('.btn-bottom');
+const isMobile = window.innerWidth < 768;
 
 btnBanner.addEventListener('click', () => {
   banner.classList.add('close')
@@ -62,7 +64,6 @@ window.onload = function () {
     }
   })
 
-
   //locomotive scroll
   const articleVideo = document.querySelector('.article-video');
   const secSlide = document.querySelector('.sec-slide');
@@ -74,15 +75,16 @@ window.onload = function () {
   const secMemberTop = secMember.getBoundingClientRect().top;
   let lastScroll2 = 0;
 
-  const isMobile = window.innerWidth < 768;
-
   const isTablet = (() => {
-    const { userAgent, maxTouchPoints } = window.navigator;
-  
+    const {
+      userAgent,
+      maxTouchPoints
+    } = window.navigator;
+
     const isMac = /Macintosh/i.test(userAgent);
-  
+
     if (isMac && maxTouchPoints > 0) return true;
-  
+
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobi|mobi/i.test(
       userAgent
     );
@@ -101,6 +103,13 @@ window.onload = function () {
         window.dispatchEvent(new Event('resize'));
       },
     });
+    //btnTop, btnBottom
+    btnTop.addEventListener('click', () => {
+      scroll.scrollTo(0);
+    })
+    btnBottom.addEventListener('click', () => {
+      scroll.scrollTo(document.body.scrollHeight);
+    })
     scroll.on('scroll', (instance) => {
       const currentScroll = instance.scroll.y;
       const memberScrollX = secMemberTop - currentScroll;
@@ -110,7 +119,7 @@ window.onload = function () {
       } else {
         header.classList.remove('hide')
       }
-      if(window.innerWidth > 1280){
+      if (window.innerWidth > 1280) {
         articleVideo.style.transform = `translate3d(0, ${currentScroll}px, 0)`
       }
 
@@ -121,26 +130,27 @@ window.onload = function () {
       }
       lastScroll2 = currentScroll;
     });
-    if(isTablet){
+    if (isTablet) {
       secSlide.classList.add('tablet')
     }
   }
 }
 
-//클릭시 맨위로
-const btnTop = document.querySelector('.btn-top');
-btnTop.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-})
+if (isMobile) {
+  //클릭시 맨위로
+  btnTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
 
-//클릭시 맨아래로
-const btnBottom = document.querySelector('.btn-bottom');
-btnBottom.addEventListener('click', () => {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: 'smooth'
-  });
-})
+  //클릭시 맨아래로
+
+  btnBottom.addEventListener('click', () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  })
+}

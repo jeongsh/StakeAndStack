@@ -18,12 +18,20 @@
   justify-content: space-between;
   height: 80px;
   padding: 0 50px;
-  gap: 100px;
+  gap: 180px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 20;
+
+  .d-flex {
+    gap: 20px;
+
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
+  }
 
   .left {
     display: flex;
@@ -38,25 +46,43 @@
     flex: 1;
     color: $Natural40;
     font-size: 12px;
+  }
 
-    .content {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
+  .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 
-    p {
-      font-weight: 600;
-      text-transform: uppercase;
-    }
+  p {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $Natural40;
+    font-size: 12px;
+  }
 
-    .white {
-      color: #fff;
-    }
+  .white {
+    color: #fff;
   }
 
   &.close {
     display: none;
+  }
+
+  .pill-yellow {
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid #000;
+    background: var(--primary, #FEED01);
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -113,11 +139,13 @@
   }
 
   .video-title {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    width: 670px;
   }
 
   .video-subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    width: 484px;
   }
 
   // .des {
@@ -246,9 +274,10 @@
 
     .number {
       font-size: 60px;
-      letter-spacing: 0.2em;
       line-height: 50px;
       font-weight: 400;
+      width: 165px;
+      text-align: right;
     }
 
     .text {
@@ -264,6 +293,12 @@
     line-height: 30px;
 
     .highlight {
+      .soon {
+        position: absolute;
+        right: -156px;
+        bottom: 0;
+      }
+
       &::after {
         background: #D5E823;
         left: 22px;
@@ -356,6 +391,10 @@
 
       &.coin-3::after {
         background: url(../images/main/network-coin-3.png) 50% 50% / cover;
+      }
+
+      &.coin-4::after {
+        background: url(../images/main/network-coin-4.png) 50% 50% / cover;
       }
 
       img {
@@ -578,6 +617,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.4;
+
+      .soon {
+        margin-top: 27px;
+        color: #000;
+      }
     }
 
     &-img {
@@ -618,20 +662,24 @@
       margin-top: 144px;
     }
   }
-  &.tablet{
-    .background{
+
+  &.tablet {
+    .background {
       height: 100%;
     }
-    .right-line{
+
+    .right-line {
       padding-top: 126px;
     }
-    .card{
+
+    .card {
       margin: 20px 0 144px !important;
       opacity: 0;
       visibility: hidden;
       transform: translateY(50%);
       transition: 1s;
-      &.is-inview{
+
+      &.is-inview {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
@@ -741,12 +789,12 @@
   }
 
   .list {
-    text-align: center;
     min-width: 377px;
     width: 377px;
     opacity: 0;
     transform: translateY(50%);
     transition: 1s;
+
     img {
       width: 367px;
       height: 383px;
@@ -1346,12 +1394,13 @@
   }
 }
 
-.box-move{
+.box-move {
   position: fixed;
   right: 42px;
   bottom: 90px;
   z-index: 1001;
-  .btn-top{
+
+  .btn-top {
     margin-bottom: 13px;
   }
 }
@@ -1541,9 +1590,9 @@
 }
 
 @media(max-width: 1281px) and (min-width: 1025px) {
-  .sec-slide{
-    .box-title{
-      .title{
+  .sec-slide {
+    .box-title {
+      .title {
         font-size: 34px;
       }
     }
@@ -1599,7 +1648,7 @@
       }
     }
 
-    .card{
+    .card {
       &-img {
         height: 240px;
         width: calc(100% - 12px);
@@ -1609,6 +1658,7 @@
         border-radius: 10px;
         margin-bottom: 12px;
       }
+
       &-title {
         width: calc(100% - 24px);
         font-weight: 700;
@@ -1875,10 +1925,12 @@
       }
     }
   }
-  .sec-network{
+
+  .sec-network {
     height: auto;
     padding: 40px 0;
   }
+
   .sec-coin {
     height: auto;
     padding: 40px 0;

@@ -10,35 +10,37 @@
       <ul class="link-list">
         <li class="link-item">
           <p class="link">About</p>
-          <a href="./about-stack.html" class="link small">+ About Stake and Stack</a>
-          <a href="./about-webew.html" class="link small">+ About webew</a>
+          <a href="./about-stack.html" class="link small">About Stake and Stack</a>
+          <a href="./about-webew.html" class="link small">About webew</a>
         </li>
         <li class="link-item">
           <p class="link">Networks</p>
-          <a href="./tezos.html" class="link small">+Tezos</a>
-          <a href="./kava.html" class="link small">+KAVA</a>
-          <a href="./akt.html" class="link small">+AKT</a>
+          <a href="./tezos.html" class="link small">Tezos (XTZ)</a>
+          <a href="./kava.html" class="link small">Kava (KAVA)</a>
+          <a href="./akt.html" class="link small">Akash Network (AKASH)</a>
+          <a href="./sol.html" class="link small">Solana (SOL)</a>
         </li>
         <!-- <li class="link-item"><a href="" class="link">Products</a></li>
         <li class="link-item"><a href="" class="link">Membership</a></li> -->
         <li class="link-item"><a href="./news-list.html" class="link">News&Blog</a></li>
-        <!-- <li class="link-item"><a href="./login" class="link thin">LOGIN</a></li> -->
-        <li class="link-item"><a href="./dashboard.html" class="link thin yellow">DASHBOARD</a></li>
-        <li class="link-item">
-          <a href="" class="link thin">
-            <img src="./assets/images/icon/flag-usd.svg" alt="">
-          </a>
-          <a href="" class="link thin">
-            <img src="./assets/images/icon/flag-usd.svg" alt="">
-          </a>
-        </li>
+        <li class="link-item"><a href="./faq.html" class="link">FAQ</a></li>
       </ul>
+      <div class="menu-footer">
+        <div class="box-btn">
+          <button class="btn btn-gray">LOGIN</button>
+          <button class="btn btn-gray"><img src="./assets/images/icon/flag-usd.svg" alt="">ENGLISH</button>
+          <button class="btn btn-gray"><img src="./assets/images/icon/dollar.svg" alt="">US Dollar</button>
+        </div>
+        <a href="./dashboard.html" class="btn-yellow btn-dashboard">
+          DASHBOARD
+        </a>
+      </div>
     </div>
   </div>
 </header>
 
 <header class="pc header">
-  <a href="/" class="link-home"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
+  <a href="/" class="link-home"><img src="./assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       About
@@ -53,6 +55,7 @@
         <a href="./tezos.html" class="link">+Tezos</a>
         <a href="./kava.html" class="link">+KAVA</a>
         <a href="./akt.html" class="link">+AKT</a>
+        <a href="./sol.html" class="link">+SOL</a>
       </div>
     </button>
     <!-- <a href="" class="link">Products</a>
@@ -65,23 +68,38 @@
     <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
     <!-- <a href="" class="btn after-login">LOGOUT</a>
     <a href="" class="btn after-login">MYPAGE</a> -->
-    <button class="btn btn-language">
-      <div class="language">
+    <div class="btn dropdown">
+      <button class="language btn-dropdown">
         <img src="./assets/images/icon/flag-usd.svg" alt="">
-        USD
-        <img src="./assets/images/icon/down.svg" alt="" class="icon">
-      </div>
+        ENGLISH
+      </button>
       <div class="wrap-language">
-        <div class="language">
+        <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          USD
-        </div>
-        <div class="language">
+          ENGLISH
+        </a>
+        <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          KWD
-        </div>
+          KOREAN
+        </a>
       </div>
-    </button>
+    </div>
+    <div class="btn dropdown">
+      <button class="language btn-dropdown">
+        <img src="./assets/images/icon/dollar.svg" alt="">
+        US Dollar
+      </button>
+      <div class="wrap-language">
+        <button class="language">
+          <img src="./assets/images/icon/dollar.svg" alt="">
+          US Dollar
+        </button>
+        <button class="language">
+          <img src="./assets/images/icon/won.svg" alt="">
+          Korean Won
+        </button>
+      </div>
+    </div>
     <a href="./dashboard.html" class="btn btn-yellow">DASHBOARD</a>
   </div>
 </header>

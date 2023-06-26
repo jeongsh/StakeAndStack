@@ -16,6 +16,12 @@ footer{
       line-height: 23px;
       margin-bottom: 25px;
       text-transform: uppercase;
+      font-weight: 400;
+      font-family: "Paytone One", sans-serif;
+      display: block;
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
     }
     .link{
       font-size: 12px;

@@ -12,35 +12,37 @@ document.body.insertAdjacentHTML('afterbegin', `
       <ul class="link-list">
         <li class="link-item">
           <p class="link">About</p>
-          <a href="./about-stack.html" class="link small">+ About Stake and Stack</a>
-          <a href="./about-webew.html" class="link small">+ About webew</a>
+          <a href="./about-stack.html" class="link small">About Stake and Stack</a>
+          <a href="./about-webew.html" class="link small">About webew</a>
         </li>
         <li class="link-item">
           <p class="link">Networks</p>
-          <a href="./tezos.html" class="link small">+Tezos</a>
-          <a href="./kava.html" class="link small">+KAVA</a>
-          <a href="./akt.html" class="link small">+AKT</a>
+          <a href="./tezos.html" class="link small">Tezos (XTZ)</a>
+          <a href="./kava.html" class="link small">Kava (KAVA)</a>
+          <a href="./akt.html" class="link small">Akash Network (AKASH)</a>
+          <a href="./sol.html" class="link small">Solana (SOL)</a>
         </li>
         <!-- <li class="link-item"><a href="" class="link">Products</a></li>
         <li class="link-item"><a href="" class="link">Membership</a></li> -->
         <li class="link-item"><a href="./news-list.html" class="link">News&Blog</a></li>
-        <!-- <li class="link-item"><a href="./login" class="link thin">LOGIN</a></li> -->
-        <li class="link-item"><a href="./dashboard.html" class="link thin yellow">DASHBOARD</a></li>
-        <li class="link-item">
-          <a href="" class="link thin">
-            <img src="./assets/images/icon/flag-usd.svg" alt="">
-          </a>
-          <a href="" class="link thin">
-            <img src="./assets/images/icon/flag-usd.svg" alt="">
-          </a>
-        </li>
+        <li class="link-item"><a href="./faq.html" class="link">FAQ</a></li>
       </ul>
+      <div class="menu-footer">
+        <div class="box-btn">
+          <button class="btn btn-gray">LOGIN</button>
+          <button class="btn btn-gray"><img src="./assets/images/icon/flag-usd.svg" alt="">ENGLISH</button>
+          <button class="btn btn-gray"><img src="./assets/images/icon/dollar.svg" alt="">US Dollar</button>
+        </div>
+        <a href="./dashboard.html" class="btn-yellow btn-dashboard">
+          DASHBOARD
+        </a>
+      </div>
     </div>
   </div>
 </header>
 
 <header class="pc header">
-  <a href="/" class="link-home"><img src="./assets/images/icon/logo-vertical.svg" alt="logo" class="logo"></a>
+  <a href="/" class="link-home"><img src="./assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       About
@@ -55,6 +57,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         <a href="./tezos.html" class="link">+Tezos</a>
         <a href="./kava.html" class="link">+KAVA</a>
         <a href="./akt.html" class="link">+AKT</a>
+        <a href="./sol.html" class="link">+SOL</a>
       </div>
     </button>
     <!-- <a href="" class="link">Products</a>
@@ -67,23 +70,38 @@ document.body.insertAdjacentHTML('afterbegin', `
     <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
     <!-- <a href="" class="btn after-login">LOGOUT</a>
     <a href="" class="btn after-login">MYPAGE</a> -->
-    <button class="btn btn-language">
-      <div class="language">
+    <div class="btn dropdown">
+      <button class="language btn-dropdown">
         <img src="./assets/images/icon/flag-usd.svg" alt="">
-        USD
-        <img src="./assets/images/icon/down.svg" alt="" class="icon">
-      </div>
+        ENGLISH
+      </button>
       <div class="wrap-language">
-        <div class="language">
+        <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          USD
-        </div>
-        <div class="language">
+          ENGLISH
+        </a>
+        <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          KWD
-        </div>
+          KOREAN
+        </a>
       </div>
-    </button>
+    </div>
+    <div class="btn dropdown">
+      <button class="language btn-dropdown">
+        <img src="./assets/images/icon/dollar.svg" alt="">
+        US Dollar
+      </button>
+      <div class="wrap-language">
+        <button class="language">
+          <img src="./assets/images/icon/dollar.svg" alt="">
+          US Dollar
+        </button>
+        <button class="language">
+          <img src="./assets/images/icon/won.svg" alt="">
+          Korean Won
+        </button>
+      </div>
+    </div>
     <a href="./dashboard.html" class="btn btn-yellow">DASHBOARD</a>
   </div>
 </header>
@@ -99,20 +117,21 @@ main.insertAdjacentHTML('beforeend', `
       <div class="box-link">
         <div class="box">
           <h3 class="title">About</h3>
-          <a href="" class="link">About Stake and Stack</a>
-          <a href="" class="link">About webew</a>
+          <a href="./about-stack.html" class="link">About Stake and Stack</a>
+          <a href="./about-webew.html" class="link">About webew</a>
+          <a href="./news-list.html" class="title">News & Blog</a>
+          <a href="./faq.html" class="title">FAQ</a>
         </div>
         <div class="box">
           <h3 class="title">networks</h3>
-          <a href="" class="link">Tezos (XTZ)</a>
-          <a href="" class="link">Kava (KAVA)</a>
-          <a href="" class="link">Akash Network (AKT)</a>
+          <a href="./tezos.html" class="link">Tezos (XTZ)</a>
+          <a href="./kava.html" class="link">Kava (KAVA)</a>
+          <a href="./akt.html" class="link">Akash Network (AKT)</a>
+          <a href="./sol.html" class="link">Solena (SOL)</a>
         </div>
         <div class="box">
           <h3 class="title">products</h3>
           <a href="" class="link">Dashboard</a>
-          <a href="" class="link">Rewards Calculator</a>
-          <a href="" class="link">SaS Club (Membership)</a>
         </div>
       </div>
       <div class="divider-vertical"></div>
@@ -133,9 +152,9 @@ main.insertAdjacentHTML('beforeend', `
             <a href="" class="link-icon"><img src="./assets/images/icon/twitter.svg" alt=""></a>
             <a href="" class="link-icon"><img src="./assets/images/icon/telegram.svg" alt=""></a>
             <a href="" class="link-icon"><img src="./assets/images/icon/kakao-talk.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/discord.svg" alt=""></a>
+            <!-- <a href="" class="link-icon"><img src="./assets/images/icon/discord.svg" alt=""></a>
             <a href="" class="link-icon"><img src="./assets/images/icon/instagram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/facebook.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="./assets/images/icon/facebook.svg" alt=""></a> -->
           </div>
         </div>
       </div>
@@ -153,7 +172,8 @@ main.insertAdjacentHTML('beforeend', `
 const header = document.querySelector('header.pc');
 const btnAbout = document.querySelectorAll('.btn-about');
 const boxSublink = document.querySelectorAll('.box-sublink');
-const btnLanguage = document.querySelector('.btn-language');
+const btnDropdown = document.querySelectorAll('.btn-dropdown');
+const dropdown = document.querySelectorAll('.dropdown');
 const sections = document.querySelectorAll('section');
 const accordion = document.querySelectorAll('.accordion');
 const btnMenu = document.querySelector('.btn-menu');
@@ -181,8 +201,21 @@ document.addEventListener('click', (e) => {
   })
 })
 
-btnLanguage.addEventListener('click', () => {
-  btnLanguage.classList.toggle('active')
+btnDropdown.forEach((e, i) => {
+  e.addEventListener('click', () => {
+    dropdown.forEach(e => {
+      e.classList.remove('active')
+    })
+    dropdown[i].classList.toggle('active')
+  })
+})
+
+document.addEventListener('click', (e) => {
+  dropdown.forEach((a, i) => {
+    if (!a.contains(e.target) && !btnDropdown[i].contains(e.target)) {
+      dropdown[i].classList.remove('active')
+    }
+  })
 })
 
 window.addEventListener('scroll', () => {
@@ -204,6 +237,14 @@ accordion.forEach((e, i) => {
 
 btnMenu.addEventListener('click', () => {
   headerMo.classList.toggle('active')
+  if(headerMo.classList.contains('active')){
+    document.body.style.overflow = 'hidden'
+    document.body.style.height = '100vh'
+  }else{
+    document.body.style.overflow = 'auto'
+    document.body.style.height = 'auto'
+  }
+  
 })
 
 toggle.forEach(e => {

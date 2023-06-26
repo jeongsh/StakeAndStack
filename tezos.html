@@ -27,7 +27,7 @@
             <p class="address">tz1aRoaRhSpRYvFdyvgWLL6TGyRoGF51wDjM</p>
             <button class="btn-copy"><img src="./assets/images/icon/copy.svg" alt=""></button>
           </div>
-          <p class="explorer">VIEW ON BLOCK EXPLORER</p>
+          <button class="explorer">VIEW ON BLOCK EXPLORER</button>
           <div class="box-info">
             <div class="info">
               <p class="type">Sas Club Fee</p>
@@ -73,7 +73,7 @@
                 alt=""></a>
             <a href="https://tezos.com/whitepaper.pdf" target="_blank" class="link-icon"><img
                 src="./assets/images/icon/paper.png" alt=""></a>
-            <a href="https://tzkt.io/" target="_blank" class="link-icon"><img src="./assets/images/icon/web.svg"
+            <a href="https://tzkt.io/" target="_blank" class="link-icon"><img src="./assets/images/icon/search.svg"
                 alt=""></a>
             <a href="https://tzstats.com/" target="_blank" class="link-icon"><img src="./assets/images/icon/search.svg"
                 alt=""></a>
@@ -241,9 +241,10 @@
               </div>
               <p class="info-text">
                 Please note that we cannot guarantee the accuracy of the Reward Calculator results.<br>
-                The rewards are subject to carious dynamic variables, and the protocol’s reward formulas may be subject
-                to change through govermance desisions and system upgrades. Use this calculator at your own risk, and
-                always perform additional research and analysis when making decisions refarding staking or delegation.s.
+                The rewards are
+                subject to carious dynamic variables, and the protocol’s reward formulas may be subject to change
+                through govermance desisions and system upgrades. Use this calculator at your own risk, and always
+                perform additional research and analysis when making decisions refarding staking or delegation.
               </p>
             </div>
             <div class="right">
@@ -308,8 +309,8 @@
     <section class="sec-3">
       <div class="wrap">
         <h2 class="title">Staking Guide & Instructions</h2>
-        <p class="des">Stake your ATOM tokens in a few clicks by following these steps :<br>
-          Our recommended way to stake ATOM is via Keplr wallet</p>
+        <p class="des">Stake your XTZ tokens in a few clicks by follwing these steps : <br>
+          Our recommended way to stake XTZ is via Kukai wallet.</p>
         <div class="swiper-box">
           <div class="swiper swiper-image">
             <div class="swiper-wrapper">
@@ -661,6 +662,21 @@
     guideSwiper.on('transitionEnd', function () {
       swiperGuideCurrent.innerHTML = swiperGuide.swiper.realIndex + 1;
     });
+
+
+    const address = document.querySelector('.address');
+    const btnExplorer = document.querySelector('.explorer');
+    let addressText = address.textContent;
+    let isChanged = false
+    btnExplorer.addEventListener('click', () => {
+      if (isChanged) {
+        address.textContent = addressText;
+        isChanged = false;
+      } else {
+        address.textContent = 'https://tzkt.io/tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY/operations/';
+        isChanged = true;
+      }
+    })
   </script>
 </body>
 
