@@ -136,6 +136,13 @@ header.pc {
       visibility: hidden;
       transition: 0.3s;
       overflow: hidden;
+      .language {
+        padding-left: 15px;
+        transition: 0.2s;
+        &:hover {
+          background: #C0C4CD;
+        }
+      }
     }
 
     .language {
@@ -148,21 +155,13 @@ header.pc {
       height: 40px;
       width: 100%;
       font-size: 12px;
+      cursor: pointer;
     }
 
     &.active {
       .wrap-language {
         opacity: 1;
         visibility: visible;
-
-        .language {
-          padding-left: 15px;
-          transition: 0.2s;
-
-          &:hover {
-            background: #C0C4CD;
-          }
-        }
       }
 
       .language {

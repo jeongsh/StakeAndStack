@@ -203,8 +203,10 @@ document.addEventListener('click', (e) => {
 
 btnDropdown.forEach((e, i) => {
   e.addEventListener('click', () => {
-    dropdown.forEach(e => {
-      e.classList.remove('active')
+    dropdown.forEach((el, idx) => {
+      if(idx !== i){
+        el.classList.remove('active')
+      }
     })
     dropdown[i].classList.toggle('active')
   })
