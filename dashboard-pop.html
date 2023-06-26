@@ -12,7 +12,7 @@
 
 <body class="body">
   <h1 style="text-align: center;">팝업 한군데에 몰아넣으려고 만든 임시 버튼입니다 눌러서 확인 부탁드려요</h1>
-  <!-- 팝업 한군데에 몰아넣으려고 만든 임시 버튼 -->
+  <!-- 팝업 한군데에 몰아넣으려고 만든 임시 버튼 data-target, data-pop-name 이건 신경 안쓰셔도 되요 -->
   <div class="box-btn-pop" style="margin: 30px auto; display: flex; justify-content: center; width: 100%; gap:16px">
     <button class="btn-pop btn-gray" data-target="pop-network">
       Choose Network
@@ -25,6 +25,9 @@
     </button>
     <button class="btn-pop btn-gray" data-target="pop-add">
       Add your wallet
+    </button>
+    <button class="btn-pop btn-gray" data-target="pop-detail">
+      wallet detail
     </button>
   </div>
 
@@ -66,6 +69,16 @@
             <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
           </label>
         </div>
+        <div class="pop-item">
+          <input type="radio" name="Network" id="sol">
+          <label for="sol">
+            <div class="left">
+              <img src="./assets/images/dashboard/logo-sm-sol.svg" alt="">
+              Akash Network (AKT)
+            </div>
+            <img src="./assets/images/icon/blue-check.svg" alt="" class="check">
+          </label>
+        </div>
       </div>
     </div>
     <div class="pop-footer">
@@ -81,6 +94,9 @@
       <h4 class="pop-title">Connect your wallet</h4>
     </div>
     <div class="pop-body">
+      <div class="pop-desc">
+        <p>If you don’t have a wallet, you can select a provider and create one now. </p>
+      </div>
       <div class="pop-list">
         <div class="pop-item">
           <input type="radio" name="connect" id="metaMask" checked>
@@ -203,6 +219,110 @@
       </div>
     </div>
   </div>
+  <!-- Add your Wallet -->
+
+  <!-- Wallet-detail -->
+  <div class="pop pop-detail" data-pop-name="pop-detail">
+    <div class="pop-header">
+      <h4 class="pop-title">Tezos (XTZ)</h4>
+      <button class="btn-star">
+        <img src="./assets/images/dashboard/star.svg" alt="" class="icon-star">
+      </button>
+    </div>
+    <div class="pop-body">
+      <div class="d-flex">
+        <p class="text">Coin Name</p>
+        <div class="content">
+          <div class="box-input">
+            <input type="text" class="input-text" placeholder="Enter Coin Name">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Wallet</p>
+        <div class="content">
+          <p>tz1krieurhr...rowruf87tz1krieurhr...rowruf87...</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Balance</p>
+        <div class="content">
+          <p>92.123.0998887</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">value</p>
+        <div class="content">
+          <p>$102,608.71</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">price</p>
+        <div class="content">
+          <p>$1.112</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Amount Bought</p>
+        <div class="content">
+          <p>90,000.00000</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Total Bought</p>
+        <div class="content">
+          <p>$90,000.00</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Avg. Price</p>
+        <div class="content">
+          <div class="box-input">
+            <input type="text" class="input-text" placeholder="Enter Avg. Price">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Delegation Period</p>
+        <div class="content">
+          <p>422 Days</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Rewards Amount</p>
+        <div class="content">
+          <p>2,147.987652</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Total PNL</p>
+        <div class="content">
+          <p class="green">$38.145221</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Returns</p>
+        <div class="content">
+          <p class="green">+15.55%</p>
+        </div>
+      </div>
+      <div class="d-flex">
+        <p class="text">Returns</p>
+        <div class="content">
+          <p class="red">-15.55%</p>
+        </div>
+      </div>
+    </div>
+    <div class="pop-footer">
+      <div class="pop-footer">
+        <button class="btn btn-discount">DISCOUNT</button>
+        <button class="btn">DELETE</button>
+        <button class="btn btn-cancle">CLOSE</button>
+      </div>
+    </div>
+  </div>
+  <!-- Wallet-detail -->
+
   <script>
     const btnPop = document.querySelectorAll('.btn-pop');
     const pop = document.querySelectorAll('.pop');

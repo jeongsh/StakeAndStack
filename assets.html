@@ -204,7 +204,12 @@
             </div>
           </div>
           <div class="wrap-last">
-            <p class="subtitle">Last Transactions</p>
+            <div class="box-title">
+              <p class="subtitle">Last Transactions</p>
+              <button class="btn-black">
+                Go to Explorer
+              </button>
+            </div>
             <div class="box-table">
               <table class="table last-table">
                 <colgroup>
@@ -235,8 +240,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                   <tr>
                     <td>Tezos (XTZ)</td>
@@ -247,8 +252,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-240.00000</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                   <tr>
                     <td>Tezos (XTZ)</td>
@@ -259,8 +264,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-240.00000</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                   <tr>
                     <td>Tezos (XTZ)</td>
@@ -271,8 +276,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-240.00000</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                   <tr>
                     <td>Tezos (XTZ)</td>
@@ -283,8 +288,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-240.00000</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                   <tr>
                     <td>Tezos (XTZ)</td>
@@ -295,8 +300,8 @@
                     </td>
                     <td class="date">2023-04-09 00:00</td>
                     <td class="operation">Staking Rewards</td>
-                    <td class="out">-240.00000</td>
-                    <td class="in">+38.145221</td>
+                    <td class="red">-240.00000</td>
+                    <td class="green">+38.145221</td>
                   </tr>
                 </tbody>
               </table>
@@ -308,265 +313,108 @@
           <div class="box-table">
             <table class="table table-wallet">
               <colgroup>
-                <col style="">
+                <col style="width: 200px;">
+                <col>
+                <col style="width: 180px;">
+                <col style="width: 180px;">
+                <col style="width: 120px;">
+                <col style="width: 170px;">
               </colgroup>
               <thead>
                 <tr>
-                  <th>Coin</th>
+                  <th>Wallet Name</th>
+                  <th>Wallet</th>
                   <th>Balance</th>
-                  <th>Valus Price</th>
-                  <th>Amount Bought</th>
-                  <th>Total Bought
-                    Avg. Price</th>
-                  <th>Delegation
-                    Period</th>
-                  <th>
-                    Rewards Amount
-                  </th>
-                  <th style="text-align: right;">Total PNL</th>
-                  <th style="text-align: right;">Returns</th>
-                  <th style="text-align: right; padding-right: 30px">APY</th>
+                  <th>Value</th>
+                  <th>APY</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
                 <tr>
-                  <td>Tezos (XTZ)
-                    <span class="td-gray">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</span>
-                  </td>
-                  <td class="td-gray">
-                    92.123.0998887
+                  <td class="d-flex">
+                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    William
                   </td>
                   <td>
-                    $102,608.71
-                    <span class="td-gray">
-                      $1.112
-                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, modi doloremque sed molestiae, corporis distinctio eaque doloribus, et iure quisquam nisi repudiandae maiores magni alias earum debitis quidem dicta reprehenderit?
                   </td>
-                  <td class="td-gray">
-                    90,000.00000
-                  </td>
-                  <td>
-                    $90,000.00
-                    <span class="td-gray">
-                      $1.00
-                    </span>
-                  </td>
-                  <td>
-                    422 Days
-                  </td>
-                  <td>
-                    2,147.987652
-                  </td>
-                  <td class="in">
-                    $38.145221
-                  </td>
-                  <td class="in">
-                    +15.55%
-                  </td>
-                  <td class="in" style="padding-right: 30px">
-                    +8.65%
-                  </td>
+                  <td>92.123.0998887</td>
+                  <td>$102,608.71</td>
+                  <td class="green">+8.65%</td>
+                  <td><button class="btn-black">+ 자세히보기</button></td>
                 </tr>
-
                 <tr class="tr-gray">
                   <th>Total</th>
                   <th>10 Assets</th>
-                  <th colspan='2'>$1,752,000.00</th>
-                  <th>$1,500,000.00</th>
-                  <th colspan='2'>$1,500,000.00</th>
-                  <th class="in">$3344.99999</th>
-                  <th class="in">+15.55%</th>
-                  <th class="in" style="padding-right: 30px">+8.65%</th>
+                  <th></th>
+                  <th>$1,752,000.00</th>
+                  <th class="green">$3344.99999</th>
                 </tr>
               </tbody>
             </table>
@@ -578,6 +426,7 @@
           <div class="box-table">
             <table class="table table-coin">
               <colgroup>
+                <col style="width: 52px;">
                 <col>
                 <col>
                 <col>
@@ -588,9 +437,9 @@
                 <col>
                 <col>
                 <col>
-                <col>
-                <col style="width: 44px;">
+                <col style="width: 55px;">
               </colgroup>
+              <!-- 디폴트는 waiting이고 tr 클래스에 complete, processing 추가하는 걸로 tr 배경색, 아이콘 변경했습니다 -->
               <thead>
                 <tr>
                   <th>Cycle</th>
