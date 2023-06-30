@@ -15,7 +15,7 @@ textAdditional.addEventListener('keyup', (e) => {
   const length = e.target.value.length
   const maxLength = e.target.getAttribute('maxlength')
   const span = e.target.nextElementSibling
-  span.innerText = `${length}/${maxLength}`
+  span.innerText = `${length}/1,000}`
 })
 
 window.onload = function () {

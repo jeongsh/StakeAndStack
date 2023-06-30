@@ -15,7 +15,7 @@ footer{
       font-size: 25px;
       line-height: 23px;
       margin-bottom: 25px;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       font-weight: 400;
       font-family: "Paytone One", sans-serif;
       display: block;
@@ -26,7 +26,7 @@ footer{
     .link{
       font-size: 12px;
       font-weight: 400;
-      line-height: 23px; 
+      line-height: 23px;
       letter-spacing: 0em;
       margin-bottom: 5px;
       display: block;
@@ -123,7 +123,7 @@ footer{
 
 @media(max-width: 768px){
  footer{
-  padding: 90px 16px 85px 16px; 
+  padding: 90px 16px 85px 16px;
   .wrap{
     padding: 0;
     margin: 0;

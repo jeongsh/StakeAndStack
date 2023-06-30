@@ -17,21 +17,50 @@ document.body.insertAdjacentHTML('afterbegin', `
         </li>
         <li class="link-item">
           <p class="link">Networks</p>
-          <a href="./tezos.html" class="link small">Tezos (XTZ)</a>
-          <a href="./kava.html" class="link small">Kava (KAVA)</a>
-          <a href="./akt.html" class="link small">Akash Network (AKASH)</a>
-          <a href="./sol.html" class="link small">Solana (SOL)</a>
+          <a href="./tezos.html" class="link small">+Tezos (XTZ)</a>
+          <a href="./kava.html" class="link small">+Kava (KAVA)</a>
+          <a href="./akt.html" class="link small">+Akash Network (AKT)</a>
+          <a href="./sol.html" class="link small">+Solana (SOL)</a>
         </li>
         <!-- <li class="link-item"><a href="" class="link">Products</a></li>
         <li class="link-item"><a href="" class="link">Membership</a></li> -->
-        <li class="link-item"><a href="./news-list.html" class="link">News&Blog</a></li>
+        <li class="link-item"><a href="./news-list.html" class="link">News & Blog</a></li>
         <li class="link-item"><a href="./faq.html" class="link">FAQ</a></li>
       </ul>
       <div class="menu-footer">
         <div class="box-btn">
-          <button class="btn btn-gray">LOGIN</button>
-          <button class="btn btn-gray"><img src="./assets/images/icon/flag-usd.svg" alt="">ENGLISH</button>
-          <button class="btn btn-gray"><img src="./assets/images/icon/dollar.svg" alt="">US Dollar</button>
+          <div class="btn dropdown">
+            <button class="language btn-dropdown">
+              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              ENG
+            </button>
+            <div class="wrap-language">
+              <a href="" class="language">
+                <img src="./assets/images/icon/flag-usd.svg" alt="">
+                English
+              </a>
+              <a href="" class="language">
+                <img src="./assets/images/icon/flag-usd.svg" alt="">
+                Korean
+              </a>
+            </div>
+          </div>
+          <div class="btn dropdown">
+            <button class="language btn-dropdown">
+              <img src="./assets/images/icon/dollar.svg" alt="">
+              USD
+            </button>
+            <div class="wrap-language">
+              <button class="language">
+                <img src="./assets/images/icon/dollar.svg" alt="">
+                US Dollar
+              </button>
+              <button class="language">
+                <img src="./assets/images/icon/won.svg" alt="">
+                KR Won
+              </button>
+            </div>
+          </div>
         </div>
         <a href="./dashboard.html" class="btn-yellow btn-dashboard">
           DASHBOARD
@@ -54,15 +83,16 @@ document.body.insertAdjacentHTML('afterbegin', `
     <button class="link btn-about">
       Networks
       <div class="box-sublink">
-        <a href="./tezos.html" class="link">+Tezos</a>
-        <a href="./kava.html" class="link">+KAVA</a>
-        <a href="./akt.html" class="link">+AKT</a>
-        <a href="./sol.html" class="link">+SOL</a>
+        <a href="./tezos.html" class="link">+Tezos (XTZ)</a>
+        <a href="./kava.html" class="link">+Kava (KAVA)</a>
+        <a href="./akt.html" class="link">+Akash Network (AKT)</a>
+        <a href="./sol.html" class="link">+Solana (SOL)</a>
       </div>
     </button>
     <!-- <a href="" class="link">Products</a>
     <a href="" class="link">Membership</a> -->
-    <a href="./news-list.html" class="link">News&Blog</a>
+    <a href="./news-list.html" class="link">News & Blog</a>
+    <a href="./faq.html" class="link">FAQ</a>
   </nav>
 
   <!-- TODO: 로그인 전, 후 분기처리 -->
@@ -73,23 +103,23 @@ document.body.insertAdjacentHTML('afterbegin', `
     <div class="btn dropdown">
       <button class="language btn-dropdown">
         <img src="./assets/images/icon/flag-usd.svg" alt="">
-        ENGLISH
+        ENG
       </button>
       <div class="wrap-language">
         <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          ENGLISH
+          English
         </a>
         <a href="" class="language">
           <img src="./assets/images/icon/flag-usd.svg" alt="">
-          KOREAN
+          Korean
         </a>
       </div>
     </div>
     <div class="btn dropdown">
       <button class="language btn-dropdown">
         <img src="./assets/images/icon/dollar.svg" alt="">
-        US Dollar
+        USD
       </button>
       <div class="wrap-language">
         <button class="language">
@@ -98,7 +128,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         </button>
         <button class="language">
           <img src="./assets/images/icon/won.svg" alt="">
-          Korean Won
+          KR Won
         </button>
       </div>
     </div>
@@ -119,18 +149,18 @@ main.insertAdjacentHTML('beforeend', `
           <h3 class="title">About</h3>
           <a href="./about-stack.html" class="link">About Stake and Stack</a>
           <a href="./about-webew.html" class="link">About webew</a>
-          <a href="./news-list.html" class="title">News & Blog</a>
-          <a href="./faq.html" class="title">FAQ</a>
+          <a href="./news-list.html" class="link">News & Blog</a>
+          <a href="./faq.html" class="link">FAQ</a>
         </div>
         <div class="box">
-          <h3 class="title">networks</h3>
+          <h3 class="title">Networks</h3>
           <a href="./tezos.html" class="link">Tezos (XTZ)</a>
           <a href="./kava.html" class="link">Kava (KAVA)</a>
           <a href="./akt.html" class="link">Akash Network (AKT)</a>
-          <a href="./sol.html" class="link">Solena (SOL)</a>
+          <a href="./sol.html" class="link">Solana (SOL)</a>
         </div>
         <div class="box">
-          <h3 class="title">products</h3>
+          <h3 class="title">Products</h3>
           <a href="" class="link">Dashboard</a>
         </div>
       </div>
@@ -246,7 +276,7 @@ btnMenu.addEventListener('click', () => {
     document.body.style.overflow = 'auto'
     document.body.style.height = 'auto'
   }
-  
+
 })
 
 toggle.forEach(e => {

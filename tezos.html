@@ -24,7 +24,7 @@
         <div class="content">
           <p class="validator">Validator Address :</p>
           <div class="d-flex center">
-            <p class="address">tz1aRoaRhSpRYvFdyvgWLL6TGyRoGF51wDjM</p>
+            <p class="address">tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY</p>
             <button class="btn-copy"><img src="./assets/images/icon/copy.svg" alt=""></button>
           </div>
           <button class="explorer">VIEW ON BLOCK EXPLORER</button>
@@ -116,7 +116,7 @@
             </div>
             <div class="box">
               <p class="value">≥100</p>
-              <p class="type">ValidMin. Delegation</p>
+              <p class="type">Min. Delegation</p>
             </div>
             <div class="box">
               <p class="value">72.41<small>%</small></p>
@@ -240,8 +240,7 @@
                 </div>
               </div>
               <p class="info-text">
-                Please note that we cannot guarantee the accuracy of the Reward Calculator results.<br>
-                The rewards are
+                Please note that we cannot guarantee the accuracy of the Reward Calculator results. The rewards are
                 subject to carious dynamic variables, and the protocol’s reward formulas may be subject to change
                 through govermance desisions and system upgrades. Use this calculator at your own risk, and always
                 perform additional research and analysis when making decisions refarding staking or delegation.
@@ -521,7 +520,7 @@
         <h2 class="title">Supported Wallets</h2>
         <p class="keep">
           Keep your XTZ in exchanges? You should create your own wallet to keep your XTZ safe! Here's the recommended
-          wallets for you
+          wallets for you.
         </p>
         <div class="d-flex pc">
           <a href="https://wallet.kukai.app" target="_blank">
@@ -576,7 +575,7 @@
       <div class="wrap">
         <h2 class="title">Don’t have XTZ?</h2>
         <h3 class="sub-title">
-          Here’s the top exchanges you can buy XTZ
+          Here’s the top exchanges you can buy XTZ.
         </h3>
         <div class="d-flex pc">
           <a href="https://www.binance.com/en/trade/XTZ_USDT" target="_blank">
@@ -670,10 +669,12 @@
     let isChanged = false
     btnExplorer.addEventListener('click', () => {
       if (isChanged) {
-        address.textContent = addressText;
+        address.innerHTML = addressText;
+        // address.textContent = addressText;
         isChanged = false;
       } else {
-        address.textContent = 'https://tzkt.io/tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY/operations/';
+        address.innerHTML =
+          '<a href="https://tzkt.io/tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY/operations/" target="_blank" class="address">https://tzkt.io/tz1Kf25fX1VdmYGSEzwFy1wNmkbSEZ2V83sY/operations/</a>';
         isChanged = true;
       }
     })

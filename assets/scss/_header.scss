@@ -296,6 +296,8 @@ header.mo {
   .menu-footer{
     width: 100%;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 9999;
   }
   .box-btn{
     display: flex;
@@ -338,6 +340,62 @@ header.mo {
 
     .menu {
       transform: translateY(0);
+    }
+  }
+  .dropdown {
+    transition: 0.3s;
+    position: relative;
+
+    .wrap-language {
+      position: absolute;
+      bottom: 46px;
+      left: 0;
+      height: 80px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 20px;
+      width: 140px;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      overflow: hidden;
+      border: 1px solid #C0C4CD;
+      .language {
+        padding-left: 15px;
+        transition: 0.2s;
+        &:hover {
+          background: #C0C4CD;
+        }
+      }
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: flex-start;
+      transition: 0.3s;
+      font-weight: 600;
+      height: 40px;
+      width: 100%;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    &.active {
+      .wrap-language {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .language {
+        .icon {
+          transform: rotate(180deg);
+        }
+      }
     }
   }
 }
