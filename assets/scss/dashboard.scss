@@ -173,7 +173,7 @@
           }
         }
       }
-  
+
       .language {
         display: flex;
         align-items: center;
@@ -458,9 +458,10 @@
         text-transform: uppercase;
       }
     }
+    .box-type{
+      width: 110px;
+    }
   }
-
-
 
   .card-round {
     padding: 10px;

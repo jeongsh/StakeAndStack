@@ -212,6 +212,7 @@ const selectBox = document.querySelectorAll('.box-select');
 const headerMo = document.querySelector('header.mo');
 const btnTab = document.querySelectorAll('.btn-tab');
 const tabContent = document.querySelectorAll('.tab-content');
+const menu = document.querySelector('.header.mo .menu');
 
 btnAbout.forEach((e, i) => {
   e.addEventListener('click', () => {
@@ -398,3 +399,9 @@ const createToast = (type) => {
     }, 1000);
   }, 2000);
 };
+
+menu.style.height = `${window.innerHeight}px`
+//화면이 리사이즈 될때마다 메뉴에 innerHeight값을 넣어줌
+window.addEventListener('resize', () => {
+  menu.style.height = `${window.innerHeight}px`
+})
