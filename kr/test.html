@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- <script src="../js/swiper.min.js"></script> -->
+
+  <style>
+    .swiper-wrapper{
+      height: 100%;
+      align-items: center;
+    }
+    .swiper-slide {
+      width: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .swiper-slide img{
+      width: 188px;
+    }
+
+    .swiper-slide.swiper-slide-active img{
+      width: 357px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 950px;">
+    <div class="swiper swiper-coin">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../assets/images/main/network-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="../assets/images/main/network-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="../assets/images/main/network-3.png" alt=""></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</body>
+
+<script>
+  window.onload = function () {
+    const swiperCoin = new Swiper('.swiper-coin', {
+      slidesPerView: '3',
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop: true,
+      centeredSlides: true,
+      speed: 500,
+    })
+  }
+</script>
+
+</html>

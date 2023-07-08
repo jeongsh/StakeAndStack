@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/dashboard.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
 
   <title>Stake and Stack</title>
 </head>
 
-<body class="body">
+<body class="body kr">
   <div class="wrapper">
     <nav class="gnb">
-      <a href="./"><img src="./assets/images/dashboard/logo-dashboard.svg" alt="logo" class="logo-dashboard"></a>
+      <a href="./"><img src="../assets/images/dashboard/logo-dashboard.svg" alt="logo" class="logo-dashboard"></a>
       <ul class="list">
         <li class="list-item">
           <a href="./dashboard.html" class="link">
@@ -25,22 +25,22 @@
           </p>
         </li>
         <li class="list-item border list-toggle active">
-          <a href="./assets.html" class="sub-link">
-            <p class="link">
+          <a href="../assets.html" class="sub-link">
+            <p class="link active">
               Staked Assets
             </p>
           </a>
           <p class="gray">
             $1.75 M
             <button class="btn-toggle">
-              <img src="./assets/images/dashboard/arrow-down.svg" alt="" class="arrow">
+              <img src="../assets/images/dashboard/arrow-down.svg" alt="" class="arrow">
             </button>
           </p>
           <div class="list-sub">
             <a href="./asset-tezos.html" class="sub-link">
               <div class="top">
                 <div class="circle"></div>
-                <p class="link active">
+                <p class="link">
                   Tezos
                   <span class="gray">
                     $1.75 M
@@ -51,7 +51,7 @@
                 <div class="gray">92,147,147,147,147,47 XTZ</div>
               </div>
             </a>
-            <a href="./assets.html" class="sub-link">
+            <a href="../assets.html" class="sub-link">
               <div class="top">
                 <div class="circle"></div>
                 <p class="link">
@@ -65,7 +65,7 @@
                 <div class="gray">92,147,147,147,147,47 XTZ</div>
               </div>
             </a>
-            <a href="./assets.html" class="sub-link">
+            <a href="../assets.html" class="sub-link">
               <div class="top">
                 <div class="circle"></div>
                 <p class="link">
@@ -83,31 +83,31 @@
         </li>
         <li class="list-item">
           <a href="" class="link">
-            <img src="./assets/images/dashboard/nft-small.png" alt="" class="icon">
+            <img src="../assets/images/dashboard/nft-small.png" alt="" class="icon">
             NFTs
           </a>
         </li>
         <li class="list-item">
           <a href="" class="link">
-            <img src="./assets/images/dashboard/member.png" alt="" class="icon">
+            <img src="../assets/images/dashboard/member.png" alt="" class="icon">
             SaS Membership
           </a>
         </li>
         <li class="list-item border">
           <a href="" class="link">
-            <img src="./assets/images/dashboard/report.png" alt="" class="icon">
+            <img src="../assets/images/dashboard/report.png" alt="" class="icon">
             Reports
           </a>
         </li>
         <li class="list-item">
           <a href="" class="link">
-            <img src="./assets/images/dashboard/news.png" alt="" class="icon">
+            <img src="../assets/images/dashboard/news.png" alt="" class="icon">
             News
           </a>
         </li>
         <li class="list-item">
           <a href="" class="link">
-            <img src="./assets/images/dashboard/content.png" alt="" class="icon">
+            <img src="../assets/images/dashboard/content.png" alt="" class="icon">
             Contents
           </a>
         </li>
@@ -117,32 +117,32 @@
       <div class="header">
         <div class="btn dropdown">
           <button class="language btn-dropdown">
-            <img src="./assets/images/icon/flag-usd.svg" alt="">
+            <img src="../assets/images/icon/flag-usd.svg" alt="">
             English
           </button>
           <div class="wrap-language">
             <div class="language">
-              <img src="./assets/images/icon/flag-usd.svg" alt="">
+              <img src="../assets/images/icon/flag-usd.svg" alt="">
               English
             </div>
             <div class="language">
-              <img src="./assets/images/icon/flag-kr.svg" alt="">
+              <img src="../assets/images/icon/flag-kr.svg" alt="">
               한국어
             </div>
           </div>
         </div>
         <div class="btn dropdown">
           <button class="language btn-dropdown">
-            <img src="./assets/images/icon/dollar.svg" alt="">
+            <img src="../assets/images/icon/dollar.svg" alt="">
             US Dollar
           </button>
           <div class="wrap-language">
             <div class="language">
-              <img src="./assets/images/icon/dollar.svg" alt="">
+              <img src="../assets/images/icon/dollar.svg" alt="">
               US Dollar
             </div>
             <div class="language">
-              <img src="./assets/images/icon/won.svg" alt="">
+              <img src="../assets/images/icon/won.svg" alt="">
               Korean Won
             </div>
           </div>
@@ -152,13 +152,10 @@
         <button class="btn-header btn-nft"></button>
         <button class="btn-header btn-setting"></button>
         <button class="btn-header btn-share"></button>
-        <button class="btn-header btn-user"><img src="./assets/images/dashboard/user.png" alt=""></button>
+        <button class="btn-header btn-user"><img src="../assets/images/dashboard/user.png" alt=""></button>
       </div>
       <div class="content">
-        <p class="title">
-          <img src="./assets/images/networks/logo-tezos.svg" alt="">
-          Tezos (XTZ)
-        </p>
+        <p class="subtitle">Staked Assets</p>
         <div class="wrap-total">
           <div class="total">
             <div class="box-num">
@@ -187,9 +184,13 @@
             </div>
           </div>
           <button class="btn-black">
-            <img src="./assets/images/dashboard/black-plus.svg" alt="">
+            <img src="../assets/images/dashboard/black-plus.svg" alt="">
             Add/Manage
           </button>
+        </div>
+        <div class="wrap-portion">
+          <!-- TODO: 차트가 붙어야 퍼블이 가능 할거 같아요 -->
+          <p style="color: #fff;">차트가 붙어야 퍼블이 가능 할거 같아요</p>
         </div>
         <div class="wrap-monthly">
           <div class="wrap-chart">
@@ -204,7 +205,7 @@
                 <p class="fluctuation up">
                   2.5%
                 </p>
-                <img src="./assets/images/dashboard/chart-3.png" alt="">
+                <img src="../assets/images/dashboard/chart-3.png" alt="">
               </div>
               <div class="box-bar">
                 <p class="bar-type">Total Earned</p>
@@ -215,16 +216,13 @@
                 <p class="fluctuation down">
                   2.5%
                 </p>
-                <img src="./assets/images/dashboard/chart-4.png" alt="">
+                <img src="../assets/images/dashboard/chart-4.png" alt="">
               </div>
             </div>
           </div>
           <div class="wrap-last">
             <div class="box-title">
               <p class="subtitle">Last Transactions</p>
-              <button class="btn-black">
-                Go to Explorer
-              </button>
             </div>
             <div class="box-table">
               <table class="table last-table">
@@ -349,7 +347,7 @@
               <tbody>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -362,7 +360,7 @@
                 </tr>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -375,7 +373,7 @@
                 </tr>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -388,7 +386,7 @@
                 </tr>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -401,7 +399,7 @@
                 </tr>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/star.svg" alt="별 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -414,7 +412,7 @@
                 </tr>
                 <tr>
                   <td class="d-flex">
-                    <img src="./assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
+                    <img src="../assets/images/dashboard/wallet.svg" alt="지갑 아이콘" class="icon-wallet">
                     William
                   </td>
                   <td>
@@ -427,10 +425,10 @@
                 </tr>
                 <tr class="tr-gray">
                   <th>Total</th>
-                  <th>10 Wallets</th>
+                  <th>10 Assets</th>
                   <th></th>
                   <th>$1,752,000.00</th>
-                  <th class="green">+103.33%</th>
+                  <th class="green">$3344.99999</th>
                 </tr>
               </tbody>
             </table>
