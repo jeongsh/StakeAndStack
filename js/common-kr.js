@@ -71,7 +71,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 
 <header class="pc header">
-  <a href="/" class="link-home"><img src="/assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="/" class="link-home"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       소개
