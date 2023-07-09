@@ -1,7 +1,7 @@
 //body 의 첫번째 자식으로 header 추가
 document.body.insertAdjacentHTML('afterbegin', `
 <header class="header mo">
-  <a href="/"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="/index.html"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <div class="btn-menu">
     <div class="line"></div>
     <div class="line"></div>
@@ -39,7 +39,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                 <img src="../assets/images/icon/flag-usd.svg" alt="">
                 English
               </a>
-              <a href="./kr/index.html" class="language">
+              <a href="./index.html" class="language">
                 <img src="../assets/images/icon/flag-kr.svg" alt="">
                 한국어
               </a>
@@ -71,7 +71,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 
 <header class="pc header">
-  <a href="/" class="link-home"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="/index.html" class="link-home"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       소개
@@ -110,7 +110,7 @@ document.body.insertAdjacentHTML('afterbegin', `
           <img src="../assets/images/icon/flag-usd.svg" alt="">
           English
         </a>
-        <a href="./kr/index.html" class="language">
+        <a href="./index.html" class="language">
           <img src="../assets/images/icon/flag-kr.svg" alt="">
           한국어
         </a>
