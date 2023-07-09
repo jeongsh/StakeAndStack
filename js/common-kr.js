@@ -1,7 +1,7 @@
 //body 의 첫번째 자식으로 header 추가
 document.body.insertAdjacentHTML('afterbegin', `
 <header class="header mo">
-  <a href="/index.html"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="./index.html"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <div class="btn-menu">
     <div class="line"></div>
     <div class="line"></div>
@@ -71,7 +71,7 @@ document.body.insertAdjacentHTML('afterbegin', `
 </header>
 
 <header class="pc header">
-  <a href="/index.html" class="link-home"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="./index.html" class="link-home"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <nav>
     <button class="link btn-about">
       소개
