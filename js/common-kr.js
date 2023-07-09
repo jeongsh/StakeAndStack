@@ -35,11 +35,11 @@ document.body.insertAdjacentHTML('afterbegin', `
               한국어
             </button>
             <div class="wrap-language">
-              <a href="" class="language">
+              <a href="/" class="language">
                 <img src="/assets/images/icon/flag-usd.svg" alt="">
                 English
               </a>
-              <a href="" class="language">
+              <a href="./kr/index.html" class="language">
                 <img src="/assets/images/icon/flag-kr.svg" alt="">
                 한국어
               </a>
@@ -76,8 +76,8 @@ document.body.insertAdjacentHTML('afterbegin', `
     <button class="link btn-about">
       소개
       <div class="box-sublink">
-        <a href="./about-stack.html" class="link">+스테이크 앤 스택</a>
-        <a href="./about-webew.html" class="link">+위뷰</a>
+        <a href="./about-stack.html" class="link">스테이크 앤 스택</a>
+        <a href="./about-webew.html" class="link">위뷰</a>
       </div>
     </button>
     <button class="link btn-about">
@@ -106,11 +106,11 @@ document.body.insertAdjacentHTML('afterbegin', `
         한국어
       </button>
       <div class="wrap-language">
-        <a href="" class="language">
+        <a href="/" class="language">
           <img src="/assets/images/icon/flag-usd.svg" alt="">
           English
         </a>
-        <a href="" class="language">
+        <a href="./kr/index.html" class="language">
           <img src="/assets/images/icon/flag-kr.svg" alt="">
           한국어
         </a>

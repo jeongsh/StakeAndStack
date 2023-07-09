@@ -39,7 +39,7 @@ document.body.insertAdjacentHTML('afterbegin', `
                 <img src="./assets/images/icon/flag-usd.svg" alt="">
                 English
               </a>
-              <a href="" class="language">
+              <a href="./kr/index.html" class="language">
                 <img src="./assets/images/icon/flag-kr.svg" alt="">
                 한국어
               </a>
@@ -110,7 +110,7 @@ document.body.insertAdjacentHTML('afterbegin', `
           <img src="./assets/images/icon/flag-usd.svg" alt="">
           English
         </a>
-        <a href="" class="language">
+        <a href="./kr/index.html" class="language">
           <img src="./assets/images/icon/flag-kr.svg" alt="">
           한국어
         </a>
