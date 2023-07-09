@@ -1,7 +1,7 @@
 //body 의 첫번째 자식으로 header 추가
 document.body.insertAdjacentHTML('afterbegin', `
 <header class="header mo">
-  <a href="/"><img src="/assets/images/icon/logo.svg" alt="logo" class="logo"></a>
+  <a href="/"><img src="../assets/images/icon/logo.svg" alt="logo" class="logo"></a>
   <div class="btn-menu">
     <div class="line"></div>
     <div class="line"></div>
@@ -31,32 +31,32 @@ document.body.insertAdjacentHTML('afterbegin', `
         <div class="box-btn">
           <div class="btn dropdown">
             <button class="language btn-dropdown">
-              <img src="/assets/images/icon/flag-kr.svg" alt="">
+              <img src="../assets/images/icon/flag-kr.svg" alt="">
               한국어
             </button>
             <div class="wrap-language">
               <a href="/" class="language">
-                <img src="/assets/images/icon/flag-usd.svg" alt="">
+                <img src="../assets/images/icon/flag-usd.svg" alt="">
                 English
               </a>
               <a href="./kr/index.html" class="language">
-                <img src="/assets/images/icon/flag-kr.svg" alt="">
+                <img src="../assets/images/icon/flag-kr.svg" alt="">
                 한국어
               </a>
             </div>
           </div>
           <div class="btn dropdown">
             <button class="language btn-dropdown">
-              <img src="/assets/images/icon/dollar.svg" alt="">
+              <img src="../assets/images/icon/dollar.svg" alt="">
               USD
             </button>
             <div class="wrap-language">
               <button class="language">
-                <img src="/assets/images/icon/dollar.svg" alt="">
+                <img src="../assets/images/icon/dollar.svg" alt="">
                 US Dollar
               </button>
               <button class="language">
-                <img src="/assets/images/icon/won.svg" alt="">
+                <img src="../assets/images/icon/won.svg" alt="">
                 KR Won
               </button>
             </div>
@@ -102,32 +102,32 @@ document.body.insertAdjacentHTML('afterbegin', `
     <a href="" class="btn after-login">MYPAGE</a> -->
     <div class="btn dropdown">
       <button class="language btn-dropdown">
-        <img src="/assets/images/icon/flag-kr.svg" alt="">
+        <img src="../assets/images/icon/flag-kr.svg" alt="">
         한국어
       </button>
       <div class="wrap-language">
         <a href="/" class="language">
-          <img src="/assets/images/icon/flag-usd.svg" alt="">
+          <img src="../assets/images/icon/flag-usd.svg" alt="">
           English
         </a>
         <a href="./kr/index.html" class="language">
-          <img src="/assets/images/icon/flag-kr.svg" alt="">
+          <img src="../assets/images/icon/flag-kr.svg" alt="">
           한국어
         </a>
       </div>
     </div>
     <div class="btn dropdown">
       <button class="language btn-dropdown">
-        <img src="/assets/images/icon/dollar.svg" alt="">
+        <img src="../assets/images/icon/dollar.svg" alt="">
         USD
       </button>
       <div class="wrap-language">
         <button class="language">
-          <img src="/assets/images/icon/dollar.svg" alt="">
+          <img src="../assets/images/icon/dollar.svg" alt="">
           US Dollar
         </button>
         <button class="language">
-          <img src="/assets/images/icon/won.svg" alt="">
+          <img src="../assets/images/icon/won.svg" alt="">
           KR Won
         </button>
       </div>
