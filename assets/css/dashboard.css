@@ -25,7 +25,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .kr h1, .kr h2, .kr h3, .kr h4, .kr h5, .kr h6 {
-  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard";
+}
+.kr p {
+  font-family: "Pretendard";
 }
 
 ul {

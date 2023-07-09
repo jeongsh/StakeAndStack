@@ -179,9 +179,10 @@ main.insertAdjacentHTML('beforeend', `
         <div class="box">
           <h3 class="title">Join our community</h3>
           <div class="d-flex">
-            <a href="" class="link-icon"><img src="./assets/images/icon/twitter.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/telegram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/kakao-talk.svg" alt=""></a>
+            <a href="" class="link-icon" target="_blank"><img src="./assets/images/icon/twitter.svg" alt=""></a>
+            <a href="https://www.threads.net/@stakeandstack" class="link-icon" target="_blank"><img src="./assets/images/icon/threads.svg" alt=""></a>
+            <a href="" class="link-icon" target="_blank"><img src="./assets/images/icon/telegram.svg" alt=""></a>
+            <a href="" class="link-icon" target="_blank"><img src="./assets/images/icon/kakao-talk.svg" alt=""></a>
             <!-- <a href="" class="link-icon"><img src="./assets/images/icon/discord.svg" alt=""></a>
             <a href="" class="link-icon"><img src="./assets/images/icon/instagram.svg" alt=""></a>
             <a href="" class="link-icon"><img src="./assets/images/icon/facebook.svg" alt=""></a> -->

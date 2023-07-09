@@ -25,7 +25,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .kr h1, .kr h2, .kr h3, .kr h4, .kr h5, .kr h6 {
-  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard";
+}
+.kr p {
+  font-family: "Pretendard";
 }
 
 ul {
@@ -792,6 +795,11 @@ header.mo .dropdown.active .language .icon {
   transform: rotate(180deg);
 }
 
+.kr header.pc nav .link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1440px) {
   header.pc .logo {
     width: 110px;
@@ -836,11 +844,6 @@ header.mo .dropdown.active .language .icon {
     bottom: 7.5px;
   }
 }
-.kr header.pc nav .link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
-
 footer {
   background: #fff;
   position: relative;
@@ -934,6 +937,17 @@ footer .cat {
   position: absolute;
   bottom: 50px;
   right: 198px;
+}
+
+.kr footer .wrap .title {
+  font-family: "Pretendard";
+  font-size: 23px;
+  font-weight: 700;
+}
+.kr footer .wrap .link {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @media (max-width: 1440px) {
@@ -1044,7 +1058,8 @@ main {
   padding-left: 70px;
   position: relative;
 }
-.sec-1 .title, .sec-1 .sub-title {
+.sec-1 .title,
+.sec-1 .sub-title {
   position: relative;
   z-index: 1;
 }
@@ -1136,6 +1151,20 @@ main {
   font-size: 25px;
   line-height: 29px;
   margin: 13px 0;
+}
+
+.kr .title {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 85px;
+}
+.kr .sub-title {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+.kr .article-title {
+  font-size: 35px;
+  font-weight: 700;
 }
 
 @media (max-width: 1440px) {

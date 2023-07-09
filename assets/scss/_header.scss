@@ -401,6 +401,12 @@ header.mo {
     }
   }
 }
+.kr{
+  header.pc nav .link{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   header.pc {
@@ -465,12 +471,4 @@ header.mo {
     }
   }
 
-}
-
-
-.kr{
-  header.pc nav .link{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-  }
 }

@@ -13,7 +13,7 @@ document.body.insertAdjacentHTML('afterbegin', `
         <li class="link-item">
           <p class="link">소개</p>
           <a href="./about-stack.html" class="link small">스테이크 앤 스택</a>
-          <a href="./about-webew.html" class="link small">위뷔</a>
+          <a href="./about-webew.html" class="link small">위뷰</a>
         </li>
         <li class="link-item">
           <p class="link">네트워크</p>
@@ -77,7 +77,7 @@ document.body.insertAdjacentHTML('afterbegin', `
       소개
       <div class="box-sublink">
         <a href="./about-stack.html" class="link">+스테이크 앤 스택</a>
-        <a href="./about-webew.html" class="link">+위뷔</a>
+        <a href="./about-webew.html" class="link">+위뷰</a>
       </div>
     </button>
     <button class="link btn-about">
@@ -146,57 +146,58 @@ main.insertAdjacentHTML('beforeend', `
     <div class="top">
       <div class="box-link">
         <div class="box">
-          <h3 class="title">About</h3>
-          <a href="./about-stack.html" class="link">About Stake and Stack</a>
-          <a href="./about-webew.html" class="link">About webew</a>
-          <a href="./news-list.html" class="link">News & Blog</a>
-          <a href="./faq.html" class="link">FAQ</a>
+          <h3 class="title">소개</h3>
+          <a href="./about-stack.html" class="link">스테이크 앤 스택</a>
+          <a href="./about-webew.html" class="link">위뷰</a>
+          <a href="./news-list.html" class="link">뉴스 & 블로그</a>
+          <a href="./faq.html" class="link">자주묻는질문</a>
         </div>
         <div class="box">
-          <h3 class="title">Networks</h3>
-          <a href="./tezos.html" class="link">Tezos (XTZ)</a>
-          <a href="./kava.html" class="link">Kava (KAVA)</a>
-          <a href="./akt.html" class="link">Akash Network (AKT)</a>
-          <a href="./sol.html" class="link">Solana (SOL)</a>
+          <h3 class="title">네트워크</h3>
+          <a href="./tezos.html" class="link">테조스 (XTZ)</a>
+          <a href="./kava.html" class="link">카바 (KAVA)</a>
+          <a href="./akt.html" class="link">아카시 네트워크 (AKT)</a>
+          <a href="./sol.html" class="link">솔라나 (SOL)</a>
         </div>
         <div class="box">
-          <h3 class="title">Products</h3>
-          <a href="" class="link">Dashboard</a>
+          <h3 class="title">제품</h3>
+          <a href="" class="link">대시보드</a>
         </div>
       </div>
       <div class="divider-vertical"></div>
       <div class="divider-horizontal"></div>
       <div class="box-icon">
         <div class="box">
-          <h3 class="title">Find us on</h3>
+          <h3 class="title">우리를 찾아보세요</h3>
           <div class="d-flex">
-            <a href="" class="link-icon"><img src="./assets/images/icon/mail.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/linktree.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/notion.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/medium.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/mail.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/linktree.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/notion.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/medium.svg" alt=""></a>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">Join our community</h3>
+          <h3 class="title">커뮤니티에 가입하세요</h3>
           <div class="d-flex">
-            <a href="" class="link-icon"><img src="./assets/images/icon/twitter.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/telegram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/kakao-talk.svg" alt=""></a>
-            <!-- <a href="" class="link-icon"><img src="./assets/images/icon/discord.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/instagram.svg" alt=""></a>
-            <a href="" class="link-icon"><img src="./assets/images/icon/facebook.svg" alt=""></a> -->
+            <a href="" class="link-icon" target="_blank"><img src="../assets/images/icon/twitter.svg" alt=""></a>
+            <a href="https://www.threads.net/@stakeandstack" class="link-icon" target="_blank"><img src="../assets/images/icon/threads.svg" alt=""></a>
+            <a href="" class="link-icon" target="_blank"><img src="../assets/images/icon/telegram.svg" alt=""></a>
+            <a href="" class="link-icon" target="_blank"><img src="../assets/images/icon/kakao-talk.svg" alt=""></a>
+            <!-- <a href="" class="link-icon"><img src="../assets/images/icon/discord.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/instagram.svg" alt=""></a>
+            <a href="" class="link-icon"><img src="../assets/images/icon/facebook.svg" alt=""></a> -->
           </div>
         </div>
       </div>
     </div>
     <div class="bottom">
-      <img src="./assets/images/icon/webew.png" alt="" class="webew">
+      <img src="../assets/images/icon/webew.png" alt="" class="webew">
       <div class="d-flex">
         <p class="copyright">Ⓒ 2023 Stake and Stack</p>
-        <a href="" class="privacy">Privacy & Terms</a>
+        <a href="" class="privacy">개인정보보호 & 이용약관</a>
       </div>
     </div>
-    <img src="./assets/images/gif/cat-b.gif" alt="" class="cat">
+    <img src="../assets/images/gif/cat-b.gif" alt="" class="cat">
   </div>
 </footer>`)
 const header = document.querySelector('header.pc');

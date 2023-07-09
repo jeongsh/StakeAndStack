@@ -25,7 +25,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .kr h1, .kr h2, .kr h3, .kr h4, .kr h5, .kr h6 {
-  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard";
+}
+.kr p {
+  font-family: "Pretendard";
 }
 
 ul {
@@ -792,6 +795,11 @@ header.mo .dropdown.active .language .icon {
   transform: rotate(180deg);
 }
 
+.kr header.pc nav .link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1440px) {
   header.pc .logo {
     width: 110px;
@@ -836,11 +844,6 @@ header.mo .dropdown.active .language .icon {
     bottom: 7.5px;
   }
 }
-.kr header.pc nav .link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
-
 footer {
   background: #fff;
   position: relative;
@@ -934,6 +937,17 @@ footer .cat {
   position: absolute;
   bottom: 50px;
   right: 198px;
+}
+
+.kr footer .wrap .title {
+  font-family: "Pretendard";
+  font-size: 23px;
+  font-weight: 700;
+}
+.kr footer .wrap .link {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @media (max-width: 1440px) {
@@ -1075,7 +1089,7 @@ section {
 .sec-coin .wrap-info .validator {
   font-size: 16px;
   line-height: 1.2;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
   color: #0C0C0C;
 }
 .sec-coin .wrap-info .address {
@@ -1530,6 +1544,32 @@ section {
 }
 .sec-6 .wrap .d-flex {
   gap: 15px;
+}
+
+.kr .sec-coin .wrap-info .head .coin-title {
+  font-weight: 700;
+}
+.kr .sub-title {
+  font-weight: 700;
+}
+.kr .des {
+  font-weight: 500;
+}
+.kr .title {
+  font-weight: 600;
+}
+.kr .sec-2 .right .reward {
+  font-weight: 400;
+  font-family: "Pretendard", sans-serif;
+}
+.kr .sec-2 .right .price {
+  font-family: "Paytone One", sans-serif;
+}
+.kr .sec-6 .wrap .sub-title {
+  margin-bottom: 100px;
+}
+.kr .sec-6 .wrap {
+  padding-top: 110px;
 }
 
 @media (min-width: 1921px) {

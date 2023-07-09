@@ -94,6 +94,23 @@ footer{
   }
 }
 
+.kr{
+  footer{
+    .wrap{
+      .title{
+        font-family: "Pretendard";
+        font-size: 23px;
+        font-weight: 700;
+      }
+      .link{
+        font-family: "Pretendard";
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1440px){
   footer{
     .wrap{

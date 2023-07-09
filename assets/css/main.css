@@ -26,7 +26,10 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .kr h1, .kr h2, .kr h3, .kr h4, .kr h5, .kr h6 {
-  font-family: "Raleway", "Noto Sans KR", sans-serif;
+  font-family: "Pretendard";
+}
+.kr p {
+  font-family: "Pretendard";
 }
 
 ul {
@@ -793,6 +796,11 @@ header.mo .dropdown.active .language .icon {
   transform: rotate(180deg);
 }
 
+.kr header.pc nav .link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1440px) {
   header.pc .logo {
     width: 110px;
@@ -837,11 +845,6 @@ header.mo .dropdown.active .language .icon {
     bottom: 7.5px;
   }
 }
-.kr header.pc nav .link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-}
-
 footer {
   background: #fff;
   position: relative;
@@ -935,6 +938,17 @@ footer .cat {
   position: absolute;
   bottom: 50px;
   right: 198px;
+}
+
+.kr footer .wrap .title {
+  font-family: "Pretendard";
+  font-size: 23px;
+  font-weight: 700;
+}
+.kr footer .wrap .link {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 13px;
 }
 
 @media (max-width: 1440px) {
@@ -2175,7 +2189,7 @@ footer .cat {
   height: 550px;
 }
 .sec-newsletter .background {
-  padding-top: 110px;
+  padding-top: 180px;
   width: 100%;
   height: 100%;
   border-radius: 0 0 100px 100px;
@@ -2196,7 +2210,7 @@ footer .cat {
   font-weight: 500;
   color: #51595A;
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 .sec-newsletter .wrap-input {
   margin: 0 auto;
@@ -2254,6 +2268,77 @@ footer .cat {
 }
 .box-move .btn-top {
   margin-bottom: 13px;
+}
+
+.kr .sec-coin .title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;
+}
+.kr .sec-coin .des {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: "Pretendard";
+}
+.kr .sec-coin .box-percent {
+  padding: 0 30px;
+}
+.kr .sec-coin .box-percent .number {
+  font-family: "Paytone One";
+}
+.kr .sec-coin .text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 5px;
+}
+.kr .sec-network .title {
+  font-weight: 600;
+  line-height: 30px;
+}
+.kr .sec-network .des {
+  font-weight: 600;
+  line-height: 30px;
+}
+.kr .sec-network .box-text .coin-type {
+  font-family: "Pretendard";
+  font-weight: 600;
+}
+.kr .sec-slide .box-title .title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  font-family: "pretendard";
+}
+.kr .sec-slide .box-title .subtitle {
+  font-weight: 600;
+}
+.kr .sec-slide .card-title {
+  font-size: 24px;
+}
+.kr .sec-partner .title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: normal;
+}
+.kr .sec-partner .des {
+  font-weight: 600;
+}
+.kr .sec-contact .title {
+  font-weight: 700;
+}
+.kr .sec-contact .des {
+  font-weight: 600;
+}
+.kr .sec-question .title {
+  font-weight: 700;
+}
+.kr .sec-news .title {
+  font-weight: 600;
+}
+.kr .sec-newsletter .title {
+  font-weight: 600;
 }
 
 @media (max-width: 1440px) {
@@ -2405,6 +2490,24 @@ footer .cat {
   }
   .banner .banner-logo {
     display: none;
+  }
+  .kr .sec-blockchains-mo .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .kr .sec-membership-mo .title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .kr .sec-blockchains-mo .subtitle {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .kr .sec-membership-mo .subtitle {
+    font-size: 20px;
+  }
+  .kr .sec-membership-mo .des {
+    font-size: 18px;
   }
   .sec-blockchains-mo,
   .sec-membership-mo {
@@ -2671,7 +2774,7 @@ footer .cat {
   .sec-coin .box-percent {
     flex-wrap: wrap;
     height: auto;
-    padding: 20px 30px;
+    padding: 20px 30px !important;
   }
   .sec-coin .box-percent .number {
     width: 50%;
@@ -2727,6 +2830,11 @@ footer .cat {
   }
 }
 @media (max-width: 500px) {
+  .sec-coin .highlights .highlight .soon {
+    position: unset;
+    margin-bottom: 8px;
+    margin-top: 4px;
+  }
   .sec-network .swiper-wrapper {
     height: 540px;
   }
@@ -2741,12 +2849,4 @@ footer .cat {
     aspect-ratio: 514/436;
     height: auto;
   }
-}
-.kr .sec-coin .title {
-  font-size: 40px;
-  font-weight: 600;
-}
-.kr .sec-coin .des {
-  font-size: 18px;
-  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

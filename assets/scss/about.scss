@@ -1,58 +1,71 @@
 @import "common";
 
-.body{
+.body {
   background: $Yellow01;
   padding-top: 125px;
   overflow-x: hidden;
-  &.webew{
-      background: $secondary;
+
+  &.webew {
+    background: $secondary;
   }
 }
-main{
+
+main {
   position: relative;
   width: 100vw;
   overflow-x: hidden;
 }
-.title{
+
+.title {
   font-size: 80px;
   line-height: 1.4;
   margin-bottom: 13px;
-  .dot{
+
+  .dot {
     width: 14.5px;
   }
 }
-.sub-title{
+
+.sub-title {
   font-size: 35px;
   line-height: 1.4;
 }
-.sec-1{
+
+.sec-1 {
   position: relative;
   z-index: 1;
-  .pug{
+
+  .pug {
     position: absolute;
     right: 0;
     bottom: 167px;
     z-index: 3;
   }
-  .wrap{
+
+  .wrap {
     padding-top: 133px;
     padding-left: 70px;
     position: relative;
   }
-  .title, .sub-title{
+
+  .title,
+  .sub-title {
     position: relative;
     z-index: 1;
   }
-  .popcorn{
+
+  .popcorn {
     position: absolute;
     top: 32px;
     right: 112px;
     z-index: 1;
   }
-  .popcorn-mo{
+
+  .popcorn-mo {
     display: none;
   }
-  &::after{
+
+  &::after {
     content: "";
     width: 100%;
     height: 167px;
@@ -64,72 +77,88 @@ main{
   }
 }
 
-.sec-2{
+.sec-2 {
   background: #fff;
-  .wrap{
+
+  .wrap {
     padding: 90px 16px 74px 16px;
-    .text{
+
+    .text {
       width: 640px;
       padding-left: 60px;
     }
-    .img-box{
+
+    .img-box {
       flex: 1;
     }
-    .coin1{
+
+    .coin1 {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .coin3{
+
+    .coin3 {
       align-self: flex-end;
       margin-left: 83px;
     }
-    article{
+
+    article {
       margin-bottom: 48px;
     }
-    .article-title{
+
+    .article-title {
       font-size: 40px;
       line-height: 1.4;
       margin-bottom: 13px;
     }
-    .desc{
+
+    .desc {
       font-size: 18px;
       line-height: 1.6;
-      .underline{
+
+      .underline {
         font-weight: 600;
         text-decoration: underline;
       }
     }
-    .areas .text{
+
+    .areas .text {
       width: 100%;
     }
-    .desc-list{
+
+    .desc-list {
       list-style: disc;
       margin-bottom: 13px;
       margin-left: 30px;
-      .inner{
+
+      .inner {
         margin-left: 20px;
       }
     }
   }
 }
 
-.webew{
-  .sec-1{
+.webew {
+  .sec-1 {
     position: relative;
-    .wrap{
+
+    .wrap {
       height: 468px;
       padding-top: 231px;
     }
   }
-  .sec-2{
-    .article-title{
+
+  .sec-2 {
+    .article-title {
       margin-bottom: 0;
-      img{
+
+      img {
         width: 8px;
       }
     }
-    .slogan{
+
+    .slogan {
       font-weight: 700;
       font-size: 25px;
       line-height: 29px;
@@ -137,179 +166,240 @@ main{
     }
   }
 }
-@media(max-width: 1440px){
+
+.kr {
+  .title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 85px;
+  }
+  .sub-title{
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .article-title{
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+}
+
+@media(max-width: 1440px) {
   .sec-1::after {
     height: 183px;
   }
-  .sec-1 .wrap{
+
+  .sec-1 .wrap {
     padding-left: 0;
   }
-  .sec-1 .popcorn{
+
+  .sec-1 .popcorn {
     right: -50px;
     width: 450px;
   }
-  .sec-2 .wrap{
+
+  .sec-2 .wrap {
     padding-left: 30px;
     padding-right: 30px;
-    .text{
+
+    .text {
       padding-left: 0;
     }
   }
-  .webew .sec-1 .wrap{
+
+  .webew .sec-1 .wrap {
     padding-top: 213px;
   }
-  .webew .pug{
+
+  .webew .pug {
     bottom: 183px;
   }
 }
-@media(max-width: 1280px){
-  .webew{
-    .sec-1{
-      .wrap{
+
+@media(max-width: 1280px) {
+  .webew {
+    .sec-1 {
+      .wrap {
         padding-top: 190px;
       }
-      .title{
+
+      .title {
         font-size: 60px;
-        .dot{
+
+        .dot {
           width: 11.5px;
         }
       }
     }
   }
 }
-@media(max-width: 1024px){
-  .body{
+
+@media(max-width: 1024px) {
+  .body {
     padding-top: 0;
   }
-  .title{
+
+  .title {
     font-size: 56px;
   }
-  .sub-title{
+
+  .sub-title {
     font-size: 26px;
   }
-  .wrap{
+
+  .wrap {
     padding: 0 30px;
     width: 100%;
   }
-  .sec-1{
-    &::after{
+
+  .sec-1 {
+    &::after {
       height: 117px;
     }
-    .wrap{
+
+    .wrap {
       padding-top: 130px;
       padding-left: 30px;
     }
-    .popcorn{
+
+    .popcorn {
       right: 0;
       width: 400px;
     }
   }
-  
+
   .sec-2 {
-    .wrap{
+    .wrap {
       padding: 80px 30px 50px 30px;
-      .text{
+
+      .text {
         padding-left: 0;
         width: 60%;
       }
-      .img{
+
+      .img {
         max-width: 80%;
       }
     }
   }
-  .webew .sec-1 .title{
+
+  .webew .sec-1 .title {
     width: 50%;
     line-height: 1.2;
   }
-  .sec-1{
-    .pug{
+
+  .sec-1 {
+    .pug {
       bottom: 116px;
     }
   }
 }
 
-@media(max-width: 900px){
-  .title{
+@media(max-width: 900px) {
+  .title {
     font-size: 52px;
   }
-  .sec-1 .popcorn{
+
+  .sec-1 .popcorn {
     width: 379px;
   }
-  .sec-2 .wrap article{
+
+  .sec-2 .wrap article {
     flex-direction: column;
     gap: 30px;
-    .text{
+
+    .text {
       order: 2;
       width: 100%;
     }
-    .img-box{
+
+    .img-box {
       order: 1;
     }
   }
-  .webew .title{
+
+  .webew .title {
     font-size: 42px;
   }
-  .webew .sec-1{
+
+  .webew .sec-1 {
     padding-bottom: 289px;
-    .title{
+
+    .title {
       width: 80%;
     }
   }
 }
 
-@media(max-width: 768px){
-  .webew .sec-1 .wrap{
+@media(max-width: 768px) {
+  .webew .sec-1 .wrap {
     height: auto;
   }
-  .title .dot{
+
+  .title .dot {
     width: 8.5px;
   }
-  .sec-1{
+
+  .sec-1 {
     padding: 30px;
     padding-bottom: 0;
-    .sub-title br{
+
+    .sub-title br {
       display: none;
     }
-    &::after{
+
+    &::after {
       display: none;
     }
-    .wrap{
+
+    .wrap {
       padding: 0 !important;
-      .popcorn{
+
+      .popcorn {
         display: none;
       }
-      .popcorn-mo{
+
+      .popcorn-mo {
         margin: 80px auto 0 auto;
         display: block;
       }
     }
   }
-  .sec-1 .pug{
+
+  .sec-1 .pug {
     bottom: 0;
   }
-  .sec-2 .wrap .img{
+
+  .sec-2 .wrap .img {
     max-width: 100%;
   }
-  .title{
+
+  .title {
     font-size: 34px;
   }
-  .webew .sec-1{
+
+  .webew .sec-1 {
     padding-bottom: 289px;
-    .title{
+
+    .title {
       width: 100%;
       font-size: 46px;
-      .dot{
+
+      .dot {
         width: 8.5px;
       }
     }
   }
-  .sec-2 .wrap .desc-list .inner{
+
+  .sec-2 .wrap .desc-list .inner {
     margin-bottom: 24px;
   }
-  .sec-2 .wrap article{
+
+  .sec-2 .wrap article {
     margin-bottom: 0;
   }
-  .sec-2 .wrap .article-title{
+
+  .sec-2 .wrap .article-title {
     font-size: 34px;
   }
 }
