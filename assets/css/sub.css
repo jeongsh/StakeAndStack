@@ -1262,6 +1262,18 @@ footer .cat {
   border: 1px solid #C0C4CD;
 }
 
+.kr .sec-title .wrap .title {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+.kr .sec-title .wrap .des {
+  color: #555D67;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (max-width: 1440px) {
   .sec-title .wrap .cat {
     right: 100px;

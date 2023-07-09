@@ -1166,4 +1166,8 @@ button, a {
   .assets .wrap-total .total .box-num {
     width: auto;
   }
+}
+.kr .main .btn-red {
+  width: 156px;
+  font-weight: 400;
 }/*# sourceMappingURL=dashboard.css.map */
