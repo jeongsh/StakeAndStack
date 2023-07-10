@@ -126,6 +126,11 @@
     }
   }
 }
+.box-dropdown{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .main {
   flex: 1;
@@ -185,6 +190,7 @@
         width: 100%;
         font-size: 12px;
         cursor: pointer;
+        line-height: 1;
       }
 
       &.active {

@@ -100,7 +100,7 @@ document.body.insertAdjacentHTML('afterbegin', `
     <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
     <!-- <a href="" class="btn after-login">LOGOUT</a>
     <a href="" class="btn after-login">MYPAGE</a> -->
-    <div class="btn">
+    <div class="btn gap">
       <div class="dropdown">
         <button class="language btn-dropdown">
           <img src="../assets/images/icon/flag-kr.svg" alt="">
