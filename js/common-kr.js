@@ -29,36 +29,36 @@ document.body.insertAdjacentHTML('afterbegin', `
       </ul>
       <div class="menu-footer">
         <div class="box-btn">
-          <div class="btn dropdown">
-            <button class="language btn-dropdown">
-              <img src="../assets/images/icon/flag-kr.svg" alt="">
-              한국어
-            </button>
-            <div class="wrap-language">
-              <a href="/" class="language">
-                <img src="../assets/images/icon/flag-usd.svg" alt="">
-                English
-              </a>
-              <a href="./index.html" class="language">
+          <div class="btn">
+            <div class="dropdown">
+              <button class="language btn-dropdown">
                 <img src="../assets/images/icon/flag-kr.svg" alt="">
-                한국어
-              </a>
+              </button>
+              <div class="wrap-language">
+                <a href="/" class="language">
+                  <img src="../assets/images/icon/flag-usd.svg" alt="">
+                  English
+                </a>
+                <a href="./index.html" class="language">
+                  <img src="../assets/images/icon/flag-kr.svg" alt="">
+                  한국어
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="btn dropdown">
-            <button class="language btn-dropdown">
-              <img src="../assets/images/icon/dollar.svg" alt="">
-              USD
-            </button>
-            <div class="wrap-language">
-              <button class="language">
-                <img src="../assets/images/icon/dollar.svg" alt="">
-                US Dollar
+            <div class="dropdown">
+              <button class="language btn-dropdown">
+                USD
               </button>
-              <button class="language">
-                <img src="../assets/images/icon/won.svg" alt="">
-                KR Won
-              </button>
+              <div class="wrap-language">
+                <button class="language">
+                  <img src="../assets/images/icon/dollar.svg" alt="">
+                  US Dollar
+                </button>
+                <button class="language">
+                  <img src="../assets/images/icon/won.svg" alt="">
+                  KR Won
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -100,36 +100,36 @@ document.body.insertAdjacentHTML('afterbegin', `
     <!-- <a href="./login.html" class="btn before-login">LOGIN</a> -->
     <!-- <a href="" class="btn after-login">LOGOUT</a>
     <a href="" class="btn after-login">MYPAGE</a> -->
-    <div class="btn dropdown">
-      <button class="language btn-dropdown">
-        <img src="../assets/images/icon/flag-kr.svg" alt="">
-        한국어
-      </button>
-      <div class="wrap-language">
-        <a href="/" class="language">
-          <img src="../assets/images/icon/flag-usd.svg" alt="">
-          English
-        </a>
-        <a href="./index.html" class="language">
+    <div class="btn">
+      <div class="dropdown">
+        <button class="language btn-dropdown">
           <img src="../assets/images/icon/flag-kr.svg" alt="">
-          한국어
-        </a>
+        </button>
+        <div class="wrap-language">
+          <a href="/" class="language">
+            <img src="../assets/images/icon/flag-usd.svg" alt="">
+            English
+          </a>
+          <a href="./index.html" class="language">
+            <img src="../assets/images/icon/flag-kr.svg" alt="">
+            한국어
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="btn dropdown">
-      <button class="language btn-dropdown">
-        <img src="../assets/images/icon/dollar.svg" alt="">
-        USD
-      </button>
-      <div class="wrap-language">
-        <button class="language">
-          <img src="../assets/images/icon/dollar.svg" alt="">
-          US Dollar
+      <div class="dropdown">
+        <button class="language btn-dropdown">
+          USD
         </button>
-        <button class="language">
-          <img src="../assets/images/icon/won.svg" alt="">
-          KR Won
-        </button>
+        <div class="wrap-language">
+          <button class="language">
+            <img src="../assets/images/icon/dollar.svg" alt="">
+            US Dollar
+          </button>
+          <button class="language">
+            <img src="../assets/images/icon/won.svg" alt="">
+            KR Won
+          </button>
+        </div>
       </div>
     </div>
     <a href="./dashboard.html" class="btn btn-yellow">대시보드</a>
