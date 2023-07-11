@@ -1430,7 +1430,8 @@
 
     .box-percent {
       padding: 0 30px;
-      .number{
+
+      .number {
         font-family: 'Paytone One';
       }
     }
@@ -1468,39 +1469,48 @@
         line-height: normal;
         font-family: 'pretendard';
       }
-      .subtitle{
+
+      .subtitle {
         font-weight: 600;
       }
     }
-    .card-title{
+
+    .card-title {
       font-size: 24px;
     }
   }
-  .sec-partner{
-    .title{
+
+  .sec-partner {
+    .title {
       font-weight: 700;
       font-size: 45px;
       line-height: normal;
     }
-    .des{
+
+    .des {
       font-weight: 600;
     }
   }
-  .sec-contact{
-    .title{
+
+  .sec-contact {
+    .title {
       font-weight: 700;
     }
-    .des{
+
+    .des {
       font-weight: 600;
     }
   }
-  .sec-question .title{
+
+  .sec-question .title {
     font-weight: 700;
   }
-  .sec-news .title{
+
+  .sec-news .title {
     font-weight: 600;
   }
-  .sec-newsletter .title{
+
+  .sec-newsletter .title {
     font-weight: 600;
   }
 }
@@ -1714,30 +1724,36 @@
     padding: 0 30px;
     gap: 30px;
 
-    .banner-logo {
-      display: none;
-    }
+    // .banner-logo {
+    //   display: none;
+    // }
   }
-  .kr{
-    .sec-blockchains-mo .title{
+
+  .kr {
+    .sec-blockchains-mo .title {
       font-size: 30px;
       font-weight: 700;
     }
-    .sec-membership-mo .title{
+
+    .sec-membership-mo .title {
       font-size: 22px;
       font-weight: 700;
     }
-    .sec-blockchains-mo .subtitle{
+
+    .sec-blockchains-mo .subtitle {
       font-size: 24px;
       font-weight: 600;
     }
-    .sec-membership-mo .subtitle{
+
+    .sec-membership-mo .subtitle {
       font-size: 20px;
     }
-    .sec-membership-mo .des{
+
+    .sec-membership-mo .des {
       font-size: 18px;
     }
   }
+
   .sec-blockchains-mo,
   .sec-membership-mo {
     padding: 110px 16px 266px 16px;
@@ -2006,12 +2022,32 @@
     width: calc(100% - 32px);
   }
 
+  .box-move {
+    display: none;
+  }
+
   .banner {
-    height: 106px;
+    height: 220px;
     display: block;
-    padding-top: 10px;
+    width: 100%;
+    padding: 20px;
+
+    .d-flex{
+      gap: 0;
+      justify-content: space-between;
+    }
+    .content {
+      display: block;
+    }
 
     .sas {
+      margin-bottom: 10px;
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+    .left{
       margin-bottom: 10px;
     }
 
@@ -2021,6 +2057,22 @@
       .content {
         display: block;
       }
+    }
+    .btn-close{
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+    p{
+      font-size: 11px;
+      text-align: right;
+    }
+    .white{
+      text-align: left;
+    }
+    .pill-yellow{
+      margin-top: 20px;
+      margin-left: auto;
     }
   }
 

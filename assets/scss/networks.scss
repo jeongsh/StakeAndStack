@@ -695,6 +695,11 @@ section {
         background: #fff url(../images/networks/akt-bg-big.jpg) 50% 0 no-repeat;
       }
     }
+    &.sol {
+      &::after {
+        background: #fff url(../images/networks/sol-bg-big.jpg) 50% 0 no-repeat;
+      }
+    }
   }
 }
 
