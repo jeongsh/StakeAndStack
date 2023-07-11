@@ -201,9 +201,47 @@
       overflow: hidden;
       box-sizing: border-box;
       transition: 0.2s;
+      cursor: auto;
     }
   }
+  .link{
+    color: #000;
+    text-decoration: underline;
+  }
 
+  dl{
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 16px;
+    &::before{
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+  }
+  dt{
+    font-weight: 700;
+    line-height: 26px;
+    color: #303234;
+    display: block;
+  }
+
+  .warp-link{
+    margin-bottom: 16px;
+    dl{
+      margin-bottom: 4px;
+    }
+    .link-title{
+      font-weight: 700;
+      color: #000;
+      font-size: 18px;
+    }
+  }
   &.active {
     .btn-accordion .line:nth-child(1) {
       transform: translate(-50%, -50%) rotate(0deg);

@@ -266,6 +266,11 @@ window.addEventListener('scroll', () => {
 accordion.forEach((e, i) => {
   e.addEventListener('click', () => {
     e.classList.toggle('active')
+    //accordion안에 자식 요소 answer 클릭안되게 stopPropagation
+    e.querySelector('.answer').addEventListener('click', (e) => {
+      e.stopPropagation()
+    })
+
   })
 })
 
@@ -347,11 +352,15 @@ selectBox.forEach(e => {
 //btnTab의 data-tab-target 속성과 tabPanel의 data-tab-name가 같으면 active 클래스 추가
 btnTab.forEach(e => {
   e.addEventListener('click', () => {
+    btnTab.forEach(el => {
+      el.classList.remove('active')
+    })
     tabContent.forEach(el => {
       el.classList.remove('active')
     })
     const tabName = e.getAttribute('data-tab-target');
     const tab = document.querySelector(`[data-tab-name="${tabName}"]`);
+    e.classList.add('active')
     tab.classList.add('active')
   })
 })

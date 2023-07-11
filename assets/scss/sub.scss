@@ -193,6 +193,9 @@
       font-size: 25px;
       line-height: 29px;
       height: 100%;
+      &.active{
+        color: #00c585;
+      }
     }
   }
 }
